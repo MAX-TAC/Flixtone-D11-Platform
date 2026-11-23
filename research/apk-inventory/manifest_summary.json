@@ -1,0 +1,712 @@
+[
+  {
+    "Apk": "android.apk",
+    "Package": null,
+    "Components": 74,
+    "Activities": 27,
+    "Services": 28,
+    "Receivers": 16,
+    "Providers": 1,
+    "Exported": 15
+  },
+  {
+    "Apk": "android.ext.shared.apk",
+    "Package": "android.ext.shared",
+    "Components": 0,
+    "Activities": 0,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.backupconfirm.apk",
+    "Package": "com.android.backupconfirm",
+    "Components": 1,
+    "Activities": 1,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.camera2.apk",
+    "Package": "com.android.camera2",
+    "Components": 8,
+    "Activities": 5,
+    "Services": 0,
+    "Receivers": 1,
+    "Providers": 0,
+    "Exported": 5
+  },
+  {
+    "Apk": "com.android.captiveportallogin.apk",
+    "Package": "com.android.captiveportallogin",
+    "Components": 3,
+    "Activities": 1,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 1,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.certinstaller.apk",
+    "Package": "com.android.certinstaller",
+    "Components": 5,
+    "Activities": 4,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 2
+  },
+  {
+    "Apk": "com.android.companiondevicemanager.apk",
+    "Package": "com.android.companiondevicemanager",
+    "Components": 3,
+    "Activities": 1,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 1,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.cts.ctsshim.apk",
+    "Package": "com.android.cts.ctsshim",
+    "Components": 1,
+    "Activities": 1,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.cts.priv.ctsshim.apk",
+    "Package": "com.android.cts.priv.ctsshim",
+    "Components": 12,
+    "Activities": 12,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.dreams.basic.apk",
+    "Package": "com.android.dreams.basic",
+    "Components": 1,
+    "Activities": 0,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.dynsystem.apk",
+    "Package": "com.android.dynsystem",
+    "Components": 3,
+    "Activities": 1,
+    "Services": 1,
+    "Receivers": 1,
+    "Providers": 0,
+    "Exported": 2
+  },
+  {
+    "Apk": "com.android.externalstorage.apk",
+    "Package": "com.android.externalstorage",
+    "Components": 3,
+    "Activities": 0,
+    "Services": 0,
+    "Receivers": 1,
+    "Providers": 2,
+    "Exported": 2
+  },
+  {
+    "Apk": "com.android.htmlviewer.apk",
+    "Package": "com.android.htmlviewer",
+    "Components": 1,
+    "Activities": 1,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.inputdevices.apk",
+    "Package": "com.android.inputdevices",
+    "Components": 1,
+    "Activities": 0,
+    "Services": 0,
+    "Receivers": 1,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.inputmethod.latin.apk",
+    "Package": "com.android.inputmethod.latin",
+    "Components": 16,
+    "Activities": 8,
+    "Services": 3,
+    "Receivers": 4,
+    "Providers": 1,
+    "Exported": 3
+  },
+  {
+    "Apk": "com.android.keychain.apk",
+    "Package": "com.android.keychain",
+    "Components": 3,
+    "Activities": 1,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 1,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.localtransport.apk",
+    "Package": "com.android.localtransport",
+    "Components": 1,
+    "Activities": 0,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.location.fused.apk",
+    "Package": "com.android.location.fused",
+    "Components": 1,
+    "Activities": 0,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.modulemetadata.apk",
+    "Package": "com.android.modulemetadata",
+    "Components": 0,
+    "Activities": 0,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.networkstack.inprocess.apk",
+    "Package": "com.android.networkstack.inprocess",
+    "Components": 2,
+    "Activities": 0,
+    "Services": 2,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.networkstack.tethering.inprocess.rro.apk",
+    "Package": "com.android.networkstack.tethering.inprocess.rro",
+    "Components": 0,
+    "Activities": 0,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.networkstack.tethering.rro.apk",
+    "Package": "com.android.networkstack.tethering.rro",
+    "Components": 0,
+    "Activities": 0,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.packageinstaller.apk",
+    "Package": "com.android.packageinstaller",
+    "Components": 18,
+    "Activities": 10,
+    "Services": 1,
+    "Receivers": 5,
+    "Providers": 2,
+    "Exported": 3
+  },
+  {
+    "Apk": "com.android.pacprocessor.apk",
+    "Package": "com.android.pacprocessor",
+    "Components": 1,
+    "Activities": 0,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.printspooler.apk",
+    "Package": "com.android.printspooler",
+    "Components": 6,
+    "Activities": 3,
+    "Services": 2,
+    "Receivers": 1,
+    "Providers": 0,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.providers.calendar.apk",
+    "Package": "com.android.providers.calendar",
+    "Components": 8,
+    "Activities": 2,
+    "Services": 1,
+    "Receivers": 4,
+    "Providers": 1,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.providers.contacts.apk",
+    "Package": "com.android.providers.contacts",
+    "Components": 9,
+    "Activities": 1,
+    "Services": 0,
+    "Receivers": 2,
+    "Providers": 6,
+    "Exported": 6
+  },
+  {
+    "Apk": "com.android.providers.downloads.apk",
+    "Package": "com.android.providers.downloads",
+    "Components": 6,
+    "Activities": 0,
+    "Services": 3,
+    "Receivers": 1,
+    "Providers": 2,
+    "Exported": 2
+  },
+  {
+    "Apk": "com.android.providers.media.apk",
+    "Package": "com.android.providers.media",
+    "Components": 1,
+    "Activities": 0,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 1,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.providers.settings.apk",
+    "Package": "com.android.providers.settings",
+    "Components": 2,
+    "Activities": 0,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 1,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.providers.tv.apk",
+    "Package": "com.android.providers.tv",
+    "Components": 6,
+    "Activities": 0,
+    "Services": 1,
+    "Receivers": 4,
+    "Providers": 1,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.providers.userdictionary.apk",
+    "Package": "com.android.providers.userdictionary",
+    "Components": 1,
+    "Activities": 0,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 1,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.provision.apk",
+    "Package": "com.android.provision",
+    "Components": 1,
+    "Activities": 1,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.proxyhandler.apk",
+    "Package": "com.android.proxyhandler",
+    "Components": 1,
+    "Activities": 0,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.remoteprovisioner.apk",
+    "Package": "com.android.remoteprovisioner",
+    "Components": 16,
+    "Activities": 0,
+    "Services": 6,
+    "Receivers": 9,
+    "Providers": 1,
+    "Exported": 2
+  },
+  {
+    "Apk": "com.android.se.apk",
+    "Package": "com.android.se",
+    "Components": 1,
+    "Activities": 0,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.sharedstoragebackup.apk",
+    "Package": "com.android.sharedstoragebackup",
+    "Components": 1,
+    "Activities": 0,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.shell.apk",
+    "Package": "com.android.shell",
+    "Components": 9,
+    "Activities": 2,
+    "Services": 1,
+    "Receivers": 3,
+    "Providers": 3,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.soundpicker.apk",
+    "Package": "com.android.soundpicker",
+    "Components": 4,
+    "Activities": 1,
+    "Services": 1,
+    "Receivers": 1,
+    "Providers": 1,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.android.statementservice.apk",
+    "Package": "com.android.statementservice",
+    "Components": 16,
+    "Activities": 0,
+    "Services": 4,
+    "Receivers": 11,
+    "Providers": 1,
+    "Exported": 3
+  },
+  {
+    "Apk": "com.android.systemui.apk",
+    "Package": "com.android.systemui",
+    "Components": 71,
+    "Activities": 39,
+    "Services": 12,
+    "Receivers": 12,
+    "Providers": 5,
+    "Exported": 27
+  },
+  {
+    "Apk": "com.android.toofifi.apk",
+    "Package": "com.android.toofifi",
+    "Components": 98,
+    "Activities": 58,
+    "Services": 36,
+    "Receivers": 3,
+    "Providers": 1,
+    "Exported": 12
+  },
+  {
+    "Apk": "com.android.tv.frameworkpackagestubs.apk",
+    "Package": "com.android.tv.frameworkpackagestubs",
+    "Components": 10,
+    "Activities": 9,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 1,
+    "Exported": 10
+  },
+  {
+    "Apk": "com.android.tv.settings.apk",
+    "Package": "com.android.tv.settings",
+    "Components": 146,
+    "Activities": 114,
+    "Services": 8,
+    "Receivers": 12,
+    "Providers": 6,
+    "Exported": 88
+  },
+  {
+    "Apk": "com.android.vpndialogs.apk",
+    "Package": "com.android.vpndialogs",
+    "Components": 4,
+    "Activities": 4,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 3
+  },
+  {
+    "Apk": "com.android.wallpaperbackup.apk",
+    "Package": "com.android.wallpaperbackup",
+    "Components": 0,
+    "Activities": 0,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.wallpaperpicker.apk",
+    "Package": "com.android.wallpaperpicker",
+    "Components": 2,
+    "Activities": 2,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.android.webview.apk",
+    "Package": "com.android.webview",
+    "Components": 62,
+    "Activities": 3,
+    "Services": 53,
+    "Receivers": 1,
+    "Providers": 3,
+    "Exported": 54
+  },
+  {
+    "Apk": "com.android.wifi.resources.rro.apk",
+    "Package": "com.android.wifi.resources.rro",
+    "Components": 0,
+    "Activities": 0,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.coolux.source.apk",
+    "Package": "com.coolux.source",
+    "Components": 38,
+    "Activities": 33,
+    "Services": 1,
+    "Receivers": 3,
+    "Providers": 1,
+    "Exported": 3
+  },
+  {
+    "Apk": "com.hysd.screen.apk",
+    "Package": "com.hysd.screen",
+    "Components": 2,
+    "Activities": 1,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.mediatek.autopair.apk",
+    "Package": "com.mediatek.autopair",
+    "Components": 3,
+    "Activities": 0,
+    "Services": 2,
+    "Receivers": 1,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.mediatek.miracast.apk",
+    "Package": "com.mediatek.miracast",
+    "Components": 8,
+    "Activities": 6,
+    "Services": 1,
+    "Receivers": 1,
+    "Providers": 0,
+    "Exported": 7
+  },
+  {
+    "Apk": "com.mediatek.network.apk",
+    "Package": "com.mediatek.network",
+    "Components": 2,
+    "Activities": 0,
+    "Services": 1,
+    "Receivers": 1,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.mediatek.tv.service.apk",
+    "Package": "com.mediatek.tv.service",
+    "Components": 30,
+    "Activities": 2,
+    "Services": 17,
+    "Receivers": 7,
+    "Providers": 4,
+    "Exported": 5
+  },
+  {
+    "Apk": "com.mediatek.tvinput.apk",
+    "Package": "com.mediatek.tvinput",
+    "Components": 14,
+    "Activities": 6,
+    "Services": 7,
+    "Receivers": 1,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.mediatek.wwtv.mediaplayer.apk",
+    "Package": "com.mediatek.wwtv.mediaplayer",
+    "Components": 15,
+    "Activities": 11,
+    "Services": 1,
+    "Receivers": 1,
+    "Providers": 2,
+    "Exported": 9
+  },
+  {
+    "Apk": "com.mediatek.wwtv.tvcenter.apk",
+    "Package": "com.mediatek.wwtv.tvcenter",
+    "Components": 39,
+    "Activities": 28,
+    "Services": 4,
+    "Receivers": 5,
+    "Providers": 2,
+    "Exported": 10
+  },
+  {
+    "Apk": "com.mstar.android.tv.disclaimercustomization.apk",
+    "Package": "com.mstar.android.tv.disclaimercustomization",
+    "Components": 1,
+    "Activities": 1,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.my.settings.apk",
+    "Package": "com.my.settings",
+    "Components": 16,
+    "Activities": 11,
+    "Services": 2,
+    "Receivers": 2,
+    "Providers": 1,
+    "Exported": 3
+  },
+  {
+    "Apk": "com.rjpj.bluetoothspeaker.apk",
+    "Package": "com.rjpj.bluetoothspeaker",
+    "Components": 2,
+    "Activities": 1,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 1,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.rjpj.tcorrection.apk",
+    "Package": "com.rjpj.tcorrection",
+    "Components": 6,
+    "Activities": 4,
+    "Services": 0,
+    "Receivers": 1,
+    "Providers": 1,
+    "Exported": 3
+  },
+  {
+    "Apk": "com.rjpj.yunota.apk",
+    "Package": "com.rjpj.yunota",
+    "Components": 6,
+    "Activities": 4,
+    "Services": 2,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 2
+  },
+  {
+    "Apk": "com.trd.dream.apk",
+    "Package": "com.trd.dream",
+    "Components": 1,
+    "Activities": 0,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "com.trd.factory.apk",
+    "Package": "com.trd.factory",
+    "Components": 24,
+    "Activities": 23,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 2
+  },
+  {
+    "Apk": "com.trd.framework.apk",
+    "Package": "com.trd.framework",
+    "Components": 2,
+    "Activities": 1,
+    "Services": 1,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.trd.service.apk",
+    "Package": "com.trd.service",
+    "Components": 4,
+    "Activities": 1,
+    "Services": 1,
+    "Receivers": 1,
+    "Providers": 1,
+    "Exported": 1
+  },
+  {
+    "Apk": "com.zeasn.launcher.apk",
+    "Package": "com.zeasn.launcher",
+    "Components": 30,
+    "Activities": 21,
+    "Services": 2,
+    "Receivers": 4,
+    "Providers": 3,
+    "Exported": 4
+  },
+  {
+    "Apk": "fusion.android.tv.demo.apk",
+    "Package": "fusion.android.tv.demo",
+    "Components": 5,
+    "Activities": 4,
+    "Services": 0,
+    "Receivers": 0,
+    "Providers": 1,
+    "Exported": 3
+  },
+  {
+    "Apk": "mediatek.factorymenu.ui.apk",
+    "Package": "mediatek.factorymenu.ui",
+    "Components": 23,
+    "Activities": 21,
+    "Services": 2,
+    "Receivers": 0,
+    "Providers": 0,
+    "Exported": 0
+  },
+  {
+    "Apk": "zeasn.open.technical.tv.store.apk",
+    "Package": "zeasn.open.technical.tv.store",
+    "Components": 30,
+    "Activities": 18,
+    "Services": 3,
+    "Receivers": 6,
+    "Providers": 3,
+    "Exported": 6
+  }
+]

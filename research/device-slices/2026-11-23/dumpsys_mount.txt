@@ -1,0 +1,28 @@
+Disks:
+
+Volumes:
+  VolumeInfo{emulated;0}:
+    type=EMULATED diskId=null partGuid= mountFlags=PRIMARY|VISIBLE_FOR_WRITE mountUserId=0 state=MOUNTED 
+    fsType=null fsUuid=null fsLabel=null 
+    path=/storage/emulated internalPath=/data/media 
+
+Records:
+  VolumeRecord:
+    type=PUBLIC fsUuid=9ABAD3D8BAD3AF4F partGuid= 
+    nickname=null userFlags=0 
+    createdMillis=2026-11-21 18:27:31 lastSeenMillis=2026-11-21 18:33:10 lastTrimMillis=unknown lastBenchMillis=unknown 
+
+Primary storage UUID: null
+
+Internal storage (null) total size: 32000000000 (33554432000000000 MiB)
+
+Local unlocked users: [0]
+System unlocked users: [0]
+
+mObbMounts:
+
+mObbPathToStateMap:
+
+Media cloud providers: {}
+
+Last maintenance: 2026-11-21 18:16:26

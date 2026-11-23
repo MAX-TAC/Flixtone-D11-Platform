@@ -1,0 +1,71 @@
+mProhibitMode: false
+mPowerStatus: 0
+mIsCecAvailable: false
+mCecVersion: 5
+mIsAbsoluteVolumeControlEnabled: false
+System_settings:
+  mMhlInputChangeEnabled: true
+  mSystemAudioActivated: false
+  mHdmiCecVolumeControlEnabled: 1
+CEC settings:
+  hdmi_cec_enabled (int): 1 (default: 1) [modifiable]
+  hdmi_cec_version (int): 6 (default: 6) [modifiable]
+  routing_control (int): 0 (default: 0) [modifiable]
+  power_control_mode (string): to_tv_and_audio_system (default: to_tv_and_audio_system) [modifiable]
+  power_state_change_on_active_source_lost (string): standby_now (default: standby_now) [modifiable]
+  system_audio_control (int): 1 (default: 1) [modifiable]
+  system_audio_mode_muting (int): 1 (default: 1) [modifiable]
+  volume_control_enabled (int): 1 (default: 1) [modifiable]
+  tv_wake_on_one_touch_play (int): 1 (default: 1) [modifiable]
+  tv_send_standby_on_sleep (int): 1 (default: 1) [modifiable]
+  set_menu_language (int): 1 (default: 1) [modifiable]
+  rc_profile_tv (int): 0 (default: 0) [modifiable]
+  rc_profile_source_handles_root_menu (int): 1 (default: 1) [modifiable]
+  rc_profile_source_handles_setup_menu (int): 1 (default: 1) [modifiable]
+  rc_profile_source_handles_contents_menu (int): 0 (default: 0) [modifiable]
+  rc_profile_source_handles_top_menu (int): 0 (default: 0) [modifiable]
+  rc_profile_source_handles_media_context_sensitive_menu (int): 0 (default: 0) [modifiable]
+  query_sad_lpcm (int): 1 (default: 1) [modifiable]
+  query_sad_dd (int): 1 (default: 1) [modifiable]
+  query_sad_mpeg1 (int): 1 (default: 1) [modifiable]
+  query_sad_mp3 (int): 1 (default: 1) [modifiable]
+  query_sad_mpeg2 (int): 1 (default: 1) [modifiable]
+  query_sad_aac (int): 1 (default: 1) [modifiable]
+  query_sad_dts (int): 1 (default: 1) [modifiable]
+  query_sad_atrac (int): 1 (default: 1) [modifiable]
+  query_sad_onebitaudio (int): 1 (default: 1) [modifiable]
+  query_sad_ddp (int): 1 (default: 1) [modifiable]
+  query_sad_dtshd (int): 1 (default: 1) [modifiable]
+  query_sad_truehd (int): 1 (default: 1) [modifiable]
+  query_sad_dst (int): 1 (default: 1) [modifiable]
+  query_sad_wmapro (int): 1 (default: 1) [modifiable]
+  query_sad_max (int): 1 (default: 1) [modifiable]
+mMhlController: 
+HDMI CEC Network
+  mPortInfo:
+    port_id: 1, type: HDMI_IN, address: 0x1000, cec: true, arc: false, mhl: false
+    port_id: 2, type: HDMI_IN, address: 0x2000, cec: true, arc: true, mhl: false
+    port_id: 3, type: HDMI_IN, address: 0x3000, cec: true, arc: false, mhl: false
+    port_id: 4, type: HDMI_IN, address: 0x4000, cec: true, arc: false, mhl: false
+  HdmiCecLocalDevice #0:
+    mDeviceType: 0
+    mPreferredAddress: 0
+    mDeviceInfo: CEC: logical_address: 0x00 device_type: 0 cec_version: 5 vendor_id: 7173227 display_name: Projetor power_status: 0 physical_address: 0x0000 port_id: 0
+      Device features: record_tv_screen: Y set_osd_string: N deck_control: N set_audio_rate: N arc_tx: N arc_rx: N set_audio_volume_level: Y 
+    mActiveSource: (invalid, invalid)
+    mActiveRoutingPath: 0xffff
+    mArcEstablished: false
+    mArcFeatureEnabled: {1=false, 2=true, 3=false, 4=false}
+    mSystemAudioMute: false
+    mSystemAudioControlFeatureEnabled: true
+    mSkipRoutingControl: false
+    mPrevPortId: -1
+    Active Source history:
+  mDeviceInfos:
+    CEC: logical_address: 0x00 device_type: 0 cec_version: 5 vendor_id: 7173227 display_name: Projetor power_status: 0 physical_address: 0x0000 port_id: 0
+      Device features: record_tv_screen: Y set_osd_string: N deck_control: N set_audio_rate: N arc_tx: N arc_rx: N set_audio_volume_level: Y 
+mCecController: 
+  CEC message history:
+    [S] time=2026-11-23 19:49:36 message=<Report Physical Address> 0F:84:00:00:00
+    [S] time=2026-11-23 19:49:36 message=<Device Vendor Id> 0F:87:6D:74:6B
+    [S] time=2026-11-23 19:49:36 message=<Request Active Source> 0F:85

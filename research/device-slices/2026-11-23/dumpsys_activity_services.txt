@@ -1,0 +1,1869 @@
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{acfdbe3 u0 com.android.toofifi/com.mphotool.ball.service.PullPlayPermissionService}
+    intent={cmp=com.android.toofifi/com.mphotool.ball.service.PullPlayPermissionService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/com.mphotool.ball.service.PullPlayPermissionService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m31s749ms startingBgTimeout=-27m16s738ms
+    lastActivity=-27m31s748ms restartTime=-27m31s748ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{7412cd3 u0 com.mediatek.tv.service/com.mediatek.tv.agent.MonitorActivityService}
+    intent={act=com.mediatek.MonitorActivityService cmp=com.mediatek.tv.service/com.mediatek.tv.agent.MonitorActivityService}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { act=com.mediatek.MonitorActivityService cmp=com.mediatek.tv.service/com.mediatek.tv.agent.MonitorActivityService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m41s308ms startingBgTimeout=--
+    lastActivity=-27m41s308ms restartTime=-27m41s308ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{f31907b u0 com.mediatek.tvinput/.tuner.TunerInputService}
+    intent={act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.tuner.TunerInputService}
+    packageName=com.mediatek.tvinput
+    processName=com.mediatek.tvinput
+    permission=android.permission.BIND_TV_INPUT
+    baseDir=/system_ext/priv-app/MtkTvInput/MtkTvInput.apk
+    dataDir=/data/user/0/com.mediatek.tvinput
+    app=ProcessRecord{24384cd 1831:com.mediatek.tvinput/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.tuner.TunerInputService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.LOCKED_BOOT_COMPLETED,reason:,reasonCode:LOCKED_BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m38s423ms startingBgTimeout=--
+    lastActivity=-27m37s956ms restartTime=-27m37s956ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{1601552 CREATE}:
+      intent={act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.tuner.TunerInputService}
+      binder=android.os.BinderProxy@bd44023
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{2fc2920 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{a283a64 u0 CR FGSA com.mediatek.tvinput/.tuner.TunerInputService:@6347bf7}
+    All Connections:
+      ConnectionRecord{a283a64 u0 CR FGSA com.mediatek.tvinput/.tuner.TunerInputService:@6347bf7}
+
+  * ServiceRecord{a3ee23f u0 com.android.toofifi/com.huawei.hisight.service.PlayerSinkService}
+    intent={cmp=com.android.toofifi/com.huawei.hisight.service.PlayerSinkService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/com.huawei.hisight.service.PlayerSinkService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m29s223ms startingBgTimeout=--
+    lastActivity=-27m29s222ms restartTime=-27m29s222ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{8a572d9 CREATE}:
+      intent={cmp=com.android.toofifi/com.huawei.hisight.service.PlayerSinkService}
+      binder=android.os.BinderProxy@446349e
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{620bb7f ProcessRecord{c4584df 1256:com.android.toofifi/1000}}
+        Per-process Connections:
+          ConnectionRecord{27dbe5e u0 CR IMP com.android.toofifi/com.huawei.hisight.service.PlayerSinkService:@bc20b99}
+    All Connections:
+      ConnectionRecord{27dbe5e u0 CR IMP com.android.toofifi/com.huawei.hisight.service.PlayerSinkService:@bc20b99}
+
+  * ServiceRecord{674825d u0 com.mediatek.miracast/.MiracastService}
+    intent={cmp=com.mediatek.miracast/.MiracastService}
+    packageName=com.mediatek.miracast
+    processName=com.mediatek.miracast
+    baseDir=/system_ext/app/WFDSinkTest/WFDSinkTest.apk
+    dataDir=/data/user/0/com.mediatek.miracast
+    app=ProcessRecord{f0fb1e9 2764:com.mediatek.miracast/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.miracast
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=1
+    infoAllowStartForeground=[callingPackage: com.mediatek.miracast; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.miracast/.MiracastService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:31; callerTargetSdkVersion:31; startForegroundCount:0; bindFromPackage:null]
+    isForeground=true foregroundId=2131034112 foregroundNoti=Notification(channel=miracast_service shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x70 color=0x00000000 vis=PRIVATE)
+    createTime=-27m13s274ms startingBgTimeout=--
+    lastActivity=-27m13s273ms restartTime=-27m13s273ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{a5e8385 u0 com.estrongs.android.pop/dbgc.DService}
+    intent={cmp=com.estrongs.android.pop/dbgc.DService}
+    packageName=com.estrongs.android.pop
+    processName=com.estrongs.android.pop
+    baseDir=/data/app/~~s48vLNKufXVqzYznnXusVQ==/com.estrongs.android.pop-ukxrUkqkV5MuqdCGEBWLiQ==/base.apk
+    dataDir=/data/user/0/com.estrongs.android.pop
+    app=ProcessRecord{2a389ad 2343:com.estrongs.android.pop/u0a50}
+    allowWhileInUsePermissionInFgs=false
+    recentCallingPackage=com.estrongs.android.pop
+    recentCallingUid=10050
+    allowStartForeground=DENIED
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.estrongs.android.pop; callingUid: 10050; uidState: RCVR; intent: Intent { cmp=com.estrongs.android.pop/dbgc.DService }; code:DENIED; tempAllowListReason:<null>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m31s259ms startingBgTimeout=--
+    lastActivity=-27m31s257ms restartTime=-27m31s257ms createdFromFg=false
+    Bindings:
+    * IntentBindRecord{84ab74c CREATE}:
+      intent={cmp=com.estrongs.android.pop/dbgc.DService}
+      binder=android.os.BinderProxy@c716395
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{2dcfcaa ProcessRecord{2a389ad 2343:com.estrongs.android.pop/u0a50}}
+        Per-process Connections:
+          ConnectionRecord{799a0fc u0 CR com.estrongs.android.pop/dbgc.DService:@f77def}
+    All Connections:
+      ConnectionRecord{799a0fc u0 CR com.estrongs.android.pop/dbgc.DService:@f77def}
+
+  * ServiceRecord{909d499 u0 com.android.toofifi/com.mphotool.extra.service.MicroPhoneService}
+    intent={cmp=com.android.toofifi/com.mphotool.extra.service.MicroPhoneService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/com.mphotool.extra.service.MicroPhoneService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m31s723ms startingBgTimeout=-27m16s714ms
+    lastActivity=-27m31s718ms restartTime=-27m31s718ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{ea083c0 u0 com.mediatek.tv.service/com.mediatek.tv.agent.DMRemoteServiceAgent}
+    intent={cmp=com.mediatek.tv.service/com.mediatek.tv.agent.DMRemoteServiceAgent}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.tv.service/com.mediatek.tv.agent.DMRemoteServiceAgent }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m41s565ms startingBgTimeout=--
+    lastActivity=-27m41s564ms restartTime=-27m41s564ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{148e785 u0 ru.pro100tehnika.tvlauncher/.PowerService}
+    intent={cmp=ru.pro100tehnika.tvlauncher/.PowerService}
+    packageName=ru.pro100tehnika.tvlauncher
+    processName=ru.pro100tehnika.tvlauncher
+    permission=android.permission.BIND_ACCESSIBILITY_SERVICE
+    baseDir=/data/app/~~9f-Qhe_whDI5X81AnlctCQ==/ru.pro100tehnika.tvlauncher-u94DiZvWUkveVwitl0kCkA==/base.apk
+    dataDir=/data/user/0/ru.pro100tehnika.tvlauncher
+    app=ProcessRecord{c14b2ea 1255:ru.pro100tehnika.tvlauncher/u0a55}
+    mIsAllowedBgActivityStartsByBinding=true
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { cmp=ru.pro100tehnika.tvlauncher/.PowerService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1002:android.bluetooth.adapter.action.LOCAL_NAME_CHANGED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:20000,callingUid:1002>; targetSdkVersion:34; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m37s288ms startingBgTimeout=--
+    lastActivity=-27m37s283ms restartTime=-27m37s283ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{28f909b CREATE}:
+      intent={cmp=ru.pro100tehnika.tvlauncher/.PowerService}
+      binder=android.os.BinderProxy@811fc38
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{5d1a411 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{fdf14fc u0 CR FGSA CAPS ru.pro100tehnika.tvlauncher/.PowerService:@9da41ef}
+    All Connections:
+      ConnectionRecord{fdf14fc u0 CR FGSA CAPS ru.pro100tehnika.tvlauncher/.PowerService:@9da41ef}
+
+  * ServiceRecord{2a5fdfe u0 com.android.toofifi/.service.LicenseCheckService}
+    intent={cmp=com.android.toofifi/.service.LicenseCheckService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/.service.LicenseCheckService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m32s15ms startingBgTimeout=-27m16s982ms
+    lastActivity=-27m32s14ms restartTime=-27m32s14ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{ccfdf34 u0 com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl}
+    intent={cmp=com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl}
+    packageName=com.android.providers.media.module
+    processName=com.android.providers.media.module
+    permission=android.permission.BIND_EXTERNAL_STORAGE_SERVICE
+    baseDir=/apex/com.android.mediaprovider/priv-app/MediaProvider@TP1A.220624.021.A1/MediaProvider.apk
+    dataDir=/data/user/0/com.android.providers.media.module
+    app=ProcessRecord{773d600 1854:com.android.providers.media.module/u0a43}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=0
+    allowStartForeground=SYSTEM_UID
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 0; uidState: NONE; intent: Intent { cmp=com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl }; code:SYSTEM_UID; tempAllowListReason:<null>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m38s320ms startingBgTimeout=--
+    lastActivity=-27m37s600ms restartTime=-27m37s600ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{663976 CREATE}:
+      intent={cmp=com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl}
+      binder=android.os.BinderProxy@84c9b77
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{506a3e4 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{89d1483 u0 CR IMP com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl:@efff32}
+    All Connections:
+      ConnectionRecord{89d1483 u0 CR IMP com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl:@efff32}
+
+  * ServiceRecord{25066d4 u0 com.mediatek.tvinput/.scart.SCARTInputService}
+    intent={act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.scart.SCARTInputService}
+    packageName=com.mediatek.tvinput
+    processName=com.mediatek.tvinput
+    permission=android.permission.BIND_TV_INPUT
+    baseDir=/system_ext/priv-app/MtkTvInput/MtkTvInput.apk
+    dataDir=/data/user/0/com.mediatek.tvinput
+    app=ProcessRecord{24384cd 1831:com.mediatek.tvinput/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.scart.SCARTInputService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.LOCKED_BOOT_COMPLETED,reason:,reasonCode:LOCKED_BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m38s306ms startingBgTimeout=--
+    lastActivity=-27m37s733ms restartTime=-27m37s733ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{1b704d CREATE}:
+      intent={act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.scart.SCARTInputService}
+      binder=android.os.BinderProxy@747702
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{b657813 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{1594448 u0 CR FGSA com.mediatek.tvinput/.scart.SCARTInputService:@e65aeeb}
+    All Connections:
+      ConnectionRecord{1594448 u0 CR FGSA com.mediatek.tvinput/.scart.SCARTInputService:@e65aeeb}
+
+  * ServiceRecord{1ccd40c u0 com.android.toofifi/com.mphotool.extra.service.ChromecastService}
+    intent={cmp=com.android.toofifi/com.mphotool.extra.service.ChromecastService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/com.mphotool.extra.service.ChromecastService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m31s665ms startingBgTimeout=-27m16s659ms
+    lastActivity=-27m31s664ms restartTime=-27m31s664ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{b052a1c u0 android.ext.services/.notification.Assistant}
+    intent={act=android.service.notification.NotificationAssistantService cmp=android.ext.services/.notification.Assistant}
+    packageName=android.ext.services
+    processName=android.ext.services
+    permission=android.permission.BIND_NOTIFICATION_ASSISTANT_SERVICE
+    baseDir=/apex/com.android.extservices/priv-app/ExtServices@TP1A.220624.021.A1/ExtServices.apk
+    dataDir=/data/user/0/android.ext.services
+    app=ProcessRecord{d0b887f 1549:android.ext.services/u0a44}
+    allowlistManager=true
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.service.notification.NotificationAssistantService cmp=android.ext.services/.notification.Assistant }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m36s990ms startingBgTimeout=--
+    lastActivity=-27m36s989ms restartTime=-27m36s989ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{67c1a50 CREATE}:
+      intent={act=android.service.notification.NotificationAssistantService cmp=android.ext.services/.notification.Assistant}
+      binder=android.os.BinderProxy@cbbc449
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{b37014e ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{964f78f u0 CR FGS android.ext.services/.notification.Assistant:@8e496ee}
+    All Connections:
+      ConnectionRecord{964f78f u0 CR FGS android.ext.services/.notification.Assistant:@8e496ee}
+
+  * ServiceRecord{8643a09 u0 com.mediatek.tvinput/.vga.VGAInputService}
+    intent={act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.vga.VGAInputService}
+    packageName=com.mediatek.tvinput
+    processName=com.mediatek.tvinput
+    permission=android.permission.BIND_TV_INPUT
+    baseDir=/system_ext/priv-app/MtkTvInput/MtkTvInput.apk
+    dataDir=/data/user/0/com.mediatek.tvinput
+    app=ProcessRecord{24384cd 1831:com.mediatek.tvinput/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.vga.VGAInputService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.LOCKED_BOOT_COMPLETED,reason:,reasonCode:LOCKED_BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m38s310ms startingBgTimeout=--
+    lastActivity=-27m37s757ms restartTime=-27m37s757ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{925826f CREATE}:
+      intent={act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.vga.VGAInputService}
+      binder=android.os.BinderProxy@3908b7c
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{cf35c05 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{1bc2473 u0 CR FGSA com.mediatek.tvinput/.vga.VGAInputService:@24298e2}
+    All Connections:
+      ConnectionRecord{1bc2473 u0 CR FGSA com.mediatek.tvinput/.vga.VGAInputService:@24298e2}
+
+  * ServiceRecord{35d0f7d u0 com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemjob.SystemJobService}
+    intent={cmp=com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemjob.SystemJobService}
+    packageName=com.amazon.avod.thirdpartyclient
+    processName=com.amazon.avod.thirdpartyclient
+    permission=android.permission.BIND_JOB_SERVICE
+    baseDir=/data/app/~~WKBV_H0QGsBez7dvQkjcnA==/com.amazon.avod.thirdpartyclient-UPfLdRmoWPT0uz1N2dObbg==/base.apk
+    dataDir=/data/user/0/com.amazon.avod.thirdpartyclient
+    app=ProcessRecord{73227 2164:com.amazon.avod.thirdpartyclient/u0a47}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemjob.SystemJobService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:35; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-26m54s787ms startingBgTimeout=--
+    lastActivity=-26m54s786ms restartTime=-26m54s786ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{a85e45a CREATE}:
+      intent={cmp=com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemjob.SystemJobService}
+      binder=android.os.BinderProxy@e31d68b
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{518e368 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{4bb81d4 u0 CR !FG !PRCP BALFD com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemjob.SystemJobService:@4d37b27}
+    All Connections:
+      ConnectionRecord{4bb81d4 u0 CR !FG !PRCP BALFD com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemjob.SystemJobService:@4d37b27}
+
+  * ServiceRecord{3ed1a7 u0 com.mediatek.tv.service/com.mediatek.tv.agent.BootupReceiver$ReceiverService}
+    intent={cmp=com.mediatek.tv.service/com.mediatek.tv.agent.BootupReceiver$ReceiverService}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.tv.service/com.mediatek.tv.agent.BootupReceiver$ReceiverService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m41s596ms startingBgTimeout=--
+    lastActivity=-27m41s595ms restartTime=-27m41s595ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{c63ba90 u0 com.my.settings/com.my.service.MySetTimeService}
+    intent={cmp=com.my.settings/com.my.service.MySetTimeService}
+    packageName=com.my.settings
+    processName=com.my.settings
+    baseDir=/system/app/KuSettings/KuSettings.apk
+    dataDir=/data/user/0/com.my.settings
+    app=ProcessRecord{284cad7 1263:com.my.settings/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.my.settings
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.my.settings; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.my.settings/com.my.service.MySetTimeService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:34; callerTargetSdkVersion:34; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m16s212ms startingBgTimeout=-27m1s209ms
+    lastActivity=-27m16s211ms restartTime=-27m16s211ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{eadec2 u0 com.mediatek.tv.service/com.mediatek.tv.agent.SoundSpeakerStatusService}
+    intent={cmp=com.mediatek.tv.service/com.mediatek.tv.agent.SoundSpeakerStatusService}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.tv.service/com.mediatek.tv.agent.SoundSpeakerStatusService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1002:android.bluetooth.device.action.ACL_CONNECTED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:20000,callingUid:1002>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m34s499ms startingBgTimeout=--
+    lastActivity=-27m34s492ms restartTime=-27m34s492ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{72b0593 u0 com.android.bluetooth/.btservice.AdapterService}
+    intent={act=android.bluetooth.IBluetooth cmp=com.android.bluetooth/.btservice.AdapterService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    permission=android.permission.ACCESS_BLUETOOTH_SHARE
+    baseDir=/apex/com.android.btservices/app/Bluetooth@TP1A.220624.021.A1/Bluetooth.apk
+    dataDir=/data/user_de/0/com.android.bluetooth
+    app=ProcessRecord{f178c74 1400:com.android.bluetooth/1002}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.bluetooth.IBluetooth cmp=com.android.bluetooth/.btservice.AdapterService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m42s616ms startingBgTimeout=--
+    lastActivity=-27m42s200ms restartTime=-27m42s200ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{b52b381 CREATE}:
+      intent={act=android.bluetooth.IBluetooth cmp=com.android.bluetooth/.btservice.AdapterService}
+      binder=android.os.BinderProxy@badec26
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{2655067 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{6848c47 u0 CR IMP com.android.bluetooth/.btservice.AdapterService:@cd72b86}
+    All Connections:
+      ConnectionRecord{6848c47 u0 CR IMP com.android.bluetooth/.btservice.AdapterService:@cd72b86}
+
+  * ServiceRecord{1ef2a77 u0 com.android.systemui/.ImageWallpaper}
+    intent={act=android.service.wallpaper.WallpaperService cmp=com.android.systemui/.ImageWallpaper}
+    packageName=com.android.systemui
+    processName=com.android.systemui
+    permission=android.permission.BIND_WALLPAPER
+    baseDir=/system_ext/priv-app/SystemUI/SystemUI.apk
+    dataDir=/data/user_de/0/com.android.systemui
+    app=ProcessRecord{93efd89 1281:com.android.systemui/u0a33}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.service.wallpaper.WallpaperService cmp=com.android.systemui/.ImageWallpaper }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.TIME_SET,reason:,reasonCode:TIME_CHANGED,duration:20000,callingUid:1000>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m43s800ms startingBgTimeout=--
+    lastActivity=-27m43s159ms restartTime=-27m43s569ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{a4cce14 CREATE}:
+      intent={act=android.service.wallpaper.WallpaperService cmp=com.android.systemui/.ImageWallpaper}
+      binder=android.os.BinderProxy@f606bd
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{1fca4b2 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{65d18ef u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@bcce1ce}
+          ConnectionRecord{b0f7090 u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@df33f53}
+    All Connections:
+      ConnectionRecord{65d18ef u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@bcce1ce}
+      ConnectionRecord{b0f7090 u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@df33f53}
+
+  * ServiceRecord{61596d7 u0 com.mediatek.tv.service/com.mediatek.hotkey.dispatcher.HotKeyService}
+    intent={cmp=com.mediatek.tv.service/com.mediatek.hotkey.dispatcher.HotKeyService}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    permission=android.permission.BIND_TV_INPUT
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.tv.service/com.mediatek.hotkey.dispatcher.HotKeyService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m42s8ms startingBgTimeout=--
+    lastActivity=-27m42s7ms restartTime=-27m42s7ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{6ba80f9 u0 com.android.tv.settings/.partnercustomizer.tvsettingservice.WirelessSpeakerServices}
+    intent={cmp=com.android.tv.settings/.partnercustomizer.tvsettingservice.WirelessSpeakerServices}
+    packageName=com.android.tv.settings
+    processName=com.android.tv.settings
+    baseDir=/system_ext/priv-app/TvSettingsPlus/TvSettingsPlus.apk
+    dataDir=/data/user_de/0/com.android.tv.settings
+    app=ProcessRecord{37667ef 1253:com.android.tv.settings/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.tv.settings
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.tv.settings; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.tv.settings/.partnercustomizer.tvsettingservice.WirelessSpeakerServices }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1002:android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:20000,callingUid:1002>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m35s168ms startingBgTimeout=--
+    lastActivity=-27m35s166ms restartTime=-27m35s166ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{ccd2b0a u0 com.mediatek.autopair/.AppService}
+    intent={cmp=com.mediatek.autopair/.AppService}
+    packageName=com.mediatek.autopair
+    processName=com.mediatek.autopair
+    baseDir=/system_ext/app/AutoPair/AutoPair.apk
+    dataDir=/data/user/0/com.mediatek.autopair
+    app=ProcessRecord{9791517 1973:com.mediatek.autopair/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.autopair
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.autopair; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.autopair/.AppService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m36s825ms startingBgTimeout=--
+    lastActivity=-27m36s824ms restartTime=-27m36s824ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{d8e0cf7 u0 com.android.inputmethod.latin/.LatinIME}
+    intent={act=android.view.InputMethod cmp=com.android.inputmethod.latin/.LatinIME}
+    packageName=com.android.inputmethod.latin
+    processName=com.android.inputmethod.latin
+    permission=android.permission.BIND_INPUT_METHOD
+    baseDir=/product/app/LatinIME/LatinIME.apk
+    dataDir=/data/user_de/0/com.android.inputmethod.latin
+    app=ProcessRecord{ced10e6 1730:com.android.inputmethod.latin/u0a29}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.view.InputMethod cmp=com.android.inputmethod.latin/.LatinIME }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.bluetooth.adapter.action.BLE_STATE_CHANGED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:10000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m39s276ms startingBgTimeout=--
+    lastActivity=-27m39s164ms restartTime=-27m39s164ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{66c8c03 CREATE}:
+      intent={act=android.view.InputMethod cmp=com.android.inputmethod.latin/.LatinIME}
+      binder=android.os.BinderProxy@c32b780
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{28151b9 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{4183d1a u0 CR !FG IMPB !VIS com.android.inputmethod.latin/.LatinIME:@de89fc5}
+    All Connections:
+      ConnectionRecord{4183d1a u0 CR !FG IMPB !VIS com.android.inputmethod.latin/.LatinIME:@de89fc5}
+
+  * ServiceRecord{a670828 u0 zeasn.open.technical.tv.store/.app.StoreService}
+    intent={cmp=zeasn.open.technical.tv.store/.app.StoreService}
+    packageName=zeasn.open.technical.tv.store
+    processName=zeasn.open.technical.tv.store
+    baseDir=/system/app/zxstore/zxstore.apk
+    dataDir=/data/user/0/zeasn.open.technical.tv.store
+    app=ProcessRecord{4207d2 3250:zeasn.open.technical.tv.store/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=zeasn.open.technical.tv.store
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=1
+    infoAllowStartForeground=[callingPackage: zeasn.open.technical.tv.store; callingUid: 1000; uidState: PER ; intent: Intent { cmp=zeasn.open.technical.tv.store/.app.StoreService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:29; callerTargetSdkVersion:29; startForegroundCount:0; bindFromPackage:null]
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=service_01 shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x60 color=0x00000000 vis=PRIVATE)
+    createTime=-27m11s718ms startingBgTimeout=--
+    lastActivity=-27m11s716ms restartTime=-27m11s716ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{920fef8 u0 com.android.bluetooth/.hfpclient.HfpClientConnectionService}
+    intent={cmp=com.android.bluetooth/.hfpclient.HfpClientConnectionService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    permission=android.permission.BIND_CONNECTION_SERVICE
+    baseDir=/apex/com.android.btservices/app/Bluetooth@TP1A.220624.021.A1/Bluetooth.apk
+    dataDir=/data/user_de/0/com.android.bluetooth
+    app=ProcessRecord{f178c74 1400:com.android.bluetooth/1002}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.bluetooth
+    recentCallingUid=1002
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.bluetooth; callingUid: 1002; uidState: PER ; intent: Intent { cmp=com.android.bluetooth/.hfpclient.HfpClientConnectionService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.bluetooth.adapter.action.STATE_CHANGED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:10000,callingUid:1000>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m35s879ms startingBgTimeout=--
+    lastActivity=-27m35s879ms restartTime=-27m35s879ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{7faa2e2 u0 com.android.bluetooth/.gatt.GattService}
+    intent={cmp=com.android.bluetooth/.gatt.GattService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    permission=android.permission.ACCESS_BLUETOOTH_SHARE
+    baseDir=/apex/com.android.btservices/app/Bluetooth@TP1A.220624.021.A1/Bluetooth.apk
+    dataDir=/data/user_de/0/com.android.bluetooth
+    app=ProcessRecord{f178c74 1400:com.android.bluetooth/1002}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.bluetooth; callingUid: 1002; uidState: PER ; intent: Intent { cmp=com.android.bluetooth/.gatt.GattService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m39s928ms startingBgTimeout=--
+    lastActivity=-27m36s864ms restartTime=-27m39s927ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{60c59fe CREATE}:
+      intent={act=android.bluetooth.IBluetoothGatt cmp=com.android.bluetooth/.gatt.GattService}
+      binder=android.os.BinderProxy@f21e55f
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{bcbcbac ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{d426f26 u0 CR IMP com.android.bluetooth/.gatt.GattService:@cd72b86}
+    All Connections:
+      ConnectionRecord{d426f26 u0 CR IMP com.android.bluetooth/.gatt.GattService:@cd72b86}
+
+  * ServiceRecord{dc5075 u0 com.android.bluetooth/.le_audio.LeAudioService}
+    intent={act=android.bluetooth.IBluetoothLeAudio cmp=com.android.bluetooth/.le_audio.LeAudioService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/apex/com.android.btservices/app/Bluetooth@TP1A.220624.021.A1/Bluetooth.apk
+    dataDir=/data/user_de/0/com.android.bluetooth
+    app=null
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.bluetooth.IBluetoothLeAudio cmp=com.android.bluetooth/.le_audio.LeAudioService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.TIME_SET,reason:,reasonCode:TIME_CHANGED,duration:20000,callingUid:1000>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m43s778ms startingBgTimeout=--
+    lastActivity=-27m43s778ms restartTime=-- createdFromFg=true
+    Bindings:
+    * IntentBindRecord{dd0180a}:
+      intent={act=android.bluetooth.IBluetoothLeAudio cmp=com.android.bluetooth/.le_audio.LeAudioService}
+      binder=null
+      requested=false received=false hasBound=false doRebind=false
+      * Client AppBindRecord{aa9787b ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{6fc888 u0 com.android.bluetooth/.le_audio.LeAudioService:@6bbae99}
+          ConnectionRecord{72255e u0 com.android.bluetooth/.le_audio.LeAudioService:@6bbae99}
+          ConnectionRecord{284b304 u0 com.android.bluetooth/.le_audio.LeAudioService:@59e76f0}
+          ConnectionRecord{856106b u0 com.android.bluetooth/.le_audio.LeAudioService:@ed159ba}
+          ConnectionRecord{a55f469 u0 com.android.bluetooth/.le_audio.LeAudioService:@59e76f0}
+          ConnectionRecord{faa0ab1 u0 com.android.bluetooth/.le_audio.LeAudioService:@ed159ba}
+    All Connections:
+      ConnectionRecord{a55f469 u0 com.android.bluetooth/.le_audio.LeAudioService:@59e76f0}
+      ConnectionRecord{284b304 u0 com.android.bluetooth/.le_audio.LeAudioService:@59e76f0}
+      ConnectionRecord{72255e u0 com.android.bluetooth/.le_audio.LeAudioService:@6bbae99}
+      ConnectionRecord{6fc888 u0 com.android.bluetooth/.le_audio.LeAudioService:@6bbae99}
+      ConnectionRecord{856106b u0 com.android.bluetooth/.le_audio.LeAudioService:@ed159ba}
+      ConnectionRecord{faa0ab1 u0 com.android.bluetooth/.le_audio.LeAudioService:@ed159ba}
+
+  * ServiceRecord{d248397 u0 com.android.networkstack.inprocess/com.android.server.NetworkStackService}
+    intent={act=android.net.INetworkStackConnector.InProcess cmp=com.android.networkstack.inprocess/com.android.server.NetworkStackService}
+    packageName=com.android.networkstack.inprocess
+    processName=system
+    permission=android.permission.MAINLINE_NETWORK_STACK
+    baseDir=/system/priv-app/InProcessNetworkStack/InProcessNetworkStack.apk
+    dataDir=/data/user_de/0/com.android.networkstack.inprocess
+    app=ProcessRecord{cb2c7a9 895:system/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.net.INetworkStackConnector.InProcess cmp=com.android.networkstack.inprocess/com.android.server.NetworkStackService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m42s921ms startingBgTimeout=--
+    lastActivity=-27m42s916ms restartTime=-27m42s916ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{6fff698 CREATE}:
+      intent={act=android.net.INetworkStackConnector.InProcess cmp=com.android.networkstack.inprocess/com.android.server.NetworkStackService}
+      binder=com.android.server.NetworkStackService$NetworkStackConnector@9ae7ef1
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{95faad6 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{aca2e16 u0 CR IMP com.android.networkstack.inprocess/com.android.server.NetworkStackService:@8700731}
+    All Connections:
+      ConnectionRecord{aca2e16 u0 CR IMP com.android.networkstack.inprocess/com.android.server.NetworkStackService:@8700731}
+
+  * ServiceRecord{cca5654 u0 com.trd.service/.TrdService}
+    intent={cmp=com.trd.service/.TrdService}
+    packageName=com.trd.service
+    processName=com.trd.service
+    baseDir=/system/app/trdservice/trdservice.apk
+    dataDir=/data/user/0/com.trd.service
+    app=ProcessRecord{97faabe 1459:com.trd.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.trd.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.trd.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.trd.service/.TrdService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m41s584ms startingBgTimeout=--
+    lastActivity=-27m41s582ms restartTime=-27m41s582ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{b4ac064 u0 com.android.bluetooth/.avrcpcontroller.AvrcpControllerService}
+    intent={cmp=com.android.bluetooth/.avrcpcontroller.AvrcpControllerService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/apex/com.android.btservices/app/Bluetooth@TP1A.220624.021.A1/Bluetooth.apk
+    dataDir=/data/user_de/0/com.android.bluetooth
+    app=ProcessRecord{f178c74 1400:com.android.bluetooth/1002}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.bluetooth
+    recentCallingUid=1002
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.bluetooth; callingUid: 1002; uidState: PER ; intent: Intent { cmp=com.android.bluetooth/.avrcpcontroller.AvrcpControllerService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.bluetooth.adapter.action.STATE_CHANGED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:10000,callingUid:1000>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m36s454ms startingBgTimeout=--
+    lastActivity=-27m36s447ms restartTime=-27m36s447ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{4d64eb9 u0 com.mediatek.tv.service/com.mediatek.tv.agent.AudioCustomizedService}
+    intent={cmp=com.mediatek.tv.service/com.mediatek.tv.agent.AudioCustomizedService}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.tv.service/com.mediatek.tv.agent.AudioCustomizedService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m34s717ms startingBgTimeout=--
+    lastActivity=-27m34s716ms restartTime=-27m34s716ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{2110a94 u0 com.android.bluetooth/.hfpclient.HeadsetClientService}
+    intent={cmp=com.android.bluetooth/.hfpclient.HeadsetClientService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/apex/com.android.btservices/app/Bluetooth@TP1A.220624.021.A1/Bluetooth.apk
+    dataDir=/data/user_de/0/com.android.bluetooth
+    app=ProcessRecord{f178c74 1400:com.android.bluetooth/1002}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.systemui
+    recentCallingUid=10033
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.bluetooth; callingUid: 1002; uidState: PER ; intent: Intent { cmp=com.android.bluetooth/.hfpclient.HeadsetClientService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.bluetooth.adapter.action.STATE_CHANGED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:10000,callingUid:1000>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m36s387ms startingBgTimeout=--
+    lastActivity=-27m36s384ms restartTime=-27m36s384ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{b4d2157}:
+      intent={act=android.bluetooth.IBluetoothHeadsetClient cmp=com.android.bluetooth/.hfpclient.HeadsetClientService}
+      binder=android.os.BinderProxy@49e444
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{39b192d ProcessRecord{93efd89 1281:com.android.systemui/u0a33}}
+        Per-process Connections:
+          ConnectionRecord{5c1138a u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@94e09f5}
+    All Connections:
+      ConnectionRecord{5c1138a u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@94e09f5}
+
+  * ServiceRecord{7f178a8 u0 com.android.toofifi/com.huawei.connection.service.NearFieldManagerService}
+    intent={pkg=com.huawei.connection cmp=com.android.toofifi/com.huawei.connection.service.NearFieldManagerService}
+    packageName=com.android.toofifi
+    processName=com.huawei.connection
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{9faa79a 2826:com.huawei.connection/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { pkg=com.huawei.connection cmp=com.android.toofifi/com.huawei.connection.service.NearFieldManagerService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m28s543ms startingBgTimeout=--
+    lastActivity=-27m28s468ms restartTime=-27m28s468ms createdFromFg=false
+    Bindings:
+    * IntentBindRecord{839e62 CREATE}:
+      intent={pkg=com.huawei.connection cmp=com.android.toofifi/com.huawei.connection.service.NearFieldManagerService}
+      binder=android.os.BinderProxy@4187bf3
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{52300b0 ProcessRecord{c4584df 1256:com.android.toofifi/1000}}
+        Per-process Connections:
+          ConnectionRecord{e802445 u0 CR IMP com.android.toofifi/com.huawei.connection.service.NearFieldManagerService:@22e4cbc}
+    All Connections:
+      ConnectionRecord{e802445 u0 CR IMP com.android.toofifi/com.huawei.connection.service.NearFieldManagerService:@22e4cbc}
+
+  * ServiceRecord{1ed4475 u0 com.android.toofifi/.service.PincodeService}
+    intent={cmp=com.android.toofifi/.service.PincodeService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/.service.PincodeService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m31s936ms startingBgTimeout=-27m16s932ms
+    lastActivity=-27m31s935ms restartTime=-27m31s935ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{67b5926 u0 com.mediatek.tv.service/com.mediatek.tv.agent.TVMenuSettingsService}
+    intent={cmp=com.mediatek.tv.service/com.mediatek.tv.agent.TVMenuSettingsService}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.tv.service/com.mediatek.tv.agent.TVMenuSettingsService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.LOCKED_BOOT_COMPLETED,reason:,reasonCode:LOCKED_BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m38s587ms startingBgTimeout=--
+    lastActivity=-27m16s23ms restartTime=-27m38s586ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
+
+  * ServiceRecord{24a3b2f u0 com.mediatek.tv.service/com.mediatek.tv.agent.CommonService}
+    intent={cmp=com.mediatek.tv.service/com.mediatek.tv.agent.CommonService}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.tv.service/com.mediatek.tv.agent.CommonService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1002:android.bluetooth.device.action.ACL_CONNECTED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:20000,callingUid:1002>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m34s444ms startingBgTimeout=--
+    lastActivity=-27m34s443ms restartTime=-27m34s443ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{2d7c658 u0 com.android.bluetooth/.a2dp.A2dpService}
+    intent={act=android.bluetooth.IBluetoothA2dp cmp=com.android.bluetooth/.a2dp.A2dpService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/apex/com.android.btservices/app/Bluetooth@TP1A.220624.021.A1/Bluetooth.apk
+    dataDir=/data/user_de/0/com.android.bluetooth
+    app=ProcessRecord{f178c74 1400:com.android.bluetooth/1002}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.tv.settings
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.bluetooth.IBluetoothA2dp cmp=com.android.bluetooth/.a2dp.A2dpService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.TIME_SET,reason:,reasonCode:TIME_CHANGED,duration:20000,callingUid:1000>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m43s783ms startingBgTimeout=--
+    lastActivity=-27m36s590ms restartTime=-27m36s590ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{23d1b29}:
+      intent={act=android.bluetooth.IBluetoothA2dp cmp=com.android.bluetooth/.a2dp.A2dpService}
+      binder=android.os.BinderProxy@d013eae
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{334e44f ProcessRecord{37667ef 1253:com.android.tv.settings/1000}}
+        Per-process Connections:
+          ConnectionRecord{8b64a5d u0 com.android.bluetooth/.a2dp.A2dpService:@5db5c34}
+      * Client AppBindRecord{f2f77dc ProcessRecord{93efd89 1281:com.android.systemui/u0a33}}
+        Per-process Connections:
+          ConnectionRecord{472e61b u0 com.android.bluetooth/.a2dp.A2dpService:@a8a382a}
+      * Client AppBindRecord{de340e5 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{13cde6d u0 com.android.bluetooth/.a2dp.A2dpService:@c6e7684}
+          ConnectionRecord{273a5e3 u0 com.android.bluetooth/.a2dp.A2dpService:@86a7a12}
+          ConnectionRecord{757e9dc u0 com.android.bluetooth/.a2dp.A2dpService:@dcfde4f}
+    All Connections:
+      ConnectionRecord{8b64a5d u0 com.android.bluetooth/.a2dp.A2dpService:@5db5c34}
+      ConnectionRecord{273a5e3 u0 com.android.bluetooth/.a2dp.A2dpService:@86a7a12}
+      ConnectionRecord{472e61b u0 com.android.bluetooth/.a2dp.A2dpService:@a8a382a}
+      ConnectionRecord{13cde6d u0 com.android.bluetooth/.a2dp.A2dpService:@c6e7684}
+      ConnectionRecord{757e9dc u0 com.android.bluetooth/.a2dp.A2dpService:@dcfde4f}
+
+  * ServiceRecord{9ab4868 u0 com.android.tv.settings/.partnercustomizer.switchofftimer.SwitchOffTimerService}
+    intent={cmp=com.android.tv.settings/.partnercustomizer.switchofftimer.SwitchOffTimerService}
+    packageName=com.android.tv.settings
+    processName=com.android.tv.settings
+    baseDir=/system_ext/priv-app/TvSettingsPlus/TvSettingsPlus.apk
+    dataDir=/data/user_de/0/com.android.tv.settings
+    app=ProcessRecord{37667ef 1253:com.android.tv.settings/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.tv.settings/.partnercustomizer.switchofftimer.SwitchOffTimerService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.LOCKED_BOOT_COMPLETED,reason:,reasonCode:LOCKED_BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m38s598ms startingBgTimeout=--
+    lastActivity=-27m16s90ms restartTime=-27m38s597ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
+
+  * ServiceRecord{4ed84f1 u0 com.android.bluetooth/.avrcpcontroller.BluetoothMediaBrowserService}
+    intent={cmp=com.android.bluetooth/.avrcpcontroller.BluetoothMediaBrowserService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/apex/com.android.btservices/app/Bluetooth@TP1A.220624.021.A1/Bluetooth.apk
+    dataDir=/data/user_de/0/com.android.bluetooth
+    app=ProcessRecord{f178c74 1400:com.android.bluetooth/1002}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.bluetooth
+    recentCallingUid=1002
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.bluetooth; callingUid: 1002; uidState: PER ; intent: Intent { cmp=com.android.bluetooth/.avrcpcontroller.BluetoothMediaBrowserService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.bluetooth.adapter.action.STATE_CHANGED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:10000,callingUid:1000>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m35s990ms startingBgTimeout=--
+    lastActivity=-27m35s662ms restartTime=-27m35s989ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{da697ba}:
+      intent={act=android.media.browse.MediaBrowserService cmp=com.android.bluetooth/.avrcpcontroller.BluetoothMediaBrowserService}
+      binder=android.os.BinderProxy@605766b
+      requested=true received=true hasBound=false doRebind=false
+
+  * ServiceRecord{8d28437 u0 com.mediatek.tv.service/com.mediatek.tv.agent.DolbyVisionService}
+    intent={cmp=com.mediatek.tv.service/com.mediatek.tv.agent.DolbyVisionService}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.tv.service/com.mediatek.tv.agent.DolbyVisionService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m41s327ms startingBgTimeout=--
+    lastActivity=-27m41s326ms restartTime=-27m41s326ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{6b92e8 u0 com.android.systemui/.SystemUIService}
+    intent={cmp=com.android.systemui/.SystemUIService}
+    packageName=com.android.systemui
+    processName=com.android.systemui
+    baseDir=/system_ext/priv-app/SystemUI/SystemUI.apk
+    dataDir=/data/user_de/0/com.android.systemui
+    app=ProcessRecord{93efd89 1281:com.android.systemui/u0a33}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { flg=0x100 cmp=com.android.systemui/.SystemUIService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m42s116ms startingBgTimeout=--
+    lastActivity=-27m42s113ms restartTime=-27m42s113ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{aea63b8 u0 com.mediatek.autopair/.AutoPairService}
+    intent={cmp=com.mediatek.autopair/.AutoPairService}
+    packageName=com.mediatek.autopair
+    processName=com.mediatek.autopair
+    baseDir=/system_ext/app/AutoPair/AutoPair.apk
+    dataDir=/data/user/0/com.mediatek.autopair
+    app=ProcessRecord{9791517 1973:com.mediatek.autopair/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.autopair
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.autopair; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.autopair/.AutoPairService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1002:android.bluetooth.device.action.ACL_CONNECTED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:20000,callingUid:1002>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m35s576ms startingBgTimeout=--
+    lastActivity=-27m35s575ms restartTime=-27m35s575ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{331a536 u0 com.mediatek.tv.service/com.mediatek.tv.agent.SetAutoSleepDefValServices}
+    intent={cmp=com.mediatek.tv.service/com.mediatek.tv.agent.SetAutoSleepDefValServices}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.tv.service/com.mediatek.tv.agent.SetAutoSleepDefValServices }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m34s580ms startingBgTimeout=--
+    lastActivity=-27m34s570ms restartTime=-27m34s570ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{433155a u0 com.android.se/.SecureElementService}
+    intent={cmp=com.android.se/.SecureElementService}
+    packageName=com.android.se
+    processName=com.android.se
+    baseDir=/system/app/SecureElement/SecureElement.apk
+    dataDir=/data/user/0/com.android.se
+    app=ProcessRecord{e55c71f 1495:com.android.se/1068}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.se
+    recentCallingUid=1068
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.se; callingUid: 1068; uidState: PER ; intent: Intent { cmp=com.android.se/.SecureElementService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m41s436ms startingBgTimeout=--
+    lastActivity=-27m41s435ms restartTime=-27m41s435ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{657ce4e u0 com.android.tv.settings/.partnercustomizer.tvsettingservice.BluetoothReconnectService}
+    intent={cmp=com.android.tv.settings/.partnercustomizer.tvsettingservice.BluetoothReconnectService}
+    packageName=com.android.tv.settings
+    processName=com.android.tv.settings
+    baseDir=/system_ext/priv-app/TvSettingsPlus/TvSettingsPlus.apk
+    dataDir=/data/user_de/0/com.android.tv.settings
+    app=ProcessRecord{37667ef 1253:com.android.tv.settings/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.tv.settings/.partnercustomizer.tvsettingservice.BluetoothReconnectService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.LOCKED_BOOT_COMPLETED,reason:,reasonCode:LOCKED_BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m38s614ms startingBgTimeout=--
+    lastActivity=-27m16s125ms restartTime=-27m38s611ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
+
+  * ServiceRecord{2588efb u0 com.android.bluetooth/.hid.HidDeviceService}
+    intent={cmp=com.android.bluetooth/.hid.HidDeviceService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/apex/com.android.btservices/app/Bluetooth@TP1A.220624.021.A1/Bluetooth.apk
+    dataDir=/data/user_de/0/com.android.bluetooth
+    app=ProcessRecord{f178c74 1400:com.android.bluetooth/1002}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.systemui
+    recentCallingUid=10033
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.bluetooth; callingUid: 1002; uidState: PER ; intent: Intent { cmp=com.android.bluetooth/.hid.HidDeviceService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.bluetooth.adapter.action.STATE_CHANGED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:10000,callingUid:1000>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m36s331ms startingBgTimeout=--
+    lastActivity=-27m36s330ms restartTime=-27m36s330ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{c2a35c8}:
+      intent={act=android.bluetooth.IBluetoothHidDevice cmp=com.android.bluetooth/.hid.HidDeviceService}
+      binder=android.os.BinderProxy@b0c0661
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{e167586 ProcessRecord{93efd89 1281:com.android.systemui/u0a33}}
+        Per-process Connections:
+          ConnectionRecord{24f8906 u0 com.android.bluetooth/.hid.HidDeviceService:@1f737e1}
+    All Connections:
+      ConnectionRecord{24f8906 u0 com.android.bluetooth/.hid.HidDeviceService:@1f737e1}
+
+  * ServiceRecord{60cef11 u0 com.android.toofifi/com.mphotool.web.server.AndServerService}
+    intent={cmp=com.android.toofifi/com.mphotool.web.server.AndServerService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/com.mphotool.web.server.AndServerService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m30s129ms startingBgTimeout=-27m15s122ms
+    lastActivity=-27m30s127ms restartTime=-27m30s127ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{bc115d u0 com.mediatek.network/.MtkNetworkMonitorService}
+    intent={cmp=com.mediatek.network/.MtkNetworkMonitorService}
+    packageName=com.mediatek.network
+    processName=com.mediatek.network
+    baseDir=/system_ext/priv-app/MtkNetworkMonitorService/MtkNetworkMonitorService.apk
+    dataDir=/data/user/0/com.mediatek.network
+    app=ProcessRecord{aa8f583 1254:com.mediatek.network/u0a30}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.network
+    recentCallingUid=10030
+    allowStartForeground=LOCKED_BOOT_COMPLETED
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.network; callingUid: 10030; uidState: CEM ; intent: Intent { cmp=com.mediatek.network/.MtkNetworkMonitorService }; code:LOCKED_BOOT_COMPLETED; tempAllowListReason:<broadcast:1000:android.intent.action.LOCKED_BOOT_COMPLETED,reason:,reasonCode:LOCKED_BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m37s580ms startingBgTimeout=-27m22s488ms
+    lastActivity=-27m33s883ms restartTime=-27m37s562ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=2
+    Delivered Starts:
+    #0 id=1 dur=-27m37s489ms dxc=1
+      intent=Intent { cmp=com.mediatek.network/.MtkNetworkMonitorService }
+    #1 id=2 dur=-27m33s883ms dxc=1
+      intent=Intent { cmp=com.mediatek.network/.MtkNetworkMonitorService }
+
+  * ServiceRecord{5dc812 u0 com.android.toofifi/com.mphotool.ball.service.SmallBallService}
+    intent={cmp=com.android.toofifi/com.mphotool.ball.service.SmallBallService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/com.mphotool.ball.service.SmallBallService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m31s788ms startingBgTimeout=-27m16s769ms
+    lastActivity=-27m31s787ms restartTime=-27m31s787ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{d9a533f u0 com.android.toofifi/com.mphotool.extra.sharecamera.ShareCameraService}
+    intent={cmp=com.android.toofifi/com.mphotool.extra.sharecamera.ShareCameraService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/com.mphotool.extra.sharecamera.ShareCameraService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m31s705ms startingBgTimeout=-27m16s693ms
+    lastActivity=-27m31s698ms restartTime=-27m31s698ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{2cb4ffd u0 com.estrongs.android.pop/com.estrongs.android.ui.notification.ESTaskService}
+    intent={cmp=com.estrongs.android.pop/com.estrongs.android.ui.notification.ESTaskService}
+    packageName=com.estrongs.android.pop
+    processName=com.estrongs.android.pop
+    baseDir=/data/app/~~s48vLNKufXVqzYznnXusVQ==/com.estrongs.android.pop-ukxrUkqkV5MuqdCGEBWLiQ==/base.apk
+    dataDir=/data/user/0/com.estrongs.android.pop
+    app=ProcessRecord{2a389ad 2343:com.estrongs.android.pop/u0a50}
+    allowWhileInUsePermissionInFgs=false
+    recentCallingPackage=com.estrongs.android.pop
+    recentCallingUid=10050
+    allowStartForeground=DENIED
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.estrongs.android.pop; callingUid: 10050; uidState: RCVR; intent: Intent { cmp=com.estrongs.android.pop/com.estrongs.android.ui.notification.ESTaskService }; code:DENIED; tempAllowListReason:<null>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m30s665ms startingBgTimeout=--
+    lastActivity=-27m30s665ms restartTime=-27m30s665ms createdFromFg=false
+    Bindings:
+    * IntentBindRecord{3030e47 CREATE}:
+      intent={cmp=com.estrongs.android.pop/com.estrongs.android.ui.notification.ESTaskService}
+      binder=android.os.BinderProxy@890e674
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{da1a79d ProcessRecord{2a389ad 2343:com.estrongs.android.pop/u0a50}}
+        Per-process Connections:
+          ConnectionRecord{cf07454 u0 CR com.estrongs.android.pop/com.estrongs.android.ui.notification.ESTaskService:@ad2a7a7}
+    All Connections:
+      ConnectionRecord{cf07454 u0 CR com.estrongs.android.pop/com.estrongs.android.ui.notification.ESTaskService:@ad2a7a7}
+
+  * ServiceRecord{ace1c42 u0 com.mediatek.tv.service/com.mediatek.tv.agent.TimeActionReceiver$ReceiverService}
+    intent={cmp=com.mediatek.tv.service/com.mediatek.tv.agent.TimeActionReceiver$ReceiverService}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.tv.service/com.mediatek.tv.agent.TimeActionReceiver$ReceiverService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1002:android.bluetooth.a2dp.profile.action.ACTIVE_DEVICE_CHANGED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:20000,callingUid:1002>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m33s204ms startingBgTimeout=--
+    lastActivity=-27m33s204ms restartTime=-27m33s204ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{99d4769 u0 com.android.systemui/.dump.SystemUIAuxiliaryDumpService}
+    intent={cmp=com.android.systemui/.dump.SystemUIAuxiliaryDumpService}
+    packageName=com.android.systemui
+    processName=com.android.systemui
+    permission=com.android.systemui.permission.SELF
+    baseDir=/system_ext/priv-app/SystemUI/SystemUI.apk
+    dataDir=/data/user_de/0/com.android.systemui
+    app=ProcessRecord{93efd89 1281:com.android.systemui/u0a33}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.systemui
+    recentCallingUid=10033
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.systemui; callingUid: 10033; uidState: PER ; intent: Intent { cmp=com.android.systemui/.dump.SystemUIAuxiliaryDumpService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m39s756ms startingBgTimeout=--
+    lastActivity=-27m39s754ms restartTime=-27m39s754ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{ba737ae u0 com.mediatek.tv.service/com.mediatek.tv.agent.HBBTVService}
+    intent={cmp=com.mediatek.tv.service/com.mediatek.tv.agent.HBBTVService}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.tv.service/com.mediatek.tv.agent.HBBTVService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m34s663ms startingBgTimeout=--
+    lastActivity=-27m34s642ms restartTime=-27m34s642ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{8919986 u0 com.android.toofifi/.engine.service.SinkTesterService}
+    intent={cmp=com.android.toofifi/.engine.service.SinkTesterService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/.engine.service.SinkTesterService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m31s822ms startingBgTimeout=-27m16s809ms
+    lastActivity=-27m31s820ms restartTime=-27m31s820ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{8e99276 u0 com.coolux.source/.service.TimeService}
+    intent={cmp=com.coolux.source/.service.TimeService}
+    packageName=com.coolux.source
+    processName=com.coolux.source
+    baseDir=/system/app/KuSourceRJ/KuSourceRJ.apk
+    dataDir=/data/user/0/com.coolux.source
+    app=ProcessRecord{a7e5235 1948:com.coolux.source/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.coolux.source
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.coolux.source; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.coolux.source/.service.TimeService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m34s879ms startingBgTimeout=--
+    lastActivity=-27m34s877ms restartTime=-27m34s877ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{e2c2351 u0 com.trd.framework/.TrdSystemService}
+    intent={cmp=com.trd.framework/.TrdSystemService}
+    packageName=com.trd.framework
+    processName=com.trd.framework
+    baseDir=/vendor/priv-app/trdmiddle/trdmiddle.apk
+    dataDir=/data/user/0/com.trd.framework
+    app=ProcessRecord{4e06d79 1422:com.trd.framework/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.trd.framework
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.trd.framework; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.trd.framework/.TrdSystemService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m41s755ms startingBgTimeout=--
+    lastActivity=-27m41s753ms restartTime=-27m41s753ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{b780fac u0 com.android.toofifi/.service.PairService}
+    intent={cmp=com.android.toofifi/.service.PairService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/.service.PairService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m31s956ms startingBgTimeout=-27m16s949ms
+    lastActivity=-27m31s953ms restartTime=-27m31s953ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{8fb9e93 u0 com.android.bluetooth/.hfp.HeadsetService}
+    intent={cmp=com.android.bluetooth/.hfp.HeadsetService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/apex/com.android.btservices/app/Bluetooth@TP1A.220624.021.A1/Bluetooth.apk
+    dataDir=/data/user_de/0/com.android.bluetooth
+    app=ProcessRecord{f178c74 1400:com.android.bluetooth/1002}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.bluetooth; callingUid: 1002; uidState: PER ; intent: Intent { cmp=com.android.bluetooth/.hfp.HeadsetService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.bluetooth.adapter.action.STATE_CHANGED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:10000,callingUid:1000>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m36s432ms startingBgTimeout=--
+    lastActivity=-27m36s421ms restartTime=-27m36s421ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{f546412}:
+      intent={act=android.bluetooth.IBluetoothHeadset cmp=com.android.bluetooth/.hfp.HeadsetService}
+      binder=android.os.BinderProxy@55847e3
+      requested=true received=true hasBound=false doRebind=false
+
+  * ServiceRecord{6c90bcd u0 com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService}
+    intent={pkg=com.mediatek.tvinput cmp=com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService}
+    packageName=com.mediatek.tvinput
+    processName=com.mediatek.tvinput
+    baseDir=/system_ext/priv-app/MtkTvInput/MtkTvInput.apk
+    dataDir=/data/user/0/com.mediatek.tvinput
+    app=ProcessRecord{24384cd 1831:com.mediatek.tvinput/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tvinput
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tvinput; callingUid: 1000; uidState: PER ; intent: Intent { pkg=com.mediatek.tvinput cmp=com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1002:android.bluetooth.adapter.action.LOCAL_NAME_CHANGED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:20000,callingUid:1002>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m37s393ms startingBgTimeout=--
+    lastActivity=-27m36s379ms restartTime=-27m37s392ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{90ff5e0 CREATE}:
+      intent={pkg=com.mediatek.tvinput cmp=com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService}
+      binder=android.os.BinderProxy@3f62099
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{d10af5e ProcessRecord{24384cd 1831:com.mediatek.tvinput/1000}}
+        Per-process Connections:
+          ConnectionRecord{4c37d64 u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@6f6eaf7}
+          ConnectionRecord{62aa5bd u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@d048914}
+          ConnectionRecord{991671b u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@8fe1d2a}
+          ConnectionRecord{9c7bc39 u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@53e3c00}
+          ConnectionRecord{b91c69d u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@bc22174}
+          ConnectionRecord{c874f40 u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@8d9aac3}
+    All Connections:
+      ConnectionRecord{9c7bc39 u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@53e3c00}
+      ConnectionRecord{4c37d64 u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@6f6eaf7}
+      ConnectionRecord{c874f40 u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@8d9aac3}
+      ConnectionRecord{991671b u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@8fe1d2a}
+      ConnectionRecord{b91c69d u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@bc22174}
+      ConnectionRecord{62aa5bd u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@d048914}
+
+  * ServiceRecord{4da8708 u0 com.mediatek.tv.service/com.mediatek.tv.agent.TVRemoteServiceAgent}
+    intent={act=android.media.tv.TvInputService cmp=com.mediatek.tv.service/com.mediatek.tv.agent.TVRemoteServiceAgent}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    permission=android.permission.BIND_TV_INPUT
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.media.tv.TvInputService cmp=com.mediatek.tv.service/com.mediatek.tv.agent.TVRemoteServiceAgent }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.TIME_SET,reason:,reasonCode:TIME_CHANGED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m43s94ms startingBgTimeout=--
+    lastActivity=-27m42s753ms restartTime=-27m42s753ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{63d7f3f CREATE}:
+      intent={act=android.media.tv.TvInputService cmp=com.mediatek.tv.service/com.mediatek.tv.agent.TVRemoteServiceAgent}
+      binder=android.os.BinderProxy@eae900c
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{57f2d55 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{557048c u0 CR FGSA com.mediatek.tv.service/com.mediatek.tv.agent.TVRemoteServiceAgent:@a24f5bf}
+    All Connections:
+      ConnectionRecord{557048c u0 CR FGSA com.mediatek.tv.service/com.mediatek.tv.agent.TVRemoteServiceAgent:@a24f5bf}
+
+  * ServiceRecord{170601 u0 com.android.tv.settings/.uicustom.floatmenu.FloatMenuService}
+    intent={cmp=com.android.tv.settings/.uicustom.floatmenu.FloatMenuService}
+    packageName=com.android.tv.settings
+    processName=com.android.tv.settings
+    baseDir=/system_ext/priv-app/TvSettingsPlus/TvSettingsPlus.apk
+    dataDir=/data/user_de/0/com.android.tv.settings
+    app=ProcessRecord{37667ef 1253:com.android.tv.settings/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.tv.settings/.uicustom.floatmenu.FloatMenuService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:30; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-26m49s254ms startingBgTimeout=--
+    lastActivity=-22m41s814ms restartTime=-26m49s253ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=5
+
+  * ServiceRecord{6e4cc3c u0 com.mediatek.tvinput/.composite.CompositeInputService}
+    intent={act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.composite.CompositeInputService}
+    packageName=com.mediatek.tvinput
+    processName=com.mediatek.tvinput
+    permission=android.permission.BIND_TV_INPUT
+    baseDir=/system_ext/priv-app/MtkTvInput/MtkTvInput.apk
+    dataDir=/data/user/0/com.mediatek.tvinput
+    app=ProcessRecord{24384cd 1831:com.mediatek.tvinput/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.composite.CompositeInputService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.LOCKED_BOOT_COMPLETED,reason:,reasonCode:LOCKED_BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m38s318ms startingBgTimeout=--
+    lastActivity=-27m37s761ms restartTime=-27m37s761ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{bb4636a CREATE}:
+      intent={act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.composite.CompositeInputService}
+      binder=android.os.BinderProxy@14d05b
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{1baa0f8 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{7f5612e u0 CR FGSA com.mediatek.tvinput/.composite.CompositeInputService:@eba37a9}
+    All Connections:
+      ConnectionRecord{7f5612e u0 CR FGSA com.mediatek.tvinput/.composite.CompositeInputService:@eba37a9}
+
+  * ServiceRecord{f4c535e u0 com.android.toofifi/com.mphotool.extra.service.MirrorControlService}
+    intent={cmp=com.android.toofifi/com.mphotool.extra.service.MirrorControlService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/com.mphotool.extra.service.MirrorControlService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m31s721ms startingBgTimeout=-27m16s718ms
+    lastActivity=-27m31s720ms restartTime=-27m31s720ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{42fee0a u0 com.android.location.fused/.FusedLocationService}
+    intent={act=com.android.location.service.FusedLocationProvider cmp=com.android.location.fused/.FusedLocationService}
+    packageName=com.android.location.fused
+    processName=system
+    permission=android.permission.WRITE_SECURE_SETTINGS
+    baseDir=/system/priv-app/FusedLocation/FusedLocation.apk
+    dataDir=/data/user_de/0/com.android.location.fused
+    app=ProcessRecord{cb2c7a9 895:system/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=com.android.location.service.FusedLocationProvider cmp=com.android.location.fused/.FusedLocationService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m42s685ms startingBgTimeout=--
+    lastActivity=-27m42s685ms restartTime=-27m42s685ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{15249d1 CREATE}:
+      intent={act=com.android.location.service.FusedLocationProvider cmp=com.android.location.fused/.FusedLocationService}
+      binder=android.location.provider.LocationProviderBase$Service@b2d4c36
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{7461737 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{41dbe75 u0 CR !FG !VIS com.android.location.fused/.FusedLocationService:@29631ac}
+    All Connections:
+      ConnectionRecord{41dbe75 u0 CR !FG !VIS com.android.location.fused/.FusedLocationService:@29631ac}
+
+  * ServiceRecord{f978087 u0 com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService}
+    intent={act=android.net.ITetheringConnector.InProcess cmp=com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService}
+    packageName=com.android.networkstack.tethering.inprocess
+    processName=system
+    permission=android.permission.MAINLINE_NETWORK_STACK
+    baseDir=/apex/com.android.tethering/priv-app/InProcessTethering@TP1A.220624.021.A1/InProcessTethering.apk
+    dataDir=/data/user_de/0/com.android.networkstack.tethering.inprocess
+    app=ProcessRecord{cb2c7a9 895:system/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.net.ITetheringConnector.InProcess cmp=com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:29; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m42s738ms startingBgTimeout=--
+    lastActivity=-27m42s737ms restartTime=-27m42s737ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{f74d4a4 CREATE}:
+      intent={act=android.net.ITetheringConnector.InProcess cmp=com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService}
+      binder=com.android.networkstack.tethering.TetheringService$TetheringConnector@860b20d
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{a79f5c2 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{9c848c6 u0 CR IMP com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService:@e601ea1}
+    All Connections:
+      ConnectionRecord{9c848c6 u0 CR IMP com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService:@e601ea1}
+
+  * ServiceRecord{f8e6b13 u0 com.estrongs.android.pop/com.estrongs.dlna.core.DlnaUpnpService}
+    intent={cmp=com.estrongs.android.pop/com.estrongs.dlna.core.DlnaUpnpService}
+    packageName=com.estrongs.android.pop
+    processName=com.estrongs.android.pop
+    baseDir=/data/app/~~s48vLNKufXVqzYznnXusVQ==/com.estrongs.android.pop-ukxrUkqkV5MuqdCGEBWLiQ==/base.apk
+    dataDir=/data/user/0/com.estrongs.android.pop
+    app=ProcessRecord{2a389ad 2343:com.estrongs.android.pop/u0a50}
+    allowWhileInUsePermissionInFgs=false
+    recentCallingPackage=com.estrongs.android.pop
+    recentCallingUid=10050
+    allowStartForeground=DENIED
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.estrongs.android.pop; callingUid: 10050; uidState: SVC ; intent: Intent { cmp=com.estrongs.android.pop/com.estrongs.dlna.core.DlnaUpnpService }; code:DENIED; tempAllowListReason:<null>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m30s35ms startingBgTimeout=--
+    lastActivity=-27m30s34ms restartTime=-27m30s34ms createdFromFg=false
+    Bindings:
+    * IntentBindRecord{4daefd3 CREATE}:
+      intent={cmp=com.estrongs.android.pop/com.estrongs.dlna.core.DlnaUpnpService}
+      binder=android.os.BinderProxy@67c9710
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{f736209 ProcessRecord{2a389ad 2343:com.estrongs.android.pop/u0a50}}
+        Per-process Connections:
+          ConnectionRecord{6ad5602 u0 CR com.estrongs.android.pop/com.estrongs.dlna.core.DlnaUpnpService:@406b4d}
+    All Connections:
+      ConnectionRecord{6ad5602 u0 CR com.estrongs.android.pop/com.estrongs.dlna.core.DlnaUpnpService:@406b4d}
+
+  * ServiceRecord{3bd457e u0 com.mediatek.tv.service/com.mediatek.wwtv.tvrecommendation.RecommendationService}
+    intent={cmp=com.mediatek.tv.service/com.mediatek.wwtv.tvrecommendation.RecommendationService}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.tv.service/com.mediatek.wwtv.tvrecommendation.RecommendationService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m42s39ms startingBgTimeout=--
+    lastActivity=-27m32s925ms restartTime=-27m42s38ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2
+
+  * ServiceRecord{8e24436 u0 com.mediatek.tvinput/.hdmi.HDMIInputService}
+    intent={act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.hdmi.HDMIInputService}
+    packageName=com.mediatek.tvinput
+    processName=com.mediatek.tvinput
+    permission=android.permission.BIND_TV_INPUT
+    baseDir=/system_ext/priv-app/MtkTvInput/MtkTvInput.apk
+    dataDir=/data/user/0/com.mediatek.tvinput
+    app=ProcessRecord{24384cd 1831:com.mediatek.tvinput/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.hdmi.HDMIInputService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.LOCKED_BOOT_COMPLETED,reason:,reasonCode:LOCKED_BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m38s325ms startingBgTimeout=--
+    lastActivity=-27m37s785ms restartTime=-27m37s785ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{7f5ac0e CREATE}:
+      intent={act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.hdmi.HDMIInputService}
+      binder=android.os.BinderProxy@edab62f
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{dfc143c ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{f8bac4 u0 CR FGSA com.mediatek.tvinput/.hdmi.HDMIInputService:@1af41d7}
+    All Connections:
+      ConnectionRecord{f8bac4 u0 CR FGSA com.mediatek.tvinput/.hdmi.HDMIInputService:@1af41d7}
+
+  * ServiceRecord{9bc66d1 u0 com.mediatek.tv.service/com.mediatek.tv.agent.NetworkMonitorService}
+    intent={cmp=com.mediatek.tv.service/com.mediatek.tv.agent.NetworkMonitorService}
+    packageName=com.mediatek.tv.service
+    processName=com.mediatek.tv.service
+    baseDir=/system_ext/priv-app/TvServices/TvServices.apk
+    dataDir=/data/user/0/com.mediatek.tv.service
+    app=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.mediatek.tv.service
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.mediatek.tv.service; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.mediatek.tv.service/com.mediatek.tv.agent.NetworkMonitorService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m34s612ms startingBgTimeout=--
+    lastActivity=-27m34s592ms restartTime=-27m34s592ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+
+  * ServiceRecord{2c3e273 u0 com.android.bluetooth/.hid.HidHostService}
+    intent={cmp=com.android.bluetooth/.hid.HidHostService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/apex/com.android.btservices/app/Bluetooth@TP1A.220624.021.A1/Bluetooth.apk
+    dataDir=/data/user_de/0/com.android.bluetooth
+    app=ProcessRecord{f178c74 1400:com.android.bluetooth/1002}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.tv.settings
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.bluetooth; callingUid: 1002; uidState: PER ; intent: Intent { cmp=com.android.bluetooth/.hid.HidHostService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.bluetooth.adapter.action.STATE_CHANGED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:10000,callingUid:1000>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m36s315ms startingBgTimeout=--
+    lastActivity=-27m36s315ms restartTime=-27m36s315ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{4e715c5}:
+      intent={act=android.bluetooth.IBluetoothHidHost cmp=com.android.bluetooth/.hid.HidHostService}
+      binder=android.os.BinderProxy@a647b1a
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{a66864b ProcessRecord{93efd89 1281:com.android.systemui/u0a33}}
+        Per-process Connections:
+          ConnectionRecord{12703c4 u0 com.android.bluetooth/.hid.HidHostService:@1f50ed7}
+    All Connections:
+      ConnectionRecord{12703c4 u0 com.android.bluetooth/.hid.HidHostService:@1f50ed7}
+
+  * ServiceRecord{309ced6 u0 com.android.toofifi/.service.ExtraService}
+    intent={cmp=com.android.toofifi/.service.ExtraService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/.service.ExtraService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m31s930ms startingBgTimeout=-27m16s920ms
+    lastActivity=-27m31s929ms restartTime=-27m31s929ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{3bcf29 u0 com.android.toofifi/.service.RemoteService}
+    intent={cmp=com.android.toofifi/.service.RemoteService}
+    packageName=com.android.toofifi
+    processName=com.android.toofifi
+    baseDir=/system/app/FTAirplayWireless/FTAirplayWireless.apk
+    dataDir=/data/user/0/com.android.toofifi
+    app=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.toofifi
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.toofifi; callingUid: 1000; uidState: PER ; intent: Intent { cmp=com.android.toofifi/.service.RemoteService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.BOOT_COMPLETED,reason:,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:28; callerTargetSdkVersion:28; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m31s906ms startingBgTimeout=-27m16s846ms
+    lastActivity=-27m31s901ms restartTime=-27m31s901ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{cd8b615 u0 com.android.bluetooth/.avrcp.AvrcpTargetService}
+    intent={cmp=com.android.bluetooth/.avrcp.AvrcpTargetService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/apex/com.android.btservices/app/Bluetooth@TP1A.220624.021.A1/Bluetooth.apk
+    dataDir=/data/user_de/0/com.android.bluetooth
+    app=ProcessRecord{f178c74 1400:com.android.bluetooth/1002}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.bluetooth
+    recentCallingUid=1002
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.bluetooth; callingUid: 1002; uidState: PER ; intent: Intent { cmp=com.android.bluetooth/.avrcp.AvrcpTargetService (has extras) }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.bluetooth.adapter.action.STATE_CHANGED,reason:,reasonCode:BLUETOOTH_BROADCAST,duration:10000,callingUid:1000>; targetSdkVersion:33; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m36s477ms startingBgTimeout=--
+    lastActivity=-27m36s475ms restartTime=-27m36s475ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+
+  * ServiceRecord{a8a617a u0 com.android.bluetooth/.a2dpsink.A2dpSinkService}
+    intent={act=android.bluetooth.IBluetoothA2dpSink cmp=com.android.bluetooth/.a2dpsink.A2dpSinkService}
+    packageName=com.android.bluetooth
+    processName=com.android.bluetooth
+    baseDir=/apex/com.android.btservices/app/Bluetooth@TP1A.220624.021.A1/Bluetooth.apk
+    dataDir=/data/user_de/0/com.android.bluetooth
+    app=ProcessRecord{f178c74 1400:com.android.bluetooth/1002}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=com.android.systemui
+    recentCallingUid=10033
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: com.android.tv.settings; callingUid: 1000; uidState: PER ; intent: Intent { act=android.bluetooth.IBluetoothA2dpSink cmp=com.android.bluetooth/.a2dpsink.A2dpSinkService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.LOCKED_BOOT_COMPLETED,reason:,reasonCode:LOCKED_BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:33; callerTargetSdkVersion:30; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m38s456ms startingBgTimeout=--
+    lastActivity=-27m36s521ms restartTime=-27m36s521ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{3943828}:
+      intent={act=android.bluetooth.IBluetoothA2dpSink cmp=com.android.bluetooth/.a2dpsink.A2dpSinkService}
+      binder=android.os.BinderProxy@6284941
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{ebf2ee6 ProcessRecord{37667ef 1253:com.android.tv.settings/1000}}
+        Per-process Connections:
+          ConnectionRecord{777fd21 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@f04cf88}
+      * Client AppBindRecord{3953c27 ProcessRecord{93efd89 1281:com.android.systemui/u0a33}}
+        Per-process Connections:
+          ConnectionRecord{9f1d0 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@adfd93}
+    All Connections:
+      ConnectionRecord{9f1d0 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@adfd93}
+      ConnectionRecord{777fd21 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@f04cf88}
+
+  * ServiceRecord{bc8d427 u0 com.mediatek.tvinput/.component.ComponentInputService}
+    intent={act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.component.ComponentInputService}
+    packageName=com.mediatek.tvinput
+    processName=com.mediatek.tvinput
+    permission=android.permission.BIND_TV_INPUT
+    baseDir=/system_ext/priv-app/MtkTvInput/MtkTvInput.apk
+    dataDir=/data/user/0/com.mediatek.tvinput
+    app=ProcessRecord{24384cd 1831:com.mediatek.tvinput/1000}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.component.ComponentInputService }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<broadcast:1000:android.intent.action.LOCKED_BOOT_COMPLETED,reason:,reasonCode:LOCKED_BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:30; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m38s318ms startingBgTimeout=--
+    lastActivity=-27m37s747ms restartTime=-27m37s747ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{c08aed4 CREATE}:
+      intent={act=android.media.tv.TvInputService cmp=com.mediatek.tvinput/.component.ComponentInputService}
+      binder=android.os.BinderProxy@ef387d
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{6bf5372 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{e55a565 u0 CR FGSA com.mediatek.tvinput/.component.ComponentInputService:@f129e5c}
+    All Connections:
+      ConnectionRecord{e55a565 u0 CR FGSA com.mediatek.tvinput/.component.ComponentInputService:@f129e5c}
+
+  * ServiceRecord{1b7634b u0 android.ext.services/.autofill.InlineSuggestionRenderServiceImpl}
+    intent={act=android.service.autofill.InlineSuggestionRenderService cmp=android.ext.services/.autofill.InlineSuggestionRenderServiceImpl}
+    packageName=android.ext.services
+    processName=android.ext.services
+    permission=android.permission.BIND_INLINE_SUGGESTION_RENDER_SERVICE
+    baseDir=/apex/com.android.extservices/priv-app/ExtServices@TP1A.220624.021.A1/ExtServices.apk
+    dataDir=/data/user/0/android.ext.services
+    app=ProcessRecord{d0b887f 1549:android.ext.services/u0a44}
+    allowWhileInUsePermissionInFgs=true
+    recentCallingPackage=android
+    recentCallingUid=1000
+    allowStartForeground=PROC_STATE_PERSISTENT
+    startForegroundCount=0
+    infoAllowStartForeground=[callingPackage: android; callingUid: 1000; uidState: PER ; intent: Intent { act=android.service.autofill.InlineSuggestionRenderService cmp=android.ext.services/.autofill.InlineSuggestionRenderServiceImpl }; code:PROC_STATE_PERSISTENT; tempAllowListReason:<null>; targetSdkVersion:30; callerTargetSdkVersion:33; startForegroundCount:0; bindFromPackage:null]
+    createTime=-27m41s474ms startingBgTimeout=--
+    lastActivity=-27m23s944ms restartTime=-27m41s283ms createdFromFg=true
+    Bindings:
+    * IntentBindRecord{70f73c3 CREATE}:
+      intent={act=android.service.autofill.InlineSuggestionRenderService cmp=android.ext.services/.autofill.InlineSuggestionRenderServiceImpl}
+      binder=android.os.BinderProxy@2abe440
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{c3bdf79 ProcessRecord{cb2c7a9 895:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{944937 u0 CR FGS CAPS android.ext.services/.autofill.InlineSuggestionRenderServiceImpl:@ed0636}
+          ConnectionRecord{46c1c1d u0 CR FGS CAPS android.ext.services/.autofill.InlineSuggestionRenderServiceImpl:@fe25cf4}
+          ConnectionRecord{9d8e220 u0 CR FGS CAPS android.ext.services/.autofill.InlineSuggestionRenderServiceImpl:@fbc3d23}
+    All Connections:
+      ConnectionRecord{944937 u0 CR FGS CAPS android.ext.services/.autofill.InlineSuggestionRenderServiceImpl:@ed0636}
+      ConnectionRecord{9d8e220 u0 CR FGS CAPS android.ext.services/.autofill.InlineSuggestionRenderServiceImpl:@fbc3d23}
+      ConnectionRecord{46c1c1d u0 CR FGS CAPS android.ext.services/.autofill.InlineSuggestionRenderServiceImpl:@fe25cf4}
+
+  Connection bindings to services:
+  * ConnectionRecord{6ad5602 u0 CR com.estrongs.android.pop/com.estrongs.dlna.core.DlnaUpnpService:@406b4d}
+    binding=AppBindRecord{f736209 com.estrongs.android.pop/com.estrongs.dlna.core.DlnaUpnpService:com.estrongs.android.pop}
+    conn=android.os.BinderProxy@406b4d flags=0x1
+  * ConnectionRecord{9f1d0 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@adfd93}
+    binding=AppBindRecord{3953c27 com.android.bluetooth/.a2dpsink.A2dpSinkService:com.android.systemui}
+    conn=android.os.BinderProxy@adfd93 flags=0x0
+  * ConnectionRecord{944937 u0 CR FGS CAPS android.ext.services/.autofill.InlineSuggestionRenderServiceImpl:@ed0636}
+    binding=AppBindRecord{c3bdf79 android.ext.services/.autofill.InlineSuggestionRenderServiceImpl:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@ed0636 flags=0x4001001
+  * ConnectionRecord{89d1483 u0 CR IMP com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl:@efff32}
+    binding=AppBindRecord{506a3e4 com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@efff32 flags=0x41
+  * ConnectionRecord{799a0fc u0 CR com.estrongs.android.pop/dbgc.DService:@f77def}
+    binding=AppBindRecord{2dcfcaa com.estrongs.android.pop/dbgc.DService:com.estrongs.android.pop}
+    conn=android.os.BinderProxy@f77def flags=0x1
+  * ConnectionRecord{f8bac4 u0 CR FGSA com.mediatek.tvinput/.hdmi.HDMIInputService:@1af41d7}
+    binding=AppBindRecord{dfc143c com.mediatek.tvinput/.hdmi.HDMIInputService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@1af41d7 flags=0x2000001
+  * ConnectionRecord{12703c4 u0 com.android.bluetooth/.hid.HidHostService:@1f50ed7}
+    binding=AppBindRecord{a66864b com.android.bluetooth/.hid.HidHostService:com.android.systemui}
+    conn=android.os.BinderProxy@1f50ed7 flags=0x0
+  * ConnectionRecord{24f8906 u0 com.android.bluetooth/.hid.HidDeviceService:@1f737e1}
+    binding=AppBindRecord{e167586 com.android.bluetooth/.hid.HidDeviceService:com.android.systemui}
+    conn=android.os.BinderProxy@1f737e1 flags=0x0
+  * ConnectionRecord{e802445 u0 CR IMP com.android.toofifi/com.huawei.connection.service.NearFieldManagerService:@22e4cbc}
+    binding=AppBindRecord{52300b0 com.android.toofifi/com.huawei.connection.service.NearFieldManagerService:com.android.toofifi}
+    conn=android.os.BinderProxy@22e4cbc flags=0x41
+  * ConnectionRecord{1bc2473 u0 CR FGSA com.mediatek.tvinput/.vga.VGAInputService:@24298e2}
+    binding=AppBindRecord{cf35c05 com.mediatek.tvinput/.vga.VGAInputService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@24298e2 flags=0x2000001
+  * ConnectionRecord{41dbe75 u0 CR !FG !VIS com.android.location.fused/.FusedLocationService:@29631ac}
+    binding=AppBindRecord{7461737 com.android.location.fused/.FusedLocationService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@29631ac flags=0x40000005
+  * ConnectionRecord{4bb81d4 u0 CR !FG !PRCP BALFD com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemjob.SystemJobService:@4d37b27}
+    binding=AppBindRecord{518e368 com.amazon.avod.thirdpartyclient/androidx.work.impl.background.systemjob.SystemJobService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@4d37b27 flags=0xc105
+  * ConnectionRecord{9c7bc39 u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@53e3c00}
+    binding=AppBindRecord{d10af5e com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:com.mediatek.tvinput}
+    conn=android.os.BinderProxy@53e3c00 flags=0x1
+  * ConnectionRecord{a55f469 u0 com.android.bluetooth/.le_audio.LeAudioService:@59e76f0}
+    binding=AppBindRecord{aa9787b com.android.bluetooth/.le_audio.LeAudioService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@59e76f0 flags=0x0
+  * ConnectionRecord{284b304 u0 com.android.bluetooth/.le_audio.LeAudioService:@59e76f0}
+    binding=AppBindRecord{aa9787b com.android.bluetooth/.le_audio.LeAudioService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@59e76f0 flags=0x0
+  * ConnectionRecord{8b64a5d u0 com.android.bluetooth/.a2dp.A2dpService:@5db5c34}
+    binding=AppBindRecord{334e44f com.android.bluetooth/.a2dp.A2dpService:com.android.tv.settings}
+    conn=android.os.BinderProxy@5db5c34 flags=0x0
+  * ConnectionRecord{a283a64 u0 CR FGSA com.mediatek.tvinput/.tuner.TunerInputService:@6347bf7}
+    binding=AppBindRecord{2fc2920 com.mediatek.tvinput/.tuner.TunerInputService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@6347bf7 flags=0x2000001
+  * ConnectionRecord{72255e u0 com.android.bluetooth/.le_audio.LeAudioService:@6bbae99}
+    binding=AppBindRecord{aa9787b com.android.bluetooth/.le_audio.LeAudioService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@6bbae99 flags=0x0
+  * ConnectionRecord{6fc888 u0 com.android.bluetooth/.le_audio.LeAudioService:@6bbae99}
+    binding=AppBindRecord{aa9787b com.android.bluetooth/.le_audio.LeAudioService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@6bbae99 flags=0x0
+  * ConnectionRecord{4c37d64 u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@6f6eaf7}
+    binding=AppBindRecord{d10af5e com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:com.mediatek.tvinput}
+    conn=android.os.BinderProxy@6f6eaf7 flags=0x1
+  * ConnectionRecord{273a5e3 u0 com.android.bluetooth/.a2dp.A2dpService:@86a7a12}
+    binding=AppBindRecord{de340e5 com.android.bluetooth/.a2dp.A2dpService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@86a7a12 flags=0x0
+  * ConnectionRecord{aca2e16 u0 CR IMP com.android.networkstack.inprocess/com.android.server.NetworkStackService:@8700731}
+    binding=AppBindRecord{95faad6 com.android.networkstack.inprocess/com.android.server.NetworkStackService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@8700731 flags=0x41
+  * ConnectionRecord{c874f40 u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@8d9aac3}
+    binding=AppBindRecord{d10af5e com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:com.mediatek.tvinput}
+    conn=android.os.BinderProxy@8d9aac3 flags=0x1
+  * ConnectionRecord{964f78f u0 CR FGS android.ext.services/.notification.Assistant:@8e496ee}
+    binding=AppBindRecord{b37014e android.ext.services/.notification.Assistant:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@8e496ee flags=0x5000001
+  * ConnectionRecord{991671b u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@8fe1d2a}
+    binding=AppBindRecord{d10af5e com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:com.mediatek.tvinput}
+    conn=android.os.BinderProxy@8fe1d2a flags=0x1
+  * ConnectionRecord{5c1138a u0 com.android.bluetooth/.hfpclient.HeadsetClientService:@94e09f5}
+    binding=AppBindRecord{39b192d com.android.bluetooth/.hfpclient.HeadsetClientService:com.android.systemui}
+    conn=android.os.BinderProxy@94e09f5 flags=0x0
+  * ConnectionRecord{fdf14fc u0 CR FGSA CAPS ru.pro100tehnika.tvlauncher/.PowerService:@9da41ef}
+    binding=AppBindRecord{5d1a411 ru.pro100tehnika.tvlauncher/.PowerService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@9da41ef flags=0x2101001
+  * ConnectionRecord{557048c u0 CR FGSA com.mediatek.tv.service/com.mediatek.tv.agent.TVRemoteServiceAgent:@a24f5bf}
+    binding=AppBindRecord{57f2d55 com.mediatek.tv.service/com.mediatek.tv.agent.TVRemoteServiceAgent:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@a24f5bf flags=0x2000001
+  * ConnectionRecord{472e61b u0 com.android.bluetooth/.a2dp.A2dpService:@a8a382a}
+    binding=AppBindRecord{f2f77dc com.android.bluetooth/.a2dp.A2dpService:com.android.systemui}
+    conn=android.os.BinderProxy@a8a382a flags=0x0
+  * ConnectionRecord{cf07454 u0 CR com.estrongs.android.pop/com.estrongs.android.ui.notification.ESTaskService:@ad2a7a7}
+    binding=AppBindRecord{da1a79d com.estrongs.android.pop/com.estrongs.android.ui.notification.ESTaskService:com.estrongs.android.pop}
+    conn=android.os.BinderProxy@ad2a7a7 flags=0x1
+  * ConnectionRecord{27dbe5e u0 CR IMP com.android.toofifi/com.huawei.hisight.service.PlayerSinkService:@bc20b99}
+    binding=AppBindRecord{620bb7f com.android.toofifi/com.huawei.hisight.service.PlayerSinkService:com.android.toofifi}
+    conn=android.os.BinderProxy@bc20b99 flags=0x41
+  * ConnectionRecord{b91c69d u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@bc22174}
+    binding=AppBindRecord{d10af5e com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:com.mediatek.tvinput}
+    conn=android.os.BinderProxy@bc22174 flags=0x1
+  * ConnectionRecord{65d18ef u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@bcce1ce}
+    binding=AppBindRecord{1fca4b2 com.android.systemui/.ImageWallpaper:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@bcce1ce flags=0x22005001
+  * ConnectionRecord{13cde6d u0 com.android.bluetooth/.a2dp.A2dpService:@c6e7684}
+    binding=AppBindRecord{de340e5 com.android.bluetooth/.a2dp.A2dpService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@c6e7684 flags=0x0
+  * ConnectionRecord{6848c47 u0 CR IMP com.android.bluetooth/.btservice.AdapterService:@cd72b86}
+    binding=AppBindRecord{2655067 com.android.bluetooth/.btservice.AdapterService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@cd72b86 flags=0x41
+  * ConnectionRecord{d426f26 u0 CR IMP com.android.bluetooth/.gatt.GattService:@cd72b86}
+    binding=AppBindRecord{bcbcbac com.android.bluetooth/.gatt.GattService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@cd72b86 flags=0x41
+  * ConnectionRecord{62aa5bd u0 CR com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:@d048914}
+    binding=AppBindRecord{d10af5e com.mediatek.tvinput/com.mediatek.arbitratorservice.HardwareManagerService:com.mediatek.tvinput}
+    conn=android.os.BinderProxy@d048914 flags=0x1
+  * ConnectionRecord{757e9dc u0 com.android.bluetooth/.a2dp.A2dpService:@dcfde4f}
+    binding=AppBindRecord{de340e5 com.android.bluetooth/.a2dp.A2dpService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@dcfde4f flags=0x0
+  * ConnectionRecord{4183d1a u0 CR !FG IMPB !VIS com.android.inputmethod.latin/.LatinIME:@de89fc5}
+    binding=AppBindRecord{28151b9 com.android.inputmethod.latin/.LatinIME:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@de89fc5 flags=0x40800005
+  * ConnectionRecord{b0f7090 u0 CR FGSA UI BALFD CAPS com.android.systemui/.ImageWallpaper:@df33f53}
+    binding=AppBindRecord{1fca4b2 com.android.systemui/.ImageWallpaper:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@df33f53 flags=0x22005001
+  * ConnectionRecord{9c848c6 u0 CR IMP com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService:@e601ea1}
+    binding=AppBindRecord{a79f5c2 com.android.networkstack.tethering.inprocess/com.android.networkstack.tethering.TetheringService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@e601ea1 flags=0x41
+  * ConnectionRecord{1594448 u0 CR FGSA com.mediatek.tvinput/.scart.SCARTInputService:@e65aeeb}
+    binding=AppBindRecord{b657813 com.mediatek.tvinput/.scart.SCARTInputService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@e65aeeb flags=0x2000001
+  * ConnectionRecord{7f5612e u0 CR FGSA com.mediatek.tvinput/.composite.CompositeInputService:@eba37a9}
+    binding=AppBindRecord{1baa0f8 com.mediatek.tvinput/.composite.CompositeInputService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@eba37a9 flags=0x2000001
+  * ConnectionRecord{856106b u0 com.android.bluetooth/.le_audio.LeAudioService:@ed159ba}
+    binding=AppBindRecord{aa9787b com.android.bluetooth/.le_audio.LeAudioService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@ed159ba flags=0x0
+  * ConnectionRecord{faa0ab1 u0 com.android.bluetooth/.le_audio.LeAudioService:@ed159ba}
+    binding=AppBindRecord{aa9787b com.android.bluetooth/.le_audio.LeAudioService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@ed159ba flags=0x0
+  * ConnectionRecord{777fd21 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService:@f04cf88}
+    binding=AppBindRecord{ebf2ee6 com.android.bluetooth/.a2dpsink.A2dpSinkService:com.android.tv.settings}
+    conn=android.os.BinderProxy@f04cf88 flags=0x0
+  * ConnectionRecord{e55a565 u0 CR FGSA com.mediatek.tvinput/.component.ComponentInputService:@f129e5c}
+    binding=AppBindRecord{6bf5372 com.mediatek.tvinput/.component.ComponentInputService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@f129e5c flags=0x2000001
+  * ConnectionRecord{9d8e220 u0 CR FGS CAPS android.ext.services/.autofill.InlineSuggestionRenderServiceImpl:@fbc3d23}
+    binding=AppBindRecord{c3bdf79 android.ext.services/.autofill.InlineSuggestionRenderServiceImpl:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@fbc3d23 flags=0x4001001
+  * ConnectionRecord{46c1c1d u0 CR FGS CAPS android.ext.services/.autofill.InlineSuggestionRenderServiceImpl:@fe25cf4}
+    binding=AppBindRecord{c3bdf79 android.ext.services/.autofill.InlineSuggestionRenderServiceImpl:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@fe25cf4 flags=0x4001001
+
+Active foreground apps - user 0:
+  #1: com.mediatek.miracast
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-27m13s171ms mStartVisibleTime=-27m13s171ms
+  #0: zeasn.open.technical.tv.store
+    mNumActive=1 mAppOnTop=true mShownWhileTop=true mShownWhileScreenOn=true
+    mStartTime=-27m11s715ms mStartVisibleTime=-27m11s715ms

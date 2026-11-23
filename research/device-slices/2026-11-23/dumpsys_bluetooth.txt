@@ -1,0 +1,353 @@
+Bluetooth Status
+  enabled: true
+  state: ON
+  address: B4:65:DC:3F:3D:39
+  name: Projetor
+  dongle: aic
+  time since enabled: 00:27:44.451
+
+Enable log:
+  11-23 19:49:35  Enabled  due to SYSTEM_BOOT by android
+
+Bluetooth crashed 0 times
+
+0 BLE apps registered
+
+BluetoothManagerService:
+  mEnable:true
+  mQuietEnable:false
+  mEnableExternal:true
+  mQuietEnableExternal:false
+
+
+AdapterProperties
+  Name: Projetor
+  Address: B4:65:DC:3F:3D:39
+  BluetoothClass: null
+  ScanMode: SCAN_MODE_CONNECTABLE
+  ConnectionState: STATE_CONNECTED
+  State: ON
+  MaxConnectedAudioDevices: 5
+  A2dpOffloadEnabled: false
+  Discovering: false
+  DiscoveryEndMs: 1795452891438
+  Bonded devices:
+    08:EB:ED:58:7E:FE [BR/EDR] Redmi TV Soundbar
+    18:24:39:31:A6:CE [  LE  ] Everycom remote
+
+mSnoopLogSettingAtEnable = empty
+mDefaultSnoopLogSettingAtEnable = null
+
+Enabled Profile Services:
+  A2dpService
+  A2dpSinkService
+  AvrcpTargetService
+  AvrcpControllerService
+  HeadsetService
+  HeadsetClientService
+  HidDeviceService
+  HidHostService
+  GattService
+
+AdapterState:
+ total records=4
+ rec[0]: time=11-23 19:49:38.210 processed=OffState org=OffState dest=TurningBleOnState what=3(0x3) BLE_TURN_ON
+ rec[1]: time=11-23 19:49:41.314 processed=TurningBleOnState org=TurningBleOnState dest=BleOnState what=7(0x7) BLE_STARTED
+ rec[2]: time=11-23 19:49:41.568 processed=BleOnState org=BleOnState dest=TurningOnState what=1(0x1) USER_TURN_ON
+ rec[3]: time=11-23 19:49:42.457 processed=TurningOnState org=TurningOnState dest=OnState what=5(0x5) BREDR_STARTED
+curState=OnState
+
+SilenceDeviceManager:
+  Address            | Is silenced?
+
+BluetoothDatabase:
+  Metadata Changes:
+    11-23 19:49:42.985 (uid/pid=1000/0) 08:EB:ED:58:7E:FE A2DP connection policy changed: : 0 -> 100
+    11-23 19:50:33.902 (uid/pid=1000/0) 08:EB:ED:58:7E:FE A2DP connection policy changed: : 100 -> 0
+    11-23 19:52:47.537 (uid/pid=1000/0) 08:EB:ED:58:7E:FE A2DP connection policy changed: : 0 -> 100
+    11-23 19:54:39.647 (uid/pid=1000/0) 08:EB:ED:58:7E:FE A2DP connection policy changed: : 100 -> 0
+
+Metadata:
+    18:24:39:31:A6:CE {profile connection policy(A2DP=-1|A2DP_SINK=-1|CSIP_SET_COORDINATOR=-1|HEADSET=-1|HEADSET_CLIENT=-1|HID_HOST=100|PAN=-1|PBAP=-1|PBAP_CLIENT=-1|MAP=-1|MAP_CLIENT=-1|SAP=-1|HAP=-1|HEARING_AID=-1|LE_AUDIO=-1|VOLUME_CONTROL=-1|LE_CALL_CONTROL=-1|LE_BROADCAST_ASSISTANT=-1|BATTERY=-1), optional codec(support=-1|enabled=-1), custom metadata(manufacturer_name=null|model_name=null|software_version=null|hardware_version=null|companion_app=null|main_icon=null|is_untethered_headset=null|untethered_left_icon=null|untethered_right_icon=null|untethered_case_icon=null|untethered_left_battery=null|untethered_right_battery=null|untethered_case_battery=null|untethered_left_charging=null|untethered_right_charging=null|untethered_case_charging=null|enhanced_settings_ui_uri=null|device_type=null|main_battery=null|main_charging=null|main_low_battery_threshold=null|untethered_left_low_battery_threshold=null|untethered_right_low_battery_threshold=null|untethered_case_low_battery_threshold=null|spatial_audio=null|fastpair_customized=null)}
+    08:EB:ED:58:7E:FE {profile connection policy(A2DP=0|A2DP_SINK=-1|CSIP_SET_COORDINATOR=-1|HEADSET=-1|HEADSET_CLIENT=-1|HID_HOST=-1|PAN=-1|PBAP=-1|PBAP_CLIENT=-1|MAP=-1|MAP_CLIENT=-1|SAP=-1|HAP=-1|HEARING_AID=-1|LE_AUDIO=-1|VOLUME_CONTROL=-1|LE_CALL_CONTROL=-1|LE_BROADCAST_ASSISTANT=-1|BATTERY=-1), optional codec(support=0|enabled=-1), custom metadata(manufacturer_name=null|model_name=null|software_version=null|hardware_version=null|companion_app=null|main_icon=null|is_untethered_headset=null|untethered_left_icon=null|untethered_right_icon=null|untethered_case_icon=null|untethered_left_battery=null|untethered_right_battery=null|untethered_case_battery=null|untethered_left_charging=null|untethered_right_charging=null|untethered_case_charging=null|enhanced_settings_ui_uri=null|device_type=null|main_battery=null|main_charging=null|main_low_battery_threshold=null|untethered_left_low_battery_threshold=null|untethered_right_low_battery_threshold=null|untethered_case_low_battery_threshold=null|spatial_audio=null|fastpair_customized=null)}
+
+Profile: GattService
+  mAdvertisingServiceUuids:
+  mMaxScanFilters: 0
+
+Registered App
+  Scanner:
+      app_if: 5, appName: android.uid.system:1000
+  Client:
+  Server:
+
+
+GATT Scanner Map
+  Entries: 1
+
+  android.uid.system:1000 (Registered)
+  LE scans (started/stopped)                                  : 5 / 4
+  Scan time in ms (active/suspend/total)                      : 1609010 / 0 / 1609010
+  Scan time with mode in ms (Opp/LowPower/Balanced/LowLatency/AmbientDiscovery):0 / 0 / 1609010 / 0 / 0
+  Scan mode counter (Opp/LowPower/Balanced/LowLatency/AmbientDiscovery):0 / 0 / 5 / 0 / 0
+  Score                                                       : 402252
+  Total number of results                                     : 0
+  Last 4 scans                                                :
+    11-23 19:49:42 - 49207ms Filter 0 results (5) CB Regular Scan
+      └ Scan Config: [ ScanMode=BALANCED, callbackType=ALL_MATCHES ]
+      └ BluetoothLeScanFilter [ DeviceName=MTK BLE Remote ]
+      └ BluetoothLeScanFilter [ DeviceName=MTK BLE Remote V2 ]
+    11-23 19:50:46 - 57300ms Filter 0 results (5) CB Regular Scan
+      └ Scan Config: [ ScanMode=BALANCED, callbackType=ALL_MATCHES ]
+      └ BluetoothLeScanFilter [ DeviceName=MTK BLE Remote ]
+      └ BluetoothLeScanFilter [ DeviceName=MTK BLE Remote V2 ]
+    11-23 19:51:54 - 50941ms Filter 0 results (5) CB Regular Scan
+      └ Scan Config: [ ScanMode=BALANCED, callbackType=ALL_MATCHES ]
+      └ BluetoothLeScanFilter [ DeviceName=MTK BLE Remote ]
+      └ BluetoothLeScanFilter [ DeviceName=MTK BLE Remote V2 ]
+    11-23 19:52:54 - 104013ms Filter 0 results (5) CB Regular Scan
+      └ Scan Config: [ ScanMode=BALANCED, callbackType=ALL_MATCHES ]
+      └ BluetoothLeScanFilter [ DeviceName=MTK BLE Remote ]
+      └ BluetoothLeScanFilter [ DeviceName=MTK BLE Remote V2 ]
+  Ongoing scans                                               :
+    11-23 19:54:52 - 1347549ms Filter 0 results (5) CB Regular Scan
+      └ Scan Config: [ ScanMode=BALANCED, callbackType=ALL_MATCHES ]
+      └ BluetoothLeScanFilter [ DeviceName=MTK BLE Remote ]
+      └ BluetoothLeScanFilter [ DeviceName=MTK BLE Remote V2 ]
+  Application ID                     : 5
+  UUID                               : 125667a7-57d9-4f2b-a954-257e700d051a
+  Connections: 0
+
+GATT Client Map
+  Entries: 0
+
+GATT Server Map
+  Entries: 0
+
+GATT Handle Map
+  Entries: 0
+  Requests: 0
+
+Profile: A2dpService
+  mActiveDevice: null
+  mMaxConnectedAudioDevices: 5
+  codecConfigPriorities:
+    SBC: 1001
+    AAC: 2001
+    aptX: -1
+    aptX HD: -1
+    LDAC: 3001
+    LC3: 6001
+  mA2dpOffloadEnabled: false
+  === A2dpStateMachine for 08:EB:ED:58:7E:FE ===
+    getConnectionPolicy: 0
+    mConnectionState: DISCONNECTED, mLastConnectionState: DISCONNECTING
+    mIsPlaying: false
+    getSupportsOptionalCodecs: 0, getOptionalCodecsEnabled: -1
+    mCodecConfig: {codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+    mCodecsSelectableCapabilities:
+      {codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+    StateMachine: name=A2dpStateMachine state=Disconnected
+    StateMachineLog:
+      A2dpStateMachine:
+       total records=24
+       rec[0]: time=11-23 19:49:44.062 processed=Connecting org=Connecting dest=Connected what=101(0x65) STACK_EVENT: arg1=0, arg2=0, obj=A2dpStackEvent {type:EVENT_TYPE_CONNECTION_STATE_CHANGED, device:08:EB:ED:58:7E:FE, value1:CONNECTED}
+       rec[1]: time=11-23 19:49:44.272 processed=Connected org=Connected dest=<null> what=101(0x65) STACK_EVENT: arg1=0, arg2=0, obj=A2dpStackEvent {type:EVENT_TYPE_CODEC_CONFIG_CHANGED, device:08:EB:ED:58:7E:FE, value1:0, codecStatus:{mCodecConfig:{codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0},mCodecsLocalCapabilities:[{codecName:LDAC,mCodecType:4,mCodecPriority:3001,mSampleRate:0xf(44100|48000|88200|96000),mBitsPerSample:0x7(16|24|32),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}, {codecName:AAC,mCodecType:1,mCodecPriority:2001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}, {codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}],mCodecsSelectableCapabilities:[{codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}]}}
+       rec[2]: time=11-23 19:50:17.581 processed=Connected org=Connected dest=<null> what=101(0x65) STACK_EVENT: arg1=0, arg2=0, obj=A2dpStackEvent {type:EVENT_TYPE_AUDIO_STATE_CHANGED, device:08:EB:ED:58:7E:FE, value1:STARTED}
+       rec[3]: time=11-23 19:50:28.185 processed=Connected org=Connected dest=<null> what=101(0x65) STACK_EVENT: arg1=0, arg2=0, obj=A2dpStackEvent {type:EVENT_TYPE_AUDIO_STATE_CHANGED, device:08:EB:ED:58:7E:FE, value1:STOPPED}
+       rec[4]: time=11-23 19:50:33.906 processed=Connected org=Connected dest=Disconnecting what=2(0x2) DISCONNECT: arg1=0, arg2=0, obj=null
+       rec[5]: time=11-23 19:50:33.923 processed=Disconnecting org=Disconnecting dest=<null> what=101(0x65) STACK_EVENT: arg1=0, arg2=0, obj=A2dpStackEvent {type:EVENT_TYPE_CONNECTION_STATE_CHANGED, device:08:EB:ED:58:7E:FE, value1:DISCONNECTING}
+       rec[6]: time=11-23 19:50:33.923 processed=Disconnecting org=Disconnecting dest=<null> what=2(0x2) DISCONNECT: arg1=0, arg2=0, obj=null
+       rec[7]: time=11-23 19:50:34.034 processed=Disconnecting org=Disconnecting dest=Disconnected what=101(0x65) STACK_EVENT: arg1=0, arg2=0, obj=A2dpStackEvent {type:EVENT_TYPE_CONNECTION_STATE_CHANGED, device:08:EB:ED:58:7E:FE, value1:DISCONNECTED}
+       rec[8]: time=11-23 19:52:47.541 processed=Disconnected org=Disconnected dest=Connecting what=1(0x1) CONNECT: arg1=0, arg2=0, obj=null
+       rec[9]: time=11-23 19:52:47.545 processed=Connecting org=Connecting dest=<null> what=101(0x65) STACK_EVENT: arg1=0, arg2=0, obj=A2dpStackEvent {type:EVENT_TYPE_CONNECTION_STATE_CHANGED, device:08:EB:ED:58:7E:FE, value1:CONNECTING}
+       rec[10]: time=11-23 19:52:47.546 processed=Connecting org=Connecting dest=<null> what=1(0x1) CONNECT: arg1=0, arg2=0, obj=null
+       rec[11]: time=11-23 19:52:47.548 processed=Connecting org=Connecting dest=<null> what=1(0x1) CONNECT: arg1=0, arg2=0, obj=null
+       rec[12]: time=11-23 19:52:48.769 processed=Connecting org=Connecting dest=<null> what=101(0x65) STACK_EVENT: arg1=0, arg2=0, obj=A2dpStackEvent {type:EVENT_TYPE_CODEC_CONFIG_CHANGED, device:08:EB:ED:58:7E:FE, value1:0, codecStatus:{mCodecConfig:{codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0},mCodecsLocalCapabilities:[{codecName:LDAC,mCodecType:4,mCodecPriority:3001,mSampleRate:0xf(44100|48000|88200|96000),mBitsPerSample:0x7(16|24|32),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}, {codecName:AAC,mCodecType:1,mCodecPriority:2001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}, {codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}],mCodecsSelectableCapabilities:[{codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}]}}
+       rec[13]: time=11-23 19:52:48.774 processed=Connecting org=Connecting dest=<null> what=101(0x65) STACK_EVENT: arg1=0, arg2=0, obj=A2dpStackEvent {type:EVENT_TYPE_CODEC_CONFIG_CHANGED, device:08:EB:ED:58:7E:FE, value1:0, codecStatus:{mCodecConfig:{codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0},mCodecsLocalCapabilities:[{codecName:LDAC,mCodecType:4,mCodecPriority:3001,mSampleRate:0xf(44100|48000|88200|96000),mBitsPerSample:0x7(16|24|32),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}, {codecName:AAC,mCodecType:1,mCodecPriority:2001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}, {codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}],mCodecsSelectableCapabilities:[{codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}]}}
+       rec[14]: time=11-23 19:52:48.984 processed=Connecting org=Connecting dest=Connected what=101(0x65) STACK_EVENT: arg1=0, arg2=0, obj=A2dpStackEvent {type:EVENT_TYPE_CONNECTION_STATE_CHANGED, device:08:EB:ED:58:7E:FE, value1:CONNECTED}
+       rec[15]: time=11-23 19:52:49.059 processed=Connected org=Connected dest=<null> what=101(0x65) STACK_EVENT: arg1=0, arg2=0, obj=A2dpStackEvent {type:EVENT_TYPE_CODEC_CONFIG_CHANGED, device:08:EB:ED:58:7E:FE, value1:0, codecStatus:{mCodecConfig:{codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0},mCodecsLocalCapabilities:[{codecName:LDAC,mCodecType:4,mCodecPriority:3001,mSampleRate:0xf(44100|48000|88200|96000),mBitsPerSample:0x7(16|24|32),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}, {codecName:AAC,mCodecType:1,mCodecPriority:2001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}, {codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}],mCodecsSelectableCapabilities:[{codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x2(48000),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}]}}
+       rec[16]: time=11-23 19:54:39.650 processed=Connected org=Connected dest=Disconnecting what=2(0x2) DISCONNECT: arg1=0, arg2=0, obj=null
+       rec[17]: time=11-23 19:54:39.656 processed=Disconnecting org=Disconnecting dest=<null> what=101(0x65) STACK_EVENT: arg1=0, arg2=0, obj=A2dpStackEvent {type:EVENT_TYPE_CONNECTION_STATE_CHANGED, device:08:EB:ED:58:7E:FE, value1:DISCONNECTING}
+       rec[18]: time=11-23 19:54:39.656 processed=Disconnecting org=Disconnecting dest=<null> what=2(0x2) DISCONNECT: arg1=0, arg2=0, obj=null
+       rec[19]: time=11-23 19:54:39.758 processed=Disconnecting org=Disconnecting dest=Disconnected what=101(0x65) STACK_EVENT: arg1=0, arg2=0, obj=A2dpStackEvent {type:EVENT_TYPE_CONNECTION_STATE_CHANGED, device:08:EB:ED:58:7E:FE, value1:DISCONNECTED}
+      curState=Disconnected
+
+Profile: A2dpSinkService
+  Active Device = null
+  Max Connected Devices = 5
+  Devices Tracked = 0
+
+Profile: AvrcpTargetService:
+  AVRCP version: Invalid
+  List of MediaControllers: size=0
+  List of Browsers: size=0
+  BTAudio Active Player Events:
+    11-23 19:49:52.112 setActivePlayer(): setting player to com.amazon.avod.thirdpartyclient
+  
+  BTAudio Audio Playback State Events:
+  
+  BTAudio Media Key Events:
+  
+  AvrcpVolumeManager:
+    mCurrentDevice: null
+    Current System Volume: 33
+    Device Volume Memory Map:
+      Device Address    : Device Name    : Vol : AbsVol
+      08:EB:ED:58:7E:FE : Redmi TV So... :  17 : NotConnected
+    BTAudio Volume Events:
+      11-23 19:49:45.012 switchVolumeDevice: Updating device volume: avrcpVolume=17
+      11-23 19:49:45.026 setVolume: device=08:EB:ED:58:7E:FE avrcpVolume=16 deviceVolume=13 sDeviceMaxVolume=100
+      11-23 19:49:45.586 switchVolumeDevice: Updating device volume: avrcpVolume=17
+      11-23 19:49:45.616 switchVolumeDevice: Updating device volume: avrcpVolume=17
+      11-23 19:49:47.422 storeVolume: Storing stream volume level for device 08:EB:ED:58:7E:FE : 13
+      11-23 19:50:18.699 setVolume: device=08:EB:ED:58:7E:FE avrcpVolume=16 deviceVolume=13 sDeviceMaxVolume=100
+      11-23 19:50:18.842 storeVolume: Storing stream volume level for device 08:EB:ED:58:7E:FE : 13
+      11-23 19:52:49.326 switchVolumeDevice: Updating device volume: avrcpVolume=17
+      11-23 19:52:49.345 switchVolumeDevice: Updating device volume: avrcpVolume=17
+      11-23 19:52:49.650 setVolume: device=08:EB:ED:58:7E:FE avrcpVolume=16 deviceVolume=13 sDeviceMaxVolume=100
+      11-23 19:52:50.273 storeVolume: Storing stream volume level for device 08:EB:ED:58:7E:FE : 13
+      11-23 19:54:30.915 sendVolumeChanged: device=08:EB:ED:58:7E:FE avrcpVolume=18 deviceVolume=14 sDeviceMaxVolume=100
+      11-23 19:54:30.935 storeVolume: Storing stream volume level for device 08:EB:ED:58:7E:FE : 14
+      11-23 19:54:31.516 sendVolumeChanged: device=08:EB:ED:58:7E:FE avrcpVolume=19 deviceVolume=15 sDeviceMaxVolume=100
+      11-23 19:54:31.536 storeVolume: Storing stream volume level for device 08:EB:ED:58:7E:FE : 15
+      11-23 19:54:31.773 sendVolumeChanged: device=08:EB:ED:58:7E:FE avrcpVolume=20 deviceVolume=16 sDeviceMaxVolume=100
+      11-23 19:54:31.793 storeVolume: Storing stream volume level for device 08:EB:ED:58:7E:FE : 16
+      11-23 19:54:32.021 sendVolumeChanged: device=08:EB:ED:58:7E:FE avrcpVolume=22 deviceVolume=17 sDeviceMaxVolume=100
+      11-23 19:54:32.041 storeVolume: Storing stream volume level for device 08:EB:ED:58:7E:FE : 17
+
+Profile: AvrcpControllerService
+  Devices Tracked = 0
+  Active Device = null
+
+  sBrowseTree: Size: 2
+  Cover Artwork Enabled: True
+  CoverArtManager:
+    Download Scheme: thumbnail
+  CoverArtStorage:
+
+  BluetoothMediaBrowserService:
+    track=null
+    playbackState=PlaybackState {state=7, position=0, buffered position=0, speed=0.0, updated=31657, actions=0, error code=0, error message=Звук через Bluetooth отключен, custom actions=[], active item id=-1}
+    queue=[]
+    internal_queue=[]
+
+Profile: HeadsetService
+  mMaxHeadsetConnections: 5
+  DefaultMaxHeadsetConnections: 5
+  mActiveDevice: null
+  isInbandRingingEnabled: true
+  isInbandRingingSupported: true
+  mInbandRingingRuntimeDisable: false
+  mAudioRouteAllowed: true
+  mVoiceRecognitionStarted: false
+  mVoiceRecognitionTimeoutEvent: null
+  mVirtualCallStarted: false
+  mDialingOutTimeoutEvent: null
+  mForceScoAudio: false
+  mCreated: true
+  mStarted: true
+  AudioManager.isBluetoothScoOn(): false
+  Telecom.isInCall(): false
+  Telecom.isRinging(): false
+
+Profile: HeadsetClientService
+
+  HfpClientConnectionService:
+    Devices:
+
+Profile: HidDeviceService
+
+Profile: HidHostService
+  mTargetDevice: null
+  mInputDevices:
+    18:24:39:31:A6:CE : 2
+
+Connection Events:
+  11-23 19:54:52.484 CONNECTED    18:24:39:31:a6:ce
+  11-23 19:52:54.595 CONNECTED    18:24:39:31:a6:ce
+  11-23 19:51:54.385 CONNECTED    18:24:39:31:a6:ce
+  11-23 19:50:46.602 CONNECTED    18:24:39:31:a6:ce
+  11-23 19:49:42.878 CONNECTED    18:24:39:31:a6:ce
+  11-23 19:49:42.560 CONNECTED    18:24:39:31:a6:ce
+  11-23 19:49:42.560 CONNECTED    18:24:39:31:a6:ce
+
+Bond Events: 
+  Total Number of events: 0
+
+Link Key Types:
+  08:eb:ed:58:7e:fe
+    BR: UNAUTH_COMB
+    LE:
+  18:24:39:31:a6:ce
+    BR: 
+    LE: PENC PID PCSRK LENC LCSRK LID
+
+A2DP State:
+  TxQueue:
+  DualModeType                                            : 0
+  Counts (enqueue/dequeue/readbuf)                        : 0 / 0 / 0
+  Last update time ago in ms (enqueue/dequeue/readbuf)    : 0 / 0 / 0
+  Frames per packet (total/max/ave)                       : 0 / 0 / 0
+  Counts (flushed/dropped/dropouts)                       : 0 / 0 / 0
+  Counts (max dropped)                                    : 0
+  Last update time ago in ms (flushed/dropped)            : 1471061 / 0
+  Counts (underflow)                                      : 0
+  Bytes (underflow)                                       : 0
+  Last update time ago in ms (underflow)                  : 0
+  Enqueue deviation counts (overdue/premature)            : 0 / 0
+  Enqueue overdue scheduling time in ms (total/max/ave)   : 0 / 0 / 0
+  Enqueue premature scheduling time in ms (total/max/ave) : 0 / 0 / 0
+  Dequeue deviation counts (overdue/premature)            : 0 / 0
+  Dequeue overdue scheduling time in ms (total/max/ave)   : 0 / 0 / 0
+  Dequeue premature scheduling time in ms (total/max/ave) : 0 / 0 / 0
+
+A2DP Source State: Enabled
+  Active peer: 00:00:00:00:00:00
+
+A2DP Sink State: Enabled
+  Active peer: 00:00:00:00:00:00
+  Peers:
+
+AVRCP Target Native Service: 0 devices
+
+Bluetooth Config:
+  Config Source: Original file
+  Devices loaded: 5
+  File created/tagged: 2026-11-21 13:16:31
+  File source: Empty
+
+Bluetooth HF Client BTA Statistics
+
+Bluetooth Wakelock Statistics:
+  Is acquired                    : false
+  Acquired/released count        : 325 / 325
+  Acquired/released error count  : 0 / 0
+  Last acquire/release error code: 0 / 0
+  Last acquired time (ms)        : 1
+  Acquired time min/max/avg (ms) : 1 / 2000 / 22
+  Total acquired time (ms)       : 7472
+  Total run time (ms)            : 1661773
+
+Bluetooth Memory Allocation Statistics:
+  Total allocated/free/used counts : 15965 / 15355 / 610
+  Total allocated/free/used octets : 7667832 / 7599841 / 67991
+
+Bluetooth Alarms Statistics:
+  Total Alarms: 1
+
+  Alarm : btm_ble_addr.refresh_raddr_timer (SINGLE)
+    Action counts (sched/resched/exec/cancel)      : 3 / 0 / 2 / 0
+    Deviation counts (overdue/premature)           : 0 / 0
+    Time in ms (since creation/interval/remaining) : 452749 / 678254 / 225505
+    Overdue scheduling time in ms (total/max/avg)  : 0 / 0 / 0
+    Premature scheduling time in ms (total/max/avg): 0 / 0 / 0
+
+
+connection_manager state:
+	devices attempting connection: 1
+	 * 18:24:39:31:a6:ce: 
+		apps doing background connect: 4, 
+
+BT Quality Report Events: 
+Event queue is empty.

@@ -1,0 +1,119 @@
+User Ids (Current user: 0):
+  0
+UserState (0):
+  inputMap: inputId -> TvInputState
+    com.mediatek.tvinput/.hdmi.HDMIInputService/HW8: info: TvInputInfo{id=com.mediatek.tvinput/.hdmi.HDMIInputService/HW8, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.hdmi.HDMIInputService}; state: 1
+    com.mediatek.tvinput/.hdmi.HDMIInputService/HW7: info: TvInputInfo{id=com.mediatek.tvinput/.hdmi.HDMIInputService/HW7, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.hdmi.HDMIInputService}; state: 1
+    com.mediatek.tvinput/.tuner.TunerInputService/HW1: info: TvInputInfo{id=com.mediatek.tvinput/.tuner.TunerInputService/HW1, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.tuner.TunerInputService}; state: 0
+    com.mediatek.tvinput/.hdmi.HDMIInputService/HW6: info: TvInputInfo{id=com.mediatek.tvinput/.hdmi.HDMIInputService/HW6, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.hdmi.HDMIInputService}; state: 1
+    com.mediatek.tvinput/.hdmi.HDMIInputService/HW5: info: TvInputInfo{id=com.mediatek.tvinput/.hdmi.HDMIInputService/HW5, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.hdmi.HDMIInputService}; state: 1
+    com.mediatek.tvinput/.composite.CompositeInputService/HW2: info: TvInputInfo{id=com.mediatek.tvinput/.composite.CompositeInputService/HW2, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.composite.CompositeInputService}; state: 2
+    com.mediatek.tvinput/.tuner.TunerInputService/HW0: info: TvInputInfo{id=com.mediatek.tvinput/.tuner.TunerInputService/HW0, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.tuner.TunerInputService}; state: 0
+  packageSet:
+    com.mediatek.tv.service
+    com.mediatek.tvinput
+  clientStateMap: ITvInputClient -> ClientState
+  serviceStateMap: ComponentName -> ServiceState
+    ComponentInfo{com.mediatek.tv.service/com.mediatek.tv.agent.TVRemoteServiceAgent}: com.android.server.tv.TvInputManagerService$ServiceState@bae561a
+      sessionTokens:
+      service: android.media.tv.ITvInputService$Stub$Proxy@992c54b
+      callback: com.android.server.tv.TvInputManagerService$ServiceCallback@e9d0b28
+      bound: true
+      reconnecting: false
+    ComponentInfo{com.mediatek.tvinput/com.mediatek.tvinput.tuner.TunerInputService}: com.android.server.tv.TvInputManagerService$ServiceState@b342041
+      sessionTokens:
+      service: android.media.tv.ITvInputService$Stub$Proxy@a4bb9e6
+      callback: com.android.server.tv.TvInputManagerService$ServiceCallback@2c66b27
+      bound: true
+      reconnecting: false
+    ComponentInfo{com.mediatek.tvinput/com.mediatek.tvinput.hdmi.HDMIInputService}: com.android.server.tv.TvInputManagerService$ServiceState@a4bb1d4
+      sessionTokens:
+      service: android.media.tv.ITvInputService$Stub$Proxy@617f7d
+      callback: com.android.server.tv.TvInputManagerService$ServiceCallback@6098e72
+      bound: true
+      reconnecting: false
+    ComponentInfo{com.mediatek.tvinput/com.mediatek.tvinput.component.ComponentInputService}: com.android.server.tv.TvInputManagerService$ServiceState@9a492c3
+      sessionTokens:
+      service: android.media.tv.ITvInputService$Stub$Proxy@59c1740
+      callback: com.android.server.tv.TvInputManagerService$ServiceCallback@e0b9679
+      bound: true
+      reconnecting: false
+    ComponentInfo{com.mediatek.tvinput/com.mediatek.tvinput.composite.CompositeInputService}: com.android.server.tv.TvInputManagerService$ServiceState@d5e1fbe
+      sessionTokens:
+      service: android.media.tv.ITvInputService$Stub$Proxy@9b3981f
+      callback: com.android.server.tv.TvInputManagerService$ServiceCallback@cb676c
+      bound: true
+      reconnecting: false
+    ComponentInfo{com.mediatek.tvinput/com.mediatek.tvinput.scart.SCARTInputService}: com.android.server.tv.TvInputManagerService$ServiceState@9a62135
+      sessionTokens:
+      service: android.media.tv.ITvInputService$Stub$Proxy@dd879ca
+      callback: com.android.server.tv.TvInputManagerService$ServiceCallback@683973b
+      bound: true
+      reconnecting: false
+    ComponentInfo{com.mediatek.tvinput/com.mediatek.tvinput.vga.VGAInputService}: com.android.server.tv.TvInputManagerService$ServiceState@bd8e58
+      sessionTokens:
+      service: android.media.tv.ITvInputService$Stub$Proxy@2249bb1
+      callback: com.android.server.tv.TvInputManagerService$ServiceCallback@cec6896
+      bound: true
+      reconnecting: false
+  sessionStateMap: ITvInputSession -> SessionState
+  mCallbacks:
+    android.media.tv.ITvInputManagerCallback$Stub$Proxy@dbe0364
+    android.media.tv.ITvInputManagerCallback$Stub$Proxy@f7a8ec9
+    android.media.tv.ITvInputManagerCallback$Stub$Proxy@f6d74dd
+    android.media.tv.TvInputManager$2@7ed3913
+    android.media.tv.ITvInputManagerCallback$Stub$Proxy@6244b4f
+    android.media.tv.ITvInputManagerCallback$Stub$Proxy@a4b27a3
+    android.media.tv.ITvInputManagerCallback$Stub$Proxy@443af3b
+    android.media.tv.ITvInputManagerCallback$Stub$Proxy@c2ec822
+    android.media.tv.ITvInputManagerCallback$Stub$Proxy@29966d3
+  mainSessionToken: null
+TvInputHardwareManager Info:
+  mConnections: deviceId -> Connection
+    0: Connection{ mHardwareInfo: TvInputHardwareInfo {id=0, type=2, audio_type=-2147467264, audio_addr=, cable_connection_status=1}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+    1: Connection{ mHardwareInfo: TvInputHardwareInfo {id=1, type=2, audio_type=-2147467264, audio_addr=, cable_connection_status=1}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+    2: Connection{ mHardwareInfo: TvInputHardwareInfo {id=2, type=3, audio_type=-2147450880, audio_addr=, cable_connection_status=2}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+    5: Connection{ mHardwareInfo: TvInputHardwareInfo {id=5, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=1, cable_connection_status=1}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+    6: Connection{ mHardwareInfo: TvInputHardwareInfo {id=6, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=2, cable_connection_status=1}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+    7: Connection{ mHardwareInfo: TvInputHardwareInfo {id=7, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=3, cable_connection_status=1}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+    8: Connection{ mHardwareInfo: TvInputHardwareInfo {id=8, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=4, cable_connection_status=1}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+    9: Connection{ mHardwareInfo: TvInputHardwareInfo {id=9, type=2, audio_type=-2147467264, audio_addr=, cable_connection_status=1}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+    10: Connection{ mHardwareInfo: TvInputHardwareInfo {id=10, type=2, audio_type=-2147467264, audio_addr=, cable_connection_status=1}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+    11: Connection{ mHardwareInfo: TvInputHardwareInfo {id=11, type=3, audio_type=-2147450880, audio_addr=, cable_connection_status=2}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+    14: Connection{ mHardwareInfo: TvInputHardwareInfo {id=14, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=1, cable_connection_status=1}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+    15: Connection{ mHardwareInfo: TvInputHardwareInfo {id=15, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=2, cable_connection_status=1}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+    16: Connection{ mHardwareInfo: TvInputHardwareInfo {id=16, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=3, cable_connection_status=1}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+    17: Connection{ mHardwareInfo: TvInputHardwareInfo {id=17, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=4, cable_connection_status=1}, mInfo: null, mCallback: null, mConfigs: [TvStreamConfig {mStreamId=0;mType=1;mGeneration=0}, TvStreamConfig {mStreamId=1;mType=1;mGeneration=0}], mCallingUid: null, mResolvedUserId: null, mResourceClientProfile: null }
+  mHardwareList:
+    TvInputHardwareInfo {id=0, type=2, audio_type=-2147467264, audio_addr=, cable_connection_status=1}
+    TvInputHardwareInfo {id=1, type=2, audio_type=-2147467264, audio_addr=, cable_connection_status=1}
+    TvInputHardwareInfo {id=2, type=3, audio_type=-2147450880, audio_addr=, cable_connection_status=2}
+    TvInputHardwareInfo {id=5, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=1, cable_connection_status=1}
+    TvInputHardwareInfo {id=6, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=2, cable_connection_status=1}
+    TvInputHardwareInfo {id=7, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=3, cable_connection_status=1}
+    TvInputHardwareInfo {id=8, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=4, cable_connection_status=1}
+    TvInputHardwareInfo {id=9, type=2, audio_type=-2147467264, audio_addr=, cable_connection_status=1}
+    TvInputHardwareInfo {id=10, type=2, audio_type=-2147467264, audio_addr=, cable_connection_status=1}
+    TvInputHardwareInfo {id=11, type=3, audio_type=-2147450880, audio_addr=, cable_connection_status=2}
+    TvInputHardwareInfo {id=14, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=1, cable_connection_status=1}
+    TvInputHardwareInfo {id=15, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=2, cable_connection_status=1}
+    TvInputHardwareInfo {id=16, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=3, cable_connection_status=1}
+    TvInputHardwareInfo {id=17, type=9, audio_type=-2147483616, audio_addr=, hdmi_port=4, cable_connection_status=1}
+  mHdmiDeviceList:
+  mHardwareInputIdMap: deviceId -> inputId
+    0: com.mediatek.tvinput/.tuner.TunerInputService/HW0
+    1: com.mediatek.tvinput/.tuner.TunerInputService/HW1
+    2: com.mediatek.tvinput/.composite.CompositeInputService/HW2
+    5: com.mediatek.tvinput/.hdmi.HDMIInputService/HW5
+    6: com.mediatek.tvinput/.hdmi.HDMIInputService/HW6
+    7: com.mediatek.tvinput/.hdmi.HDMIInputService/HW7
+    8: com.mediatek.tvinput/.hdmi.HDMIInputService/HW8
+  mHdmiInputIdMap: id -> inputId
+  mInputMap: inputId -> inputInfo
+    com.mediatek.tvinput/.tuner.TunerInputService/HW0: TvInputInfo{id=com.mediatek.tvinput/.tuner.TunerInputService/HW0, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.tuner.TunerInputService}
+    com.mediatek.tvinput/.tuner.TunerInputService/HW1: TvInputInfo{id=com.mediatek.tvinput/.tuner.TunerInputService/HW1, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.tuner.TunerInputService}
+    com.mediatek.tvinput/.composite.CompositeInputService/HW2: TvInputInfo{id=com.mediatek.tvinput/.composite.CompositeInputService/HW2, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.composite.CompositeInputService}
+    com.mediatek.tvinput/.hdmi.HDMIInputService/HW5: TvInputInfo{id=com.mediatek.tvinput/.hdmi.HDMIInputService/HW5, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.hdmi.HDMIInputService}
+    com.mediatek.tvinput/.hdmi.HDMIInputService/HW6: TvInputInfo{id=com.mediatek.tvinput/.hdmi.HDMIInputService/HW6, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.hdmi.HDMIInputService}
+    com.mediatek.tvinput/.hdmi.HDMIInputService/HW7: TvInputInfo{id=com.mediatek.tvinput/.hdmi.HDMIInputService/HW7, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.hdmi.HDMIInputService}
+    com.mediatek.tvinput/.hdmi.HDMIInputService/HW8: TvInputInfo{id=com.mediatek.tvinput/.hdmi.HDMIInputService/HW8, pkg=com.mediatek.tvinput, service=com.mediatek.tvinput.hdmi.HDMIInputService}

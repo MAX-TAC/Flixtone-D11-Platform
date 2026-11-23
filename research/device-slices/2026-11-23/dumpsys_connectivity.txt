@@ -1,0 +1,152 @@
+NetworkProviders for:
+  4: WifiNetworkFactory
+  6: RestrictedWifiNetworkFactory
+  8: MultiInternetWifiNetworkFactory
+  2: VcnNetworkProvider
+  3: VpnNetworkProvider:0
+  1: EthernetNetworkFactory
+  5: UntrustedWifiNetworkFactory
+  7: OemPaidWifiNetworkFactory
+
+Active default network: 100
+
+Current network preferences: 
+  Default requests:
+
+Current Networks:
+  NetworkAgentInfo{network{100}  handle{432902426637}  ni{WIFI CONNECTED extra: } Score(60 ; KeepConnected : 0 ; Policies : TRANSPORT_PRIMARY&EVER_VALIDATED_NOT_AVOIDED_WHEN_BAD&IS_UNMETERED&IS_VALIDATED)  created everValidated lastValidated  lp{{InterfaceName: wlan0 LinkAddresses: [ fe80::d298:df1b:c8f0:7e1f/64,192.168.31.99/24 ] DnsAddresses: [ /192.168.31.1 ] Domains: null MTU: 0 ServerAddress: /192.168.31.1 TcpBufferSizes: 524288,1048576,2097152,262144,524288,1048576 Routes: [ fe80::/64 -> :: wlan0 mtu 0,192.168.31.0/24 -> 0.0.0.0 wlan0 mtu 0,0.0.0.0/0 -> 192.168.31.1 wlan0 mtu 0 ]}}  nc{[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=60000Kbps Specifier: <WifiNetworkAgentSpecifier [WifiConfiguration=, SSID="Mega Redmi 5G", BSSID=a4:a9:30:de:22:c2, band=2, mMatchLocalOnlySpecifiers=false]> TransportInfo: <SSID: "Mega Redmi 5G", BSSID: a4:a9:30:de:22:c2, MAC: b4:65:dc:3f:3d:38, IP: /192.168.31.99, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 6, RSSI: -45, Link speed: 286Mbps, Tx Link speed: 286Mbps, Max Supported Tx Link speed: 600Mbps, Rx Link speed: 286Mbps, Max Supported Rx Link speed: 600Mbps, Frequency: 5765MHz, Net ID: 0, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"Mega Redmi 5G"wpa2-pskMLO Information: , AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>> SignalStrength: -45 OwnerUid: 1000 AdminUids: [1000] SSID: "Mega Redmi 5G" UnderlyingNetworks: Null]}  factorySerialNumber=4}
+    Requests: REQUEST:15 LISTEN:12 BACKGROUND_REQUEST:0 total:27
+      NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+      NetworkRequest [ LISTEN id=5, [ Capabilities: FOREGROUND RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=7, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+      NetworkRequest [ LISTEN id=8, [ Capabilities: FOREGROUND RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+      NetworkRequest [ LISTEN id=9, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+      NetworkRequest [ LISTEN id=10, [ RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+      NetworkRequest [ LISTEN id=11, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=14, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.mediatek.tv.service UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=18, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.networkstack.inprocess UnderlyingNetworks: Null] ]
+      NetworkRequest [ LISTEN id=19, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.networkstack.inprocess UnderlyingNetworks: Null] ]
+      NetworkRequest [ TRACK_SYSTEM_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED RequestorUid: 1000 RequestorPkg: com.android.networkstack.tethering.inprocess UnderlyingNetworks: Null] ]
+      NetworkRequest [ LISTEN id=21, [ Transports: CELLULAR|WIFI Capabilities: NOT_VPN RequestorUid: 10033 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=23, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10033 RequestorUid: 10033 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=25, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10033 RequestorUid: 10033 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+      NetworkRequest [ LISTEN id=26, [ RequestorUid: 10033 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=28, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10030 RequestorUid: 10030 RequestorPkg: com.mediatek.network UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=34, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.mediatek.tv.service UnderlyingNetworks: Null] ]
+      NetworkRequest [ LISTEN id=35, [ Transports: CELLULAR|WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED Uid: 10050 RequestorUid: 10050 RequestorPkg: com.estrongs.android.pop UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=37, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10047 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+      NetworkRequest [ LISTEN id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND&NOT_VCN_MANAGED Uid: 10054 RequestorUid: 10054 RequestorPkg: ru.astroapps.hdrezka UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=42, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10032 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=46, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10012 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+      NetworkRequest [ LISTEN id=49, [ RequestorUid: 1000 RequestorPkg: com.android.networkstack.tethering.inprocess UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=51, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10047 RequestorUid: 10047 RequestorPkg: com.amazon.avod.thirdpartyclient UnderlyingNetworks: Null] ]
+      NetworkRequest [ REQUEST id=53, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10055 RequestorUid: 10055 RequestorPkg: ru.pro100tehnika.tvlauncher UnderlyingNetworks: Null] ]
+    Inactivity Timers:
+    Nat464Xlat:
+      <not start>
+
+Status for known UIDs:
+  
+Network Requests:
+  uid/pid:1000/895 activeRequest: 1 callbackRequest: 1 [NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 1 order: 2147483647
+  uid/pid:1000/895 activeRequest: null callbackRequest: 2 [NetworkRequest [ BACKGROUND_REQUEST id=2, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 1 order: 2147483647
+  uid/pid:1000/895 activeRequest: null callbackRequest: 5 [NetworkRequest [ LISTEN id=5, [ Capabilities: FOREGROUND RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 activeRequest: 7 callbackRequest: 6 [NetworkRequest [ REQUEST id=7, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 activeRequest: null callbackRequest: 8 [NetworkRequest [ LISTEN id=8, [ Capabilities: FOREGROUND RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 activeRequest: null callbackRequest: 9 [NetworkRequest [ LISTEN id=9, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 activeRequest: null callbackRequest: 10 [NetworkRequest [ LISTEN id=10, [ RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 activeRequest: null callbackRequest: 11 [NetworkRequest [ LISTEN id=11, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 activeRequest: null callbackRequest: 12 [NetworkRequest [ LISTEN id=12, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 activeRequest: 14 callbackRequest: 13 [NetworkRequest [ REQUEST id=14, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/1360 activeRequest: 16 callbackRequest: 15 [NetworkRequest [ REQUEST id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.mediatek.tv.service UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 activeRequest: 18 callbackRequest: 17 [NetworkRequest [ REQUEST id=18, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.networkstack.inprocess UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 activeRequest: null callbackRequest: 19 [NetworkRequest [ LISTEN id=19, [ Transports: WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.android.networkstack.inprocess UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 activeRequest: 20 callbackRequest: 20 [NetworkRequest [ TRACK_SYSTEM_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED RequestorUid: 1000 RequestorPkg: com.android.networkstack.tethering.inprocess UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:10033/1281 activeRequest: null callbackRequest: 21 [NetworkRequest [ LISTEN id=21, [ Transports: CELLULAR|WIFI Capabilities: NOT_VPN RequestorUid: 10033 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]] callback flags: 1 order: 2147483647
+  uid/pid:10033/1281 activeRequest: 23 callbackRequest: 22 [NetworkRequest [ REQUEST id=23, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10033 RequestorUid: 10033 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]] callback flags: 1 order: 2147483647
+  uid/pid:10033/1281 activeRequest: 25 callbackRequest: 24 [NetworkRequest [ REQUEST id=25, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10033 RequestorUid: 10033 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]] callback flags: 1 order: 2147483647
+  uid/pid:10033/1281 activeRequest: null callbackRequest: 26 [NetworkRequest [ LISTEN id=26, [ RequestorUid: 10033 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 activeRequest: 28 callbackRequest: 27 [NetworkRequest [ REQUEST id=28, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:10030/1254 activeRequest: 30 callbackRequest: 29 [NetworkRequest [ REQUEST id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10030 RequestorUid: 10030 RequestorPkg: com.mediatek.network UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/1360 activeRequest: 34 callbackRequest: 33 [NetworkRequest [ REQUEST id=34, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.mediatek.tv.service UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:10050/2343 activeRequest: null callbackRequest: 35 [NetworkRequest [ LISTEN id=35, [ Transports: CELLULAR|WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED Uid: 10050 RequestorUid: 10050 RequestorPkg: com.estrongs.android.pop UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 asUid: 10047 activeRequest: 37 callbackRequest: 36 [NetworkRequest [ REQUEST id=37, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10047 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:10054/1262 activeRequest: null callbackRequest: 40 [NetworkRequest [ LISTEN id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND&NOT_VCN_MANAGED Uid: 10054 RequestorUid: 10054 RequestorPkg: ru.astroapps.hdrezka UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 asUid: 10032 activeRequest: 42 callbackRequest: 41 [NetworkRequest [ REQUEST id=42, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10032 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 asUid: 10012 activeRequest: 46 callbackRequest: 45 [NetworkRequest [ REQUEST id=46, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10012 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:1000/895 activeRequest: null callbackRequest: 49 [NetworkRequest [ LISTEN id=49, [ RequestorUid: 1000 RequestorPkg: com.android.networkstack.tethering.inprocess UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:10047/2164 activeRequest: 51 callbackRequest: 50 [NetworkRequest [ REQUEST id=51, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10047 RequestorUid: 10047 RequestorPkg: com.amazon.avod.thirdpartyclient UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  uid/pid:10055/1255 activeRequest: 53 callbackRequest: 52 [NetworkRequest [ REQUEST id=53, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10055 RequestorUid: 10055 RequestorPkg: ru.pro100tehnika.tvlauncher UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+
+Network Offers:
+  NetworkOffer [ Provider Id (2) Score(52 ; KeepConnected : 0 ; Policies : TRANSPORT_PRIMARY&EVER_VALIDATED_NOT_AVOIDED_WHEN_BAD&IS_UNMETERED&IS_VALIDATED) Caps [ Transports: CELLULAR Capabilities: MMS&SUPL&DUN&FOTA&IMS&CBS&IA&RCS&XCAP&EIMS&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&MCX&NOT_VCN_MANAGED UnderlyingNetworks: Null] Needed by [2]]
+  NetworkOffer [ Provider Id (4) Score(60 ; KeepConnected : 0 ; Policies : EVER_VALIDATED_NOT_AVOIDED_WHEN_BAD&IS_UNMETERED&IS_VALIDATED) Caps [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps Specifier: <android.net.MatchAllNetworkSpecifier@0> UnderlyingNetworks: Null] Needed by [23, 37, 53, 28, 16, 51, 25, 42, 1, 18, 30, 46, 14, 7, 34]]
+  NetworkOffer [ Provider Id (5) Score(2147483647 ; KeepConnected : 0 ; Policies : EVER_VALIDATED_NOT_AVOIDED_WHEN_BAD&IS_INVINCIBLE&IS_UNMETERED&IS_VALIDATED) Caps [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps Specifier: <android.net.MatchAllNetworkSpecifier@0> UnderlyingNetworks: Null] Needed by [23, 37, 53, 28, 16, 51, 25, 42, 1, 18, 30, 46, 14, 7, 34]]
+  NetworkOffer [ Provider Id (6) Score(2147483647 ; KeepConnected : 0 ; Policies : EVER_VALIDATED_NOT_AVOIDED_WHEN_BAD&IS_INVINCIBLE&IS_UNMETERED&IS_VALIDATED) Caps [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&TRUSTED&NOT_VPN&NOT_ROAMING&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps Specifier: <android.net.MatchAllNetworkSpecifier@0> UnderlyingNetworks: Null] Needed by []]
+  NetworkOffer [ Provider Id (7) Score(2147483647 ; KeepConnected : 0 ; Policies : EVER_VALIDATED_NOT_AVOIDED_WHEN_BAD&IS_INVINCIBLE&IS_UNMETERED&IS_VALIDATED) Caps [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&NOT_CONGESTED&NOT_SUSPENDED&OEM_PAID&OEM_PRIVATE&NOT_VCN_MANAGED LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps Specifier: <android.net.MatchAllNetworkSpecifier@0> UnderlyingNetworks: Null] Needed by [23, 37, 53, 28, 16, 51, 25, 42, 1, 18, 30, 46, 14, 7, 34]]
+  NetworkOffer [ Provider Id (8) Score(2147483647 ; KeepConnected : 0 ; Policies : EVER_VALIDATED_NOT_AVOIDED_WHEN_BAD&IS_INVINCIBLE&IS_UNMETERED&IS_VALIDATED) Caps [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps Specifier: <android.net.MatchAllNetworkSpecifier@0> UnderlyingNetworks: Null] Needed by [23, 37, 53, 28, 16, 51, 25, 42, 1, 18, 30, 46, 14, 7, 34]]
+
+mLegacyTypeTracker:
+  Supported types: 1 7 9 13 17
+  Current state:
+    1 [100 WIFI]
+
+
+Supported Socket keepalives: [1, 3, 0, 0, 0, 0, 0, 0, 0]
+Reserved Privileged keepalives: 2
+Allowed Unprivileged keepalives per uid: 2
+Socket keepalives:
+
+Bad Wi-Fi avoidance: unrestricted
+
+
+mNetworkRequestInfoLogs (most recent first):
+  2026-11-23T19:50:27.810987 - RELEASE uid/pid:10055/1255 activeRequest: 32 callbackRequest: 31 [NetworkRequest [ REQUEST id=32, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10055 RequestorUid: 10055 RequestorPkg: ru.pro100tehnika.tvlauncher UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:50:26.062333 - REGISTER uid/pid:10055/1255 activeRequest: null callbackRequest: 52 [NetworkRequest [ REQUEST id=53, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10055 RequestorUid: 10055 RequestorPkg: ru.pro100tehnika.tvlauncher UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:50:23.477161 - REGISTER uid/pid:10047/2164 activeRequest: null callbackRequest: 50 [NetworkRequest [ REQUEST id=51, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10047 RequestorUid: 10047 RequestorPkg: com.amazon.avod.thirdpartyclient UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:50:22.920613 - RELEASE uid/pid:10047/2164 activeRequest: 39 callbackRequest: 38 [NetworkRequest [ REQUEST id=39, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10047 RequestorUid: 10047 RequestorPkg: com.amazon.avod.thirdpartyclient UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:50:05.732901 - REGISTER uid/pid:1000/895 activeRequest: null callbackRequest: 49 [NetworkRequest [ LISTEN id=49, [ RequestorUid: 1000 RequestorPkg: com.android.networkstack.tethering.inprocess UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:50:04.777284 - RELEASE uid/pid:10012/2765 activeRequest: 48 callbackRequest: 47 [NetworkRequest [ REQUEST id=48, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10012 RequestorUid: 10012 RequestorPkg: com.android.statementservice UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:50:04.731674 - REGISTER uid/pid:10012/2765 activeRequest: null callbackRequest: 47 [NetworkRequest [ REQUEST id=48, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10012 RequestorUid: 10012 RequestorPkg: com.android.statementservice UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:50:04.664420 - REGISTER uid/pid:1000/895 asUid: 10012 activeRequest: null callbackRequest: 45 [NetworkRequest [ REQUEST id=46, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10012 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:50:04.188919 - RELEASE uid/pid:10032/2763 activeRequest: 44 callbackRequest: 43 [NetworkRequest [ REQUEST id=44, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10032 RequestorUid: 10032 RequestorPkg: com.android.remoteprovisioner UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:50:03.979990 - REGISTER uid/pid:10032/2763 activeRequest: null callbackRequest: 43 [NetworkRequest [ REQUEST id=44, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10032 RequestorUid: 10032 RequestorPkg: com.android.remoteprovisioner UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:50:03.833848 - REGISTER uid/pid:1000/895 asUid: 10032 activeRequest: null callbackRequest: 41 [NetworkRequest [ REQUEST id=42, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10032 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:49:57.594862 - REGISTER uid/pid:10054/1262 activeRequest: null callbackRequest: 40 [NetworkRequest [ LISTEN id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND&NOT_VCN_MANAGED Uid: 10054 RequestorUid: 10054 RequestorPkg: ru.astroapps.hdrezka UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:49:48.558477 - REGISTER uid/pid:10047/2164 activeRequest: null callbackRequest: 38 [NetworkRequest [ REQUEST id=39, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10047 RequestorUid: 10047 RequestorPkg: com.amazon.avod.thirdpartyclient UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:49:48.501144 - REGISTER uid/pid:1000/895 asUid: 10047 activeRequest: null callbackRequest: 36 [NetworkRequest [ REQUEST id=37, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10047 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:49:45.832373 - REGISTER uid/pid:10050/2343 activeRequest: null callbackRequest: 35 [NetworkRequest [ LISTEN id=35, [ Transports: CELLULAR|WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED Uid: 10050 RequestorUid: 10050 RequestorPkg: com.estrongs.android.pop UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:49:43.990238 - REGISTER uid/pid:1000/1360 activeRequest: null callbackRequest: 33 [NetworkRequest [ REQUEST id=34, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: com.mediatek.tv.service UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:49:42.331470 - REGISTER uid/pid:10055/1255 activeRequest: null callbackRequest: 31 [NetworkRequest [ REQUEST id=32, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10055 RequestorUid: 10055 RequestorPkg: ru.pro100tehnika.tvlauncher UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:49:40.820100 - REGISTER uid/pid:10030/1254 activeRequest: null callbackRequest: 29 [NetworkRequest [ REQUEST id=30, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10030 RequestorUid: 10030 RequestorPkg: com.mediatek.network UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:49:40.363685 - REGISTER uid/pid:1000/895 activeRequest: null callbackRequest: 27 [NetworkRequest [ REQUEST id=28, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 1000 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+  2026-11-23T19:49:38.246793 - REGISTER uid/pid:10033/1281 activeRequest: null callbackRequest: 26 [NetworkRequest [ LISTEN id=26, [ RequestorUid: 10033 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+
+mNetworkInfoBlockingLogs (most recent first):
+
+NetTransition WakeLock activity (most recent first):
+  total acquisitions: 0
+  total releases: 0
+  cumulative duration: 0s
+  longest duration: 0s
+  
+  bandwidth update requests (by uid):
+
+mOemNetworkPreferencesLogs (most recent first):
+
+
+Permission Monitor:
+  Interface filtering rules:
+  
+  Lockdown filtering rules:
+  
+  Update logs:
+    2026-11-23T19:49:34.774843 - New user(0) added: nPerm uids={1000=2, 1002=1, 2000=2, 10007=2, 10022=2, 10025=2, 10026=2, 10033=1, 10047=1, 10050=1, 20007=2, 20022=2, 20025=2, 20026=2, 20033=1, 20047=1, 20050=1}, tPerm appIds={1000=12, 1002=12, 1068=0, 2000=12, 10000=0, 10001=0, 10002=0, 10003=0, 10004=4, 10005=0, 10006=0, 10007=12, 10008=0, 10009=4, 10010=0, 10011=0, 10012=4, 10013=0, 10014=0, 10015=0, 10016=0, 10017=0, 10018=0, 10019=0, 10020=0, 10021=4, 10022=4, 10023=0, 10024=4, 10025=0, 10026=0, 10027=4, 10028=4, 10029=0, 10030=4, 10031=0, 10032=4, 10033=0, 10034=0, 10035=0, 10036=4, 10037=0, 10038=0, 10039=0, 10040=0, 10041=0, 10042=4, 10043=8, 10044=4, 10045=0, 10046=4, 10047=4, 10048=4, 10049=4, 10050=4, 10051=4, 10052=0, 10053=4, 10054=4, 10055=4, 10056=4, 10057=0, 20000=0, 20001=0, 20002=0, 20003=0, 20004=4, 20005=0, 20006=0, 20007=12, 20008=0, 20009=4, 20010=0, 20011=0, 20012=4, 20013=0, 20014=0, 20015=0, 20016=0, 20017=0, 20018=0, 20019=0, 20020=0, 20021=4, 20022=4, 20023=0, 20024=4, 20025=0, 20026=0, 20027=4, 20028=4, 20029=0, 20030=4, 20031=0, 20032=4, 20033=0, 20034=0, 20035=0, 20036=4, 20037=0, 20038=0, 20039=0, 20040=0, 20041=0, 20042=4, 20043=8, 20044=4, 20045=0, 20046=4, 20047=4, 20048=4, 20049=4, 20050=4, 20051=4, 20052=0, 20053=4, 20054=4, 20055=4, 20056=4, 20057=0}
+
+Legacy network activity:
+  mNetworkActive=true
+  Idle timers:
+    wlan0:
+      timeout=15 type=1

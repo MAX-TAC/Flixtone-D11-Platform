@@ -1,0 +1,1194 @@
+Supported System Usages:
+  AUDIO_USAGE_CALL_ASSISTANT
+UID Policy:
+	mObserverRegistered=True
+	Assistants UIDs: 
+		No UIDs present.
+	Active Assistants UIDs: 
+		No UIDs present.
+	Accessibility UIDs: 
+		UID[0]=10055
+	Input Method Service UID=10029
+	Is RTT Enabled: False
+AudioCommandThread: 0xf350f600
+- Commands:
+   Command Time        Wait pParam
+  Last Command
+   00      000350.456  0    0xf3051330
+OutputCommandThread: 0xf350f720
+- Commands:
+   Command Time        Wait pParam
+  Last Command
+   03      000354.321  0    0xf319a7a0
+
+AudioPolicyManager Dump: 0xf34ea300
+ Primary Output I/O handle: 13
+ Phone state: AUDIO_MODE_NORMAL
+ Force use for communications: 0
+ Force use for media: 0
+ Force use for record: 0
+ Force use for dock: 8
+ Force use for system: 0
+ Force use for HDMI system audio: 0
+ Force use for encoded surround output: 0
+ Force use for vibrate ringing: 0
+ TTS output not available
+ Master mono: off
+ Communication Strategy id: 16
+ Config source: /vendor/etc/audio_policy_configuration.xml
+
+ Available output devices (1):
+  1. Port ID: 2; "Speaker"; {AUDIO_DEVICE_OUT_SPEAKER, @:}
+     Encapsulation modes: 0, metadata types: 0
+   - Profiles (4):
+      1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+         sampling rates: 48000
+         channel masks: 0x0003
+         AUDIO_ENCAPSULATION_TYPE_NONE
+      2. ""; AUDIO_FORMAT_AC3 (0x9000000)
+         sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+         channel masks: 0x0003
+         AUDIO_ENCAPSULATION_TYPE_NONE
+      3. ""; AUDIO_FORMAT_E_AC3 (0xa000000)
+         sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+         channel masks: 0x0003
+         AUDIO_ENCAPSULATION_TYPE_NONE
+      4. ""; AUDIO_FORMAT_E_AC3_JOC (0xa000001)
+         sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+         channel masks: 0x0003
+         AUDIO_ENCAPSULATION_TYPE_NONE
+     - gains:
+       Gain 1:
+       - mode: 00000001
+       - channel_mask: 00000000
+       - min_value: 0 mB
+       - max_value: 100 mB
+       - default_value: 50 mB
+       - step_value: 1 mB
+       - min_ramp_ms: 0 ms
+       - max_ramp_ms: 0 ms
+
+ Available input devices (7):
+  1. Port ID: 6; "Built-In Mic"; {AUDIO_DEVICE_IN_BUILTIN_MIC, @:bottom}
+     Encapsulation modes: 0, metadata types: 0
+   - Profiles (1):
+      1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+         sampling rates: 48000
+         channel masks: 0x000c
+         AUDIO_ENCAPSULATION_TYPE_NONE
+  2. Port ID: 8; "HDMI In"; {AUDIO_DEVICE_IN_HDMI, @:}
+     Encapsulation modes: 0, metadata types: 0
+   - Profiles (1):
+      1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+         sampling rates: 48000
+         channel masks: 0x000c
+         AUDIO_ENCAPSULATION_TYPE_NONE
+     - gains:
+       Gain 1:
+       - mode: 00000001
+       - channel_mask: 00000000
+       - min_value: 0 mB
+       - max_value: 100 mB
+       - default_value: 50 mB
+       - step_value: 1 mB
+       - min_ramp_ms: 0 ms
+       - max_ramp_ms: 0 ms
+  3. Port ID: 15; "Remote Submix In"; {AUDIO_DEVICE_IN_REMOTE_SUBMIX, @:0}
+     Encapsulation modes: 0, metadata types: 0
+   - Profiles (1):
+      1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+         sampling rates: 48000
+         channel masks: 0x000c
+         AUDIO_ENCAPSULATION_TYPE_NONE
+  4. Port ID: 9; "Tv Tuner"; {AUDIO_DEVICE_IN_TV_TUNER, @:}
+     Encapsulation modes: 0, metadata types: 0
+   - Profiles (1):
+      1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+         sampling rates: 48000
+         channel masks: 0x000c
+         AUDIO_ENCAPSULATION_TYPE_NONE
+     - gains:
+       Gain 1:
+       - mode: 00000001
+       - channel_mask: 00000000
+       - min_value: 0 mB
+       - max_value: 100 mB
+       - default_value: 50 mB
+       - step_value: 1 mB
+       - min_ramp_ms: 0 ms
+       - max_ramp_ms: 0 ms
+  5. Port ID: 10; "Line In"; {AUDIO_DEVICE_IN_LINE, @:}
+     Encapsulation modes: 0, metadata types: 0
+   - Profiles (1):
+      1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+         sampling rates: 48000
+         channel masks: 0x000c
+         AUDIO_ENCAPSULATION_TYPE_NONE
+     - gains:
+       Gain 1:
+       - mode: 00000001
+       - channel_mask: 00000000
+       - min_value: 0 mB
+       - max_value: 100 mB
+       - default_value: 50 mB
+       - step_value: 1 mB
+       - min_ramp_ms: 0 ms
+       - max_ramp_ms: 0 ms
+  6. Port ID: 11; "tv_monitor"; {AUDIO_DEVICE_IN_LOOPBACK, @:}
+     Encapsulation modes: 0, metadata types: 0
+   - Profiles (2):
+      1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+         sampling rates: 8000, 16000, 48000
+         channel masks: 0x000c, 0x0010
+         AUDIO_ENCAPSULATION_TYPE_NONE
+      2. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+         sampling rates: 48000
+         channel masks: 0x000c
+         AUDIO_ENCAPSULATION_TYPE_NONE
+     - gains:
+       Gain 1:
+       - mode: 00000001
+       - channel_mask: 0000000c
+       - min_value: 0 mB
+       - max_value: 100 mB
+       - default_value: 50 mB
+       - step_value: 1 mB
+       - min_ramp_ms: 0 ms
+       - max_ramp_ms: 0 ms
+  7. Port ID: 13; "Stub In"; {AUDIO_DEVICE_IN_DEFAULT, @:}
+     Encapsulation modes: 0, metadata types: 0
+   - Profiles (2):
+      1. ""; [dynamic format][dynamic channels][dynamic rates]; AUDIO_FORMAT_DEFAULT (0x0)
+         AUDIO_ENCAPSULATION_TYPE_NONE
+      2. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+         sampling rates: 48000
+         channel masks: 0x000c
+         AUDIO_ENCAPSULATION_TYPE_NONE
+
+ Hardware modules (4):
+  1. Handle: 10; "primary"
+   - Output MixPorts (4):
+      1. "primary output"; 0x0002 (AUDIO_OUTPUT_FLAG_PRIMARY)
+       - Profiles (1):
+          1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+             sampling rates: 48000
+             channel masks: 0x0003
+             AUDIO_ENCAPSULATION_TYPE_NONE
+       - Supported devices (14):
+        1. Port ID: 2; "Speaker"; {AUDIO_DEVICE_OUT_SPEAKER, @:}
+           Encapsulation modes: 0, metadata types: 0
+        2. "Wired Headset"; {AUDIO_DEVICE_OUT_WIRED_HEADSET, @:}
+           Encapsulation modes: 0, metadata types: 0
+        3. "Wired Headphones"; {AUDIO_DEVICE_OUT_WIRED_HEADPHONE, @:}
+           Encapsulation modes: 0, metadata types: 0
+        4. "BT SCO"; {AUDIO_DEVICE_OUT_BLUETOOTH_SCO, @:}
+           Encapsulation modes: 0, metadata types: 0
+        5. "BT SCO Headset"; {AUDIO_DEVICE_OUT_BLUETOOTH_SCO_HEADSET, @:}
+           Encapsulation modes: 0, metadata types: 0
+        6. "BT A2DP Out"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP, @:}
+           Encapsulation modes: 0, metadata types: 0
+        7. "BT A2DP Headphones"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES, @:}
+           Encapsulation modes: 0, metadata types: 0
+        8. "BT A2DP Speaker"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER, @:}
+           Encapsulation modes: 0, metadata types: 0
+        9. "HDMI Out"; {AUDIO_DEVICE_OUT_HDMI, @:}
+           Encapsulation modes: 0, metadata types: 0
+        10. "USB Host Out"; {AUDIO_DEVICE_OUT_USB_ACCESSORY, @:}
+            Encapsulation modes: 0, metadata types: 0
+        11. "USB Device Out"; {AUDIO_DEVICE_OUT_USB_DEVICE, @:}
+            Encapsulation modes: 0, metadata types: 0
+        12. "HDMI ARC"; {AUDIO_DEVICE_OUT_HDMI_ARC, @:}
+            Encapsulation modes: 0, metadata types: 0
+        13. "Spdif"; {AUDIO_DEVICE_OUT_SPDIF, @:}
+            Encapsulation modes: 0, metadata types: 0
+        14. "USB Headset Out"; {AUDIO_DEVICE_OUT_USB_HEADSET, @:}
+            Encapsulation modes: 0, metadata types: 0
+       - maxOpenCount: 1; curOpenCount: 1
+       - maxActiveCount: 1; curActiveCount: 0
+       - recommendedMuteDurationMs: 0 ms
+      2. "mmap_no_irq_out"; 0x4001 (AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_MMAP_NOIRQ)
+       - Profiles (1):
+          1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+             sampling rates: 48000
+             channel masks: 0x0003
+             AUDIO_ENCAPSULATION_TYPE_NONE
+       - Supported devices (12):
+        1. Port ID: 2; "Speaker"; {AUDIO_DEVICE_OUT_SPEAKER, @:}
+           Encapsulation modes: 0, metadata types: 0
+        2. "Wired Headset"; {AUDIO_DEVICE_OUT_WIRED_HEADSET, @:}
+           Encapsulation modes: 0, metadata types: 0
+        3. "Wired Headphones"; {AUDIO_DEVICE_OUT_WIRED_HEADPHONE, @:}
+           Encapsulation modes: 0, metadata types: 0
+        4. "BT A2DP Out"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP, @:}
+           Encapsulation modes: 0, metadata types: 0
+        5. "BT A2DP Headphones"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES, @:}
+           Encapsulation modes: 0, metadata types: 0
+        6. "BT A2DP Speaker"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER, @:}
+           Encapsulation modes: 0, metadata types: 0
+        7. "HDMI Out"; {AUDIO_DEVICE_OUT_HDMI, @:}
+           Encapsulation modes: 0, metadata types: 0
+        8. "USB Host Out"; {AUDIO_DEVICE_OUT_USB_ACCESSORY, @:}
+           Encapsulation modes: 0, metadata types: 0
+        9. "USB Device Out"; {AUDIO_DEVICE_OUT_USB_DEVICE, @:}
+           Encapsulation modes: 0, metadata types: 0
+        10. "HDMI ARC"; {AUDIO_DEVICE_OUT_HDMI_ARC, @:}
+            Encapsulation modes: 0, metadata types: 0
+        11. "Spdif"; {AUDIO_DEVICE_OUT_SPDIF, @:}
+            Encapsulation modes: 0, metadata types: 0
+        12. "USB Headset Out"; {AUDIO_DEVICE_OUT_USB_HEADSET, @:}
+            Encapsulation modes: 0, metadata types: 0
+       - maxOpenCount: 2; curOpenCount: 0
+       - maxActiveCount: 1; curActiveCount: 0
+       - recommendedMuteDurationMs: 0 ms
+      3. "offload output"; 0x0011 (AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_COMPRESS_OFFLOAD)
+       - Profiles (13):
+          1. ""; AUDIO_FORMAT_AC3 (0x9000000)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          2. ""; AUDIO_FORMAT_E_AC3 (0xa000000)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          3. ""; AUDIO_FORMAT_E_AC3_JOC (0xa000001)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          4. ""; AUDIO_FORMAT_DOLBY_TRUEHD (0xe000000)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          5. ""; AUDIO_FORMAT_DTS (0xb000000)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0x2d03f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          6. ""; AUDIO_FORMAT_DTS_HD (0xc000000)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0x2d03f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          7. ""; AUDIO_FORMAT_AAC (0x4000000)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          8. ""; AUDIO_FORMAT_AAC_LC (0x4000002)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          9. ""; AUDIO_FORMAT_AAC_HE_V1 (0x4000010)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          10. ""; AUDIO_FORMAT_AAC_HE_V2 (0x4000100)
+              sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+              channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+              AUDIO_ENCAPSULATION_TYPE_NONE
+          11. ""; AUDIO_FORMAT_AC4 (0x22000000)
+              sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+              channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+              AUDIO_ENCAPSULATION_TYPE_NONE
+          12. ""; AUDIO_FORMAT_MP3 (0x1000000)
+              sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 176400, 192000
+              channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+              AUDIO_ENCAPSULATION_TYPE_NONE
+          13. ""; AUDIO_FORMAT_DRA (0x2f000000)
+              sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 176400, 192000
+              channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+              AUDIO_ENCAPSULATION_TYPE_NONE
+       - Supported devices (12):
+        1. Port ID: 2; "Speaker"; {AUDIO_DEVICE_OUT_SPEAKER, @:}
+           Encapsulation modes: 0, metadata types: 0
+        2. "Wired Headset"; {AUDIO_DEVICE_OUT_WIRED_HEADSET, @:}
+           Encapsulation modes: 0, metadata types: 0
+        3. "Wired Headphones"; {AUDIO_DEVICE_OUT_WIRED_HEADPHONE, @:}
+           Encapsulation modes: 0, metadata types: 0
+        4. "BT A2DP Out"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP, @:}
+           Encapsulation modes: 0, metadata types: 0
+        5. "BT A2DP Headphones"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES, @:}
+           Encapsulation modes: 0, metadata types: 0
+        6. "BT A2DP Speaker"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER, @:}
+           Encapsulation modes: 0, metadata types: 0
+        7. "HDMI Out"; {AUDIO_DEVICE_OUT_HDMI, @:}
+           Encapsulation modes: 0, metadata types: 0
+        8. "USB Host Out"; {AUDIO_DEVICE_OUT_USB_ACCESSORY, @:}
+           Encapsulation modes: 0, metadata types: 0
+        9. "USB Device Out"; {AUDIO_DEVICE_OUT_USB_DEVICE, @:}
+           Encapsulation modes: 0, metadata types: 0
+        10. "HDMI ARC"; {AUDIO_DEVICE_OUT_HDMI_ARC, @:}
+            Encapsulation modes: 0, metadata types: 0
+        11. "Spdif"; {AUDIO_DEVICE_OUT_SPDIF, @:}
+            Encapsulation modes: 0, metadata types: 0
+        12. "USB Headset Out"; {AUDIO_DEVICE_OUT_USB_HEADSET, @:}
+            Encapsulation modes: 0, metadata types: 0
+       - maxOpenCount: 2; curOpenCount: 0
+       - maxActiveCount: 2; curActiveCount: 0
+       - recommendedMuteDurationMs: 0 ms
+      4. "hw_av_sync output"; 0x0041 (AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_HW_AV_SYNC)
+       - Profiles (17):
+          1. ""; AUDIO_FORMAT_PCM_8_BIT (0x2)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          2. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          3. ""; AUDIO_FORMAT_PCM_24_BIT_PACKED (0x6)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          4. ""; AUDIO_FORMAT_PCM_32_BIT (0x3)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          5. ""; AUDIO_FORMAT_AC3 (0x9000000)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          6. ""; AUDIO_FORMAT_E_AC3 (0xa000000)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          7. ""; AUDIO_FORMAT_E_AC3_JOC (0xa000001)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          8. ""; AUDIO_FORMAT_DOLBY_TRUEHD (0xe000000)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          9. ""; AUDIO_FORMAT_DTS (0xb000000)
+             sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+             channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0x2d03f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+             AUDIO_ENCAPSULATION_TYPE_NONE
+          10. ""; AUDIO_FORMAT_DTS_HD (0xc000000)
+              sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+              channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0x2d03f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+              AUDIO_ENCAPSULATION_TYPE_NONE
+          11. ""; AUDIO_FORMAT_AAC (0x4000000)
+              sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+              channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+              AUDIO_ENCAPSULATION_TYPE_NONE
+          12. ""; AUDIO_FORMAT_AAC_LC (0x4000002)
+              sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+              channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+              AUDIO_ENCAPSULATION_TYPE_NONE
+          13. ""; AUDIO_FORMAT_AAC_HE_V1 (0x4000010)
+              sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+              channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+              AUDIO_ENCAPSULATION_TYPE_NONE
+          14. ""; AUDIO_FORMAT_AAC_HE_V2 (0x4000100)
+              sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+              channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+              AUDIO_ENCAPSULATION_TYPE_NONE
+          15. ""; AUDIO_FORMAT_AC4 (0x22000000)
+              sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+              channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+              AUDIO_ENCAPSULATION_TYPE_NONE
+          16. ""; AUDIO_FORMAT_MP3 (0x1000000)
+              sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 176400, 192000
+              channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+              AUDIO_ENCAPSULATION_TYPE_NONE
+          17. ""; AUDIO_FORMAT_DRA (0x2f000000)
+              sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 176400, 192000
+              channel masks: 0x0001, 0x0003, 0x0007, 0x000b, 0x0033, 0x0037, 0x003f, 0x0103, 0x0107, 0x013f, 0x0603, 0x060f, 0x063f, 0xc0003, 0xc0007, 0xc000b, 0xc000f, 0xc003f
+              AUDIO_ENCAPSULATION_TYPE_NONE
+       - Supported devices (12):
+        1. Port ID: 2; "Speaker"; {AUDIO_DEVICE_OUT_SPEAKER, @:}
+           Encapsulation modes: 0, metadata types: 0
+        2. "Wired Headset"; {AUDIO_DEVICE_OUT_WIRED_HEADSET, @:}
+           Encapsulation modes: 0, metadata types: 0
+        3. "Wired Headphones"; {AUDIO_DEVICE_OUT_WIRED_HEADPHONE, @:}
+           Encapsulation modes: 0, metadata types: 0
+        4. "BT A2DP Out"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP, @:}
+           Encapsulation modes: 0, metadata types: 0
+        5. "BT A2DP Headphones"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES, @:}
+           Encapsulation modes: 0, metadata types: 0
+        6. "BT A2DP Speaker"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER, @:}
+           Encapsulation modes: 0, metadata types: 0
+        7. "HDMI Out"; {AUDIO_DEVICE_OUT_HDMI, @:}
+           Encapsulation modes: 0, metadata types: 0
+        8. "USB Host Out"; {AUDIO_DEVICE_OUT_USB_ACCESSORY, @:}
+           Encapsulation modes: 0, metadata types: 0
+        9. "USB Device Out"; {AUDIO_DEVICE_OUT_USB_DEVICE, @:}
+           Encapsulation modes: 0, metadata types: 0
+        10. "HDMI ARC"; {AUDIO_DEVICE_OUT_HDMI_ARC, @:}
+            Encapsulation modes: 0, metadata types: 0
+        11. "Spdif"; {AUDIO_DEVICE_OUT_SPDIF, @:}
+            Encapsulation modes: 0, metadata types: 0
+        12. "USB Headset Out"; {AUDIO_DEVICE_OUT_USB_HEADSET, @:}
+            Encapsulation modes: 0, metadata types: 0
+       - maxOpenCount: 2; curOpenCount: 0
+       - maxActiveCount: 2; curActiveCount: 0
+       - recommendedMuteDurationMs: 0 ms
+   - Input MixPorts (5):
+      1. "primary input"; 0x0000 (AUDIO_INPUT_FLAG_NONE)
+       - Profiles (1):
+          1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+             sampling rates: 48000
+             channel masks: 0x000c
+             AUDIO_ENCAPSULATION_TYPE_NONE
+       - Supported devices (1):
+        1. Port ID: 6; "Built-In Mic"; {AUDIO_DEVICE_IN_BUILTIN_MIC, @:bottom}
+           Encapsulation modes: 0, metadata types: 0
+       - maxOpenCount: 1; curOpenCount: 0
+       - maxActiveCount: 1; curActiveCount: 0
+       - recommendedMuteDurationMs: 0 ms
+      2. "tv input"; 0x0000 (AUDIO_INPUT_FLAG_NONE)
+       - Profiles (1):
+          1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+             sampling rates: 48000
+             channel masks: 0x000c
+             AUDIO_ENCAPSULATION_TYPE_NONE
+       - Supported devices (5):
+        1. "BT SCO Headset Mic"; {AUDIO_DEVICE_IN_BLUETOOTH_SCO_HEADSET, @:}
+           Encapsulation modes: 0, metadata types: 0
+        2. Port ID: 8; "HDMI In"; {AUDIO_DEVICE_IN_HDMI, @:}
+           Encapsulation modes: 0, metadata types: 0
+        3. Port ID: 9; "Tv Tuner"; {AUDIO_DEVICE_IN_TV_TUNER, @:}
+           Encapsulation modes: 0, metadata types: 0
+        4. Port ID: 10; "Line In"; {AUDIO_DEVICE_IN_LINE, @:}
+           Encapsulation modes: 0, metadata types: 0
+        5. Port ID: 11; "tv_monitor"; {AUDIO_DEVICE_IN_LOOPBACK, @:}
+           Encapsulation modes: 0, metadata types: 0
+       - maxOpenCount: 1; curOpenCount: 0
+       - maxActiveCount: 1; curActiveCount: 0
+       - recommendedMuteDurationMs: 0 ms
+      3. "hdmi input"; 0x0000 (AUDIO_INPUT_FLAG_NONE)
+       - Profiles (1):
+          1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+             sampling rates: 48000
+             channel masks: 0x000c
+             AUDIO_ENCAPSULATION_TYPE_NONE
+       - maxOpenCount: 1; curOpenCount: 0
+       - maxActiveCount: 1; curActiveCount: 0
+       - recommendedMuteDurationMs: 0 ms
+      4. "line input"; 0x0000 (AUDIO_INPUT_FLAG_NONE)
+       - Profiles (1):
+          1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+             sampling rates: 48000
+             channel masks: 0x000c
+             AUDIO_ENCAPSULATION_TYPE_NONE
+       - maxOpenCount: 1; curOpenCount: 0
+       - maxActiveCount: 1; curActiveCount: 0
+       - recommendedMuteDurationMs: 0 ms
+      5. "stub input"; 0x0000 (AUDIO_INPUT_FLAG_NONE)
+       - Profiles (1):
+          1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+             sampling rates: 48000
+             channel masks: 0x000c
+             AUDIO_ENCAPSULATION_TYPE_NONE
+       - Supported devices (1):
+        1. Port ID: 13; "Stub In"; {AUDIO_DEVICE_IN_DEFAULT, @:}
+           Encapsulation modes: 0, metadata types: 0
+       - maxOpenCount: 1; curOpenCount: 0
+       - maxActiveCount: 1; curActiveCount: 0
+       - recommendedMuteDurationMs: 0 ms
+   - Declared devices (21):
+    1. Port ID: 2; "Speaker"; {AUDIO_DEVICE_OUT_SPEAKER, @:}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (4):
+        1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+           sampling rates: 48000
+           channel masks: 0x0003
+           AUDIO_ENCAPSULATION_TYPE_NONE
+        2. ""; AUDIO_FORMAT_AC3 (0x9000000)
+           sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+           channel masks: 0x0003
+           AUDIO_ENCAPSULATION_TYPE_NONE
+        3. ""; AUDIO_FORMAT_E_AC3 (0xa000000)
+           sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+           channel masks: 0x0003
+           AUDIO_ENCAPSULATION_TYPE_NONE
+        4. ""; AUDIO_FORMAT_E_AC3_JOC (0xa000001)
+           sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 96000, 192000
+           channel masks: 0x0003
+           AUDIO_ENCAPSULATION_TYPE_NONE
+       - gains:
+         Gain 1:
+         - mode: 00000001
+         - channel_mask: 00000000
+         - min_value: 0 mB
+         - max_value: 100 mB
+         - default_value: 50 mB
+         - step_value: 1 mB
+         - min_ramp_ms: 0 ms
+         - max_ramp_ms: 0 ms
+    2. "Wired Headset"; {AUDIO_DEVICE_OUT_WIRED_HEADSET, @:}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (1):
+        1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+           sampling rates: 48000
+           channel masks: 0x0003
+           AUDIO_ENCAPSULATION_TYPE_NONE
+    3. "Wired Headphones"; {AUDIO_DEVICE_OUT_WIRED_HEADPHONE, @:}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (1):
+        1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+           sampling rates: 48000
+           channel masks: 0x0003
+           AUDIO_ENCAPSULATION_TYPE_NONE
+    4. "BT SCO"; {AUDIO_DEVICE_OUT_BLUETOOTH_SCO, @:}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (1):
+        1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+           sampling rates: 48000
+           channel masks: 0x0003
+           AUDIO_ENCAPSULATION_TYPE_NONE
+    5. "BT SCO Headset"; {AUDIO_DEVICE_OUT_BLUETOOTH_SCO_HEADSET, @:}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (1):
+        1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+           sampling rates: 48000
+           channel masks: 0x0003
+           AUDIO_ENCAPSULATION_TYPE_NONE
+    6. "BT A2DP Out"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP, @:}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (1):
+        1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+           sampling rates: 48000
+           channel masks: 0x0003
+           AUDIO_ENCAPSULATION_TYPE_NONE
+    7. "BT A2DP Headphones"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES, @:}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (1):
+        1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+           sampling rates: 48000
+           channel masks: 0x0003
+           AUDIO_ENCAPSULATION_TYPE_NONE
+    8. "BT A2DP Speaker"; {AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER, @:}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (1):
+        1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+           sampling rates: 48000
+           channel masks: 0x0003
+           AUDIO_ENCAPSULATION_TYPE_NONE
+    9. "HDMI Out"; {AUDIO_DEVICE_OUT_HDMI, @:}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (1):
+        1. ""; [dynamic format][dynamic channels][dynamic rates]; AUDIO_FORMAT_DEFAULT (0x0)
+           AUDIO_ENCAPSULATION_TYPE_NONE
+    10. "USB Host Out"; {AUDIO_DEVICE_OUT_USB_ACCESSORY, @:}
+        Encapsulation modes: 0, metadata types: 0
+      - Profiles (1):
+         1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+            sampling rates: 48000
+            channel masks: 0x0003
+            AUDIO_ENCAPSULATION_TYPE_NONE
+    11. "USB Device Out"; {AUDIO_DEVICE_OUT_USB_DEVICE, @:}
+        Encapsulation modes: 0, metadata types: 0
+      - Profiles (1):
+         1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+            sampling rates: 48000
+            channel masks: 0x0003
+            AUDIO_ENCAPSULATION_TYPE_NONE
+    12. "HDMI ARC"; {AUDIO_DEVICE_OUT_HDMI_ARC, @:}
+        Encapsulation modes: 0, metadata types: 0
+      - Profiles (4):
+         1. ""; AUDIO_FORMAT_AC3 (0x9000000)
+            sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000
+            channel masks: 0x0001, 0x0003, 0x003f, 0x063f
+            AUDIO_ENCAPSULATION_TYPE_NONE
+         2. ""; AUDIO_FORMAT_E_AC3 (0xa000000)
+            sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000
+            channel masks: 0x0001, 0x0003, 0x003f, 0x063f
+            AUDIO_ENCAPSULATION_TYPE_NONE
+         3. ""; AUDIO_FORMAT_DTS (0xb000000)
+            sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000
+            channel masks: 0x0001, 0x0003, 0x003f, 0x063f
+            AUDIO_ENCAPSULATION_TYPE_NONE
+         4. ""; AUDIO_FORMAT_DTS_HD (0xc000000)
+            sampling rates: 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000
+            channel masks: 0x0001, 0x0003, 0x003f, 0x063f
+            AUDIO_ENCAPSULATION_TYPE_NONE
+    13. "Spdif"; {AUDIO_DEVICE_OUT_SPDIF, @:}
+        Encapsulation modes: 0, metadata types: 0
+      - Profiles (1):
+         1. ""; [dynamic format][dynamic channels][dynamic rates]; AUDIO_FORMAT_DEFAULT (0x0)
+            AUDIO_ENCAPSULATION_TYPE_NONE
+    14. "USB Headset Out"; {AUDIO_DEVICE_OUT_USB_HEADSET, @:}
+        Encapsulation modes: 0, metadata types: 0
+      - Profiles (1):
+         1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+            sampling rates: 48000
+            channel masks: 0x0003
+            AUDIO_ENCAPSULATION_TYPE_NONE
+    15. Port ID: 6; "Built-In Mic"; {AUDIO_DEVICE_IN_BUILTIN_MIC, @:bottom}
+        Encapsulation modes: 0, metadata types: 0
+      - Profiles (1):
+         1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+            sampling rates: 48000
+            channel masks: 0x000c
+            AUDIO_ENCAPSULATION_TYPE_NONE
+    16. "BT SCO Headset Mic"; {AUDIO_DEVICE_IN_BLUETOOTH_SCO_HEADSET, @:}
+        Encapsulation modes: 0, metadata types: 0
+      - Profiles (1):
+         1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+            sampling rates: 48000
+            channel masks: 0x000c
+            AUDIO_ENCAPSULATION_TYPE_NONE
+    17. Port ID: 8; "HDMI In"; {AUDIO_DEVICE_IN_HDMI, @:}
+        Encapsulation modes: 0, metadata types: 0
+      - Profiles (1):
+         1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+            sampling rates: 48000
+            channel masks: 0x000c
+            AUDIO_ENCAPSULATION_TYPE_NONE
+        - gains:
+          Gain 1:
+          - mode: 00000001
+          - channel_mask: 00000000
+          - min_value: 0 mB
+          - max_value: 100 mB
+          - default_value: 50 mB
+          - step_value: 1 mB
+          - min_ramp_ms: 0 ms
+          - max_ramp_ms: 0 ms
+    18. Port ID: 9; "Tv Tuner"; {AUDIO_DEVICE_IN_TV_TUNER, @:}
+        Encapsulation modes: 0, metadata types: 0
+      - Profiles (1):
+         1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+            sampling rates: 48000
+            channel masks: 0x000c
+            AUDIO_ENCAPSULATION_TYPE_NONE
+        - gains:
+          Gain 1:
+          - mode: 00000001
+          - channel_mask: 00000000
+          - min_value: 0 mB
+          - max_value: 100 mB
+          - default_value: 50 mB
+          - step_value: 1 mB
+          - min_ramp_ms: 0 ms
+          - max_ramp_ms: 0 ms
+    19. Port ID: 10; "Line In"; {AUDIO_DEVICE_IN_LINE, @:}
+        Encapsulation modes: 0, metadata types: 0
+      - Profiles (1):
+         1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+            sampling rates: 48000
+            channel masks: 0x000c
+            AUDIO_ENCAPSULATION_TYPE_NONE
+        - gains:
+          Gain 1:
+          - mode: 00000001
+          - channel_mask: 00000000
+          - min_value: 0 mB
+          - max_value: 100 mB
+          - default_value: 50 mB
+          - step_value: 1 mB
+          - min_ramp_ms: 0 ms
+          - max_ramp_ms: 0 ms
+    20. Port ID: 11; "tv_monitor"; {AUDIO_DEVICE_IN_LOOPBACK, @:}
+        Encapsulation modes: 0, metadata types: 0
+      - Profiles (2):
+         1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+            sampling rates: 8000, 16000, 48000
+            channel masks: 0x000c, 0x0010
+            AUDIO_ENCAPSULATION_TYPE_NONE
+         2. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+            sampling rates: 48000
+            channel masks: 0x000c
+            AUDIO_ENCAPSULATION_TYPE_NONE
+        - gains:
+          Gain 1:
+          - mode: 00000001
+          - channel_mask: 0000000c
+          - min_value: 0 mB
+          - max_value: 100 mB
+          - default_value: 50 mB
+          - step_value: 1 mB
+          - min_ramp_ms: 0 ms
+          - max_ramp_ms: 0 ms
+    21. Port ID: 13; "Stub In"; {AUDIO_DEVICE_IN_DEFAULT, @:}
+        Encapsulation modes: 0, metadata types: 0
+      - Profiles (2):
+         1. ""; [dynamic format][dynamic channels][dynamic rates]; AUDIO_FORMAT_DEFAULT (0x0)
+            AUDIO_ENCAPSULATION_TYPE_NONE
+         2. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+            sampling rates: 48000
+            channel masks: 0x000c
+            AUDIO_ENCAPSULATION_TYPE_NONE
+   - Audio Routes (17):
+      1. Mix; Sink: "Speaker"
+         Sources: "primary output", "mmap_no_irq_out", "hw_av_sync output", "offload output", "Tv Tuner", "HDMI In", "Line In", "tv_monitor"
+      2. Mix; Sink: "Wired Headset"
+         Sources: "primary output", "mmap_no_irq_out", "hw_av_sync output", "offload output", "Tv Tuner", "HDMI In", "Line In", "tv_monitor"
+      3. Mix; Sink: "Wired Headphones"
+         Sources: "primary output", "mmap_no_irq_out", "hw_av_sync output", "offload output", "Tv Tuner", "HDMI In", "Line In", "tv_monitor"
+      4. Mix; Sink: "HDMI Out"
+         Sources: "primary output", "mmap_no_irq_out", "hw_av_sync output", "offload output", "Tv Tuner", "HDMI In", "Line In", "tv_monitor"
+      5. Mix; Sink: "HDMI ARC"
+         Sources: "primary output", "mmap_no_irq_out", "hw_av_sync output", "offload output", "Tv Tuner", "HDMI In", "Line In", "tv_monitor"
+      6. Mix; Sink: "Spdif"
+         Sources: "primary output", "mmap_no_irq_out", "hw_av_sync output", "offload output", "Tv Tuner", "HDMI In", "Line In", "tv_monitor"
+      7. Mix; Sink: "BT A2DP Out"
+         Sources: "primary output", "mmap_no_irq_out", "hw_av_sync output", "offload output", "Tv Tuner", "HDMI In", "Line In", "tv_monitor"
+      8. Mix; Sink: "BT A2DP Headphones"
+         Sources: "primary output", "mmap_no_irq_out", "hw_av_sync output", "offload output", "Tv Tuner", "HDMI In", "Line In", "tv_monitor"
+      9. Mix; Sink: "BT A2DP Speaker"
+         Sources: "primary output", "mmap_no_irq_out", "hw_av_sync output", "offload output", "Tv Tuner", "HDMI In", "Line In", "tv_monitor"
+      10. Mix; Sink: "USB Host Out"
+          Sources: "primary output", "mmap_no_irq_out", "hw_av_sync output", "offload output", "Tv Tuner", "HDMI In", "Line In", "tv_monitor"
+      11. Mix; Sink: "USB Device Out"
+          Sources: "primary output", "mmap_no_irq_out", "hw_av_sync output", "offload output", "Tv Tuner", "HDMI In", "Line In", "tv_monitor"
+      12. Mix; Sink: "USB Headset Out"
+          Sources: "primary output", "mmap_no_irq_out", "hw_av_sync output", "offload output", "Tv Tuner", "HDMI In", "Line In", "tv_monitor"
+      13. Mix; Sink: "primary input"
+          Sources: "Built-In Mic"
+      14. Mix; Sink: "BT SCO"
+          Sources: "primary output"
+      15. Mix; Sink: "BT SCO Headset"
+          Sources: "primary output"
+      16. Mix; Sink: "tv input"
+          Sources: "Tv Tuner", "HDMI In", "Line In", "tv_monitor", "BT SCO Headset Mic"
+      17. Mix; Sink: "stub input"
+          Sources: "Stub In"
+  2. Handle: 18; "bluetooth"
+   - Output MixPorts (1):
+      1. "hearing aid output"; 0x0000 (AUDIO_OUTPUT_FLAG_NONE)
+       - Profiles (1):
+          1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+             sampling rates: 16000, 24000
+             channel masks: 0x0003
+             AUDIO_ENCAPSULATION_TYPE_NONE
+       - Supported devices (1):
+        1. "BT Hearing Aid Out"; {AUDIO_DEVICE_OUT_HEARING_AID, @:}
+           Encapsulation modes: 0, metadata types: 0
+       - maxOpenCount: 1; curOpenCount: 0
+       - maxActiveCount: 1; curActiveCount: 0
+       - recommendedMuteDurationMs: 0 ms
+   - Declared devices (1):
+    1. "BT Hearing Aid Out"; {AUDIO_DEVICE_OUT_HEARING_AID, @:}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (1):
+        1. ""; [dynamic format][dynamic channels][dynamic rates]; AUDIO_FORMAT_DEFAULT (0x0)
+           AUDIO_ENCAPSULATION_TYPE_NONE
+   - Audio Routes (1):
+      1. Mix; Sink: "BT Hearing Aid Out"
+         Sources: "hearing aid output"
+  3. Handle: 26; "usb"
+   - Input MixPorts (1):
+      1. "usb_device input"; 0x0000 (AUDIO_INPUT_FLAG_NONE)
+       - Profiles (1):
+          1. ""; [dynamic format][dynamic channels][dynamic rates]; AUDIO_FORMAT_DEFAULT (0x0)
+             AUDIO_ENCAPSULATION_TYPE_NONE
+       - Supported devices (2):
+        1. "USB Device In"; {AUDIO_DEVICE_IN_USB_DEVICE, @:}
+           Encapsulation modes: 0, metadata types: 0
+        2. "USB Headset In"; {AUDIO_DEVICE_IN_USB_HEADSET, @:}
+           Encapsulation modes: 0, metadata types: 0
+       - maxOpenCount: 1; curOpenCount: 0
+       - maxActiveCount: 1; curActiveCount: 0
+       - recommendedMuteDurationMs: 0 ms
+   - Declared devices (2):
+    1. "USB Device In"; {AUDIO_DEVICE_IN_USB_DEVICE, @:}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (1):
+        1. ""; [dynamic format][dynamic channels][dynamic rates]; AUDIO_FORMAT_DEFAULT (0x0)
+           AUDIO_ENCAPSULATION_TYPE_NONE
+    2. "USB Headset In"; {AUDIO_DEVICE_IN_USB_HEADSET, @:}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (1):
+        1. ""; [dynamic format][dynamic channels][dynamic rates]; AUDIO_FORMAT_DEFAULT (0x0)
+           AUDIO_ENCAPSULATION_TYPE_NONE
+   - Audio Routes (1):
+      1. Mix; Sink: "usb_device input"
+         Sources: "USB Device In", "USB Headset In"
+  4. Handle: 34; "r_submix"
+   - Output MixPorts (1):
+      1. "r_submix output"; 0x0000 (AUDIO_OUTPUT_FLAG_NONE)
+       - Profiles (1):
+          1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+             sampling rates: 48000
+             channel masks: 0x0003
+             AUDIO_ENCAPSULATION_TYPE_NONE
+       - Supported devices (1):
+        1. "Remote Submix Out"; {AUDIO_DEVICE_OUT_REMOTE_SUBMIX, @:0}
+           Encapsulation modes: 0, metadata types: 0
+       - maxOpenCount: 1; curOpenCount: 0
+       - maxActiveCount: 1; curActiveCount: 0
+       - recommendedMuteDurationMs: 0 ms
+   - Input MixPorts (1):
+      1. "r_submix input"; 0x0000 (AUDIO_INPUT_FLAG_NONE)
+       - Profiles (1):
+          1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+             sampling rates: 48000
+             channel masks: 0x000c
+             AUDIO_ENCAPSULATION_TYPE_NONE
+       - Supported devices (1):
+        1. Port ID: 15; "Remote Submix In"; {AUDIO_DEVICE_IN_REMOTE_SUBMIX, @:0}
+           Encapsulation modes: 0, metadata types: 0
+       - maxOpenCount: 1; curOpenCount: 0
+       - maxActiveCount: 1; curActiveCount: 0
+       - recommendedMuteDurationMs: 0 ms
+   - Declared devices (2):
+    1. "Remote Submix Out"; {AUDIO_DEVICE_OUT_REMOTE_SUBMIX, @:0}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (1):
+        1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+           sampling rates: 48000
+           channel masks: 0x0003
+           AUDIO_ENCAPSULATION_TYPE_NONE
+    2. Port ID: 15; "Remote Submix In"; {AUDIO_DEVICE_IN_REMOTE_SUBMIX, @:0}
+       Encapsulation modes: 0, metadata types: 0
+     - Profiles (1):
+        1. ""; AUDIO_FORMAT_PCM_16_BIT (0x1)
+           sampling rates: 48000
+           channel masks: 0x000c
+           AUDIO_ENCAPSULATION_TYPE_NONE
+   - Audio Routes (2):
+      1. Mix; Sink: "Remote Submix Out"
+         Sources: "r_submix output"
+      2. Mix; Sink: "r_submix input"
+         Sources: "Remote Submix In"
+
+ Outputs (1):
+  1. Port ID: 1; I/O handle: 13; Latency: 148; 0x0002 (AUDIO_OUTPUT_FLAG_PRIMARY)
+     AUDIO_FORMAT_PCM_16_BIT; 48000; Channel mask: 0x3
+     Devices: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+     Global active count: 0
+   - Product Strategies (1):
+      id 21: - ActivityCount: 0, StopTime: 354322554661, 
+   - Volume Activities (14):
+      id 1: - ActivityCount: 0, StopTime: 0, , Volume: -16.000, MuteCount: 00
+      id 2: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 00
+      id 3: - ActivityCount: 0, StopTime: 0, , Volume: -35.400, MuteCount: 00
+      id 4: - ActivityCount: 0, StopTime: 354322554661, , Volume: 0.000, MuteCount: 00
+      id 5: - ActivityCount: 0, StopTime: 0, , Volume: -32.525, MuteCount: 00
+      id 6: - ActivityCount: 0, StopTime: 0, , Volume: -29.612, MuteCount: 00
+      id 8: - ActivityCount: 0, StopTime: 0, , Volume: -30.143, MuteCount: 00
+      id 9: - ActivityCount: 0, StopTime: 0, , Volume: -32.686, MuteCount: 00
+      id 10: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 01
+      id 11: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 00
+      id 12: - ActivityCount: 0, StopTime: 0, , Volume: -32.525, MuteCount: 00
+      id 13: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 00
+      id 14: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 00
+      id 15: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 00
+   - AudioTrack clients (1):
+      1. Port ID: 31; Session ID: 89; uid 10054; State: Inactive
+         AUDIO_FORMAT_PCM_16_BIT; 48000; Channel mask: 0x3
+         Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_MEDIA Source: AUDIO_SOURCE_INVALID Flags: 0xa00 Tags:  }
+         Stream: 3; Flags: 00000008; Refcount: 0
+         DAP Primary Mix: 0x0
+
+ Inputs (0):
+
+ Total Effects CPU: 0.000000 MIPS, Total Effects memory: 0 KB, Max memory used: 0 KB
+
+ Audio Patches (1):
+  1. owner uid 1041; handle 32; af handle 36
+     [src  1] Mix Port ID: 1; I/O handle: 13;
+     [sink 1] Device Port ID: 2; {AUDIO_DEVICE_OUT_SPEAKER, @:}
+
+ Audio Policy Mix:
+
+ Audio sources (0):
+ AllowedCapturePolicies:
+
+Policy Engine dump:
+  Product Strategies dump:
+    -STRATEGY_PHONE (id: 16)
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+       Group: 1 stream: AUDIO_STREAM_VOICE_CALL
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_VOICE_COMMUNICATION Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       Group: 7 stream: AUDIO_STREAM_BLUETOOTH_SCO
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_UNKNOWN Source: AUDIO_SOURCE_DEFAULT Flags: 0x4 Tags:  }
+
+    -STRATEGY_SONIFICATION (id: 17)
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+       Group: 3 stream: AUDIO_STREAM_RING
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_NOTIFICATION_TELEPHONY_RINGTONE Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       Group: 5 stream: AUDIO_STREAM_ALARM
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_ALARM Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+
+    -STRATEGY_ENFORCED_AUDIBLE (id: 18)
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+       Group: 8 stream: AUDIO_STREAM_ENFORCED_AUDIBLE
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_UNKNOWN Source: AUDIO_SOURCE_DEFAULT Flags: 0x1 Tags:  }
+
+    -STRATEGY_ACCESSIBILITY (id: 19)
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+       Group: 11 stream: AUDIO_STREAM_ACCESSIBILITY
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_ASSISTANCE_ACCESSIBILITY Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+
+    -STRATEGY_SONIFICATION_RESPECTFUL (id: 20)
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+       Group: 6 stream: AUDIO_STREAM_NOTIFICATION
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_NOTIFICATION Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       Group: 6 stream: AUDIO_STREAM_NOTIFICATION
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_NOTIFICATION_EVENT Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+
+    -STRATEGY_MEDIA (id: 21)
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+       Group: 12 stream: AUDIO_STREAM_ASSISTANT
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_SPEECH Usage: AUDIO_USAGE_ASSISTANT Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       Group: 4 stream: AUDIO_STREAM_MUSIC
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_MEDIA Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       Group: 4 stream: AUDIO_STREAM_MUSIC
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_GAME Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       Group: 4 stream: AUDIO_STREAM_MUSIC
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_ASSISTANT Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       Group: 4 stream: AUDIO_STREAM_MUSIC
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_ASSISTANCE_NAVIGATION_GUIDANCE Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       Group: 4 stream: AUDIO_STREAM_MUSIC
+        Attributes: { Any }
+       Group: 2 stream: AUDIO_STREAM_SYSTEM
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_ASSISTANCE_SONIFICATION Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+
+    -STRATEGY_DTMF (id: 22)
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+       Group: 9 stream: AUDIO_STREAM_DTMF
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_VOICE_COMMUNICATION_SIGNALLING Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+
+    -STRATEGY_TRANSMITTED_THROUGH_SPEAKER (id: 23)
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+       Group: 10 stream: AUDIO_STREAM_TTS
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_UNKNOWN Source: AUDIO_SOURCE_DEFAULT Flags: 0x8 Tags:  }
+
+    -rerouting (id: 24)
+      Selected Device: {Empty device types, @:}
+       Group: 14 stream: AUDIO_STREAM_REROUTING
+        Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_VIRTUAL_SOURCE Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+
+    -patch (id: 25)
+      Selected Device: {Empty device types, @:}
+       Group: 15 stream: AUDIO_STREAM_PATCH
+        Attributes: { Any }
+
+  Device role per product strategy dump:
+
+  Device role per capture preset dump:
+
+  Volume Groups dump:
+    -voice_call (id: 1)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_VOICE_CALL(0)  
+       Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_VOICE_COMMUNICATION Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       DEVICE_CATEGORY_HEADSET : { (  0, -4200),  ( 33, -2800),  ( 66, -1400),  (100,     0) }
+       DEVICE_CATEGORY_SPEAKER : { (  0, -2400),  ( 33, -1600),  ( 66,  -800),  (100,     0) }
+       DEVICE_CATEGORY_EARPIECE : { (  0, -2700),  ( 33, -1800),  ( 66,  -900),  (100,     0) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  0, -11500),  (  1, -5900),  (  2, -5600),  (  3, -5300),  (  4, -5000),  (  5, -4800),  (  6, -4600),  (  7, -4400),  (  8, -4200),  (  9, -4000),  ( 10, -3800),  ( 11, -3600),  ( 12, -3400),  ( 13, -3300),  ( 14, -3200),  ( 15, -3100),  ( 16, -3000),  ( 17, -2900),  ( 18, -2800),  ( 19, -2700),  ( 20, -2600),  ( 21, -2500),  ( 22, -2400),  ( 23, -2300),  ( 24, -2200),  ( 25, -2100),  ( 26, -2000),  ( 27, -1900),  ( 28, -1850),  ( 29, -1800),  ( 30, -1750),  ( 31, -1700),  ( 32, -1650),  ( 33, -1600),  ( 34, -1550),  ( 35, -1500),  ( 36, -1450),  ( 37, -1400),  ( 38, -1350),  ( 39, -1300),  ( 40, -1250),  ( 41, -1200),  ( 42, -1150),  ( 43, -1100),  ( 44, -1050),  ( 45, -1000),  ( 46,  -950),  ( 47,  -925),  ( 48,  -900),  ( 49,  -875),  ( 50,  -850),  ( 51,  -825),  ( 52,  -800),  ( 53,  -775),  ( 54,  -750),  ( 55,  -725),  ( 56,  -700),  ( 57,  -675),  ( 58,  -650),  ( 59,  -625),  ( 60,  -600),  ( 61,  -575),  ( 62,  -550),  ( 63,  -525),  ( 64,  -500),  ( 65,  -475),  ( 66,  -450),  ( 67,  -425),  ( 68,  -400),  ( 69,  -387),  ( 70,  -375),  ( 71,  -362),  ( 72,  -350),  ( 73,  -337),  ( 74,  -325),  ( 75,  -312),  ( 76,  -300),  ( 77,  -287),  ( 78,  -275),  ( 79,  -262),  ( 80,  -250),  ( 81,  -237),  ( 82,  -225),  ( 83,  -212),  ( 84,  -200),  ( 85,  -187),  ( 86,  -175),  ( 87,  -162),  ( 88,  -150),  ( 89,  -137),  ( 90,  -125),  ( 91,  -112),  ( 92,  -100),  ( 93,   -87),  ( 94,   -75),  ( 95,   -62),  ( 96,   -50),  ( 97,   -37),  ( 98,   -25),  ( 99,   -15),  (100,     0) }
+       DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          01         07         0002 : 03, 0004 : 02, 0008 : 02, 0080 : 02, 0400 : 03, 4000000 : 02, 40000000 : 03, 
+
+
+    -system (id: 2)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_SYSTEM(1)  
+       Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_ASSISTANCE_SONIFICATION Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       DEVICE_CATEGORY_HEADSET : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_SPEAKER : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_EARPIECE : { (  1, -2400),  ( 33, -1800),  ( 66, -1200),  (100,  -600) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          00         100         0002 : 33, 0004 : 10, 0008 : 10, 0080 : 17, 0400 : 25, 4000000 : 10, 40000000 : 25, 
+
+
+    -ring (id: 3)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_RING(2)  
+       Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_NOTIFICATION_TELEPHONY_RINGTONE Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       DEVICE_CATEGORY_HEADSET : { (  1, -4950),  ( 33, -3350),  ( 66, -1700),  (100,     0) }
+       DEVICE_CATEGORY_SPEAKER : { (  1, -5800),  ( 20, -4000),  ( 60, -1700),  (100,     0) }
+       DEVICE_CATEGORY_EARPIECE : { (  1, -4950),  ( 33, -3350),  ( 66, -1700),  (100,     0) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  1, -5800),  ( 20, -4000),  ( 60, -2100),  (100, -1000) }
+       DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          00         07         0002 : 02, 0004 : 01, 0008 : 01, 0080 : 01, 0400 : 02, 4000000 : 01, 40000000 : 02, 
+
+
+    -music (id: 4)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_MUSIC(3)  
+       Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_MEDIA Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+                    { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_GAME Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+                    { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_ASSISTANT Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+                    { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_ASSISTANCE_NAVIGATION_GUIDANCE Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+                    { Any }
+       DEVICE_CATEGORY_HEADSET : { (  0, -11500),  (  1, -5900),  (  2, -5600),  (  3, -5300),  (  4, -5000),  (  5, -4800),  (  6, -4600),  (  7, -4400),  (  8, -4200),  (  9, -4000),  ( 10, -3800),  ( 11, -3600),  ( 12, -3400),  ( 13, -3300),  ( 14, -3200),  ( 15, -3100),  ( 16, -3000),  ( 17, -2900),  ( 18, -2800),  ( 19, -2700),  ( 20, -2600),  ( 21, -2500),  ( 22, -2400),  ( 23, -2300),  ( 24, -2200),  ( 25, -2100),  ( 26, -2000),  ( 27, -1900),  ( 28, -1850),  ( 29, -1800),  ( 30, -1750),  ( 31, -1700),  ( 32, -1650),  ( 33, -1600),  ( 34, -1550),  ( 35, -1500),  ( 36, -1450),  ( 37, -1400),  ( 38, -1350),  ( 39, -1300),  ( 40, -1250),  ( 41, -1200),  ( 42, -1150),  ( 43, -1100),  ( 44, -1050),  ( 45, -1000),  ( 46,  -950),  ( 47,  -925),  ( 48,  -900),  ( 49,  -875),  ( 50,  -850),  ( 51,  -825),  ( 52,  -800),  ( 53,  -775),  ( 54,  -750),  ( 55,  -725),  ( 56,  -700),  ( 57,  -675),  ( 58,  -650),  ( 59,  -625),  ( 60,  -600),  ( 61,  -575),  ( 62,  -550),  ( 63,  -525),  ( 64,  -500),  ( 65,  -475),  ( 66,  -450),  ( 67,  -425),  ( 68,  -400),  ( 69,  -387),  ( 70,  -375),  ( 71,  -362),  ( 72,  -350),  ( 73,  -337),  ( 74,  -325),  ( 75,  -312),  ( 76,  -300),  ( 77,  -287),  ( 78,  -275),  ( 79,  -262),  ( 80,  -250),  ( 81,  -237),  ( 82,  -225),  ( 83,  -212),  ( 84,  -200),  ( 85,  -187),  ( 86,  -175),  ( 87,  -162),  ( 88,  -150),  ( 89,  -137),  ( 90,  -125),  ( 91,  -112),  ( 92,  -100),  ( 93,   -87),  ( 94,   -75),  ( 95,   -62),  ( 96,   -50),  ( 97,   -37),  ( 98,   -25),  ( 99,   -15),  (100,     0) }
+       DEVICE_CATEGORY_SPEAKER : { (  0, -11500),  (  1, -5900),  (  2, -5600),  (  3, -5300),  (  4, -5000),  (  5, -4800),  (  6, -4600),  (  7, -4400),  (  8, -4200),  (  9, -4000),  ( 10, -3800),  ( 11, -3600),  ( 12, -3400),  ( 13, -3300),  ( 14, -3200),  ( 15, -3100),  ( 16, -3000),  ( 17, -2900),  ( 18, -2800),  ( 19, -2700),  ( 20, -2600),  ( 21, -2500),  ( 22, -2400),  ( 23, -2300),  ( 24, -2200),  ( 25, -2100),  ( 26, -2000),  ( 27, -1900),  ( 28, -1850),  ( 29, -1800),  ( 30, -1750),  ( 31, -1700),  ( 32, -1650),  ( 33, -1600),  ( 34, -1550),  ( 35, -1500),  ( 36, -1450),  ( 37, -1400),  ( 38, -1350),  ( 39, -1300),  ( 40, -1250),  ( 41, -1200),  ( 42, -1150),  ( 43, -1100),  ( 44, -1050),  ( 45, -1000),  ( 46,  -950),  ( 47,  -925),  ( 48,  -900),  ( 49,  -875),  ( 50,  -850),  ( 51,  -825),  ( 52,  -800),  ( 53,  -775),  ( 54,  -750),  ( 55,  -725),  ( 56,  -700),  ( 57,  -675),  ( 58,  -650),  ( 59,  -625),  ( 60,  -600),  ( 61,  -575),  ( 62,  -550),  ( 63,  -525),  ( 64,  -500),  ( 65,  -475),  ( 66,  -450),  ( 67,  -425),  ( 68,  -400),  ( 69,  -387),  ( 70,  -375),  ( 71,  -362),  ( 72,  -350),  ( 73,  -337),  ( 74,  -325),  ( 75,  -312),  ( 76,  -300),  ( 77,  -287),  ( 78,  -275),  ( 79,  -262),  ( 80,  -250),  ( 81,  -237),  ( 82,  -225),  ( 83,  -212),  ( 84,  -200),  ( 85,  -187),  ( 86,  -175),  ( 87,  -162),  ( 88,  -150),  ( 89,  -137),  ( 90,  -125),  ( 91,  -112),  ( 92,  -100),  ( 93,   -87),  ( 94,   -75),  ( 95,   -62),  ( 96,   -50),  ( 97,   -37),  ( 98,   -25),  ( 99,   -15),  (100,     0) }
+       DEVICE_CATEGORY_EARPIECE : { (  0, -11500),  (  1, -5900),  (  2, -5600),  (  3, -5300),  (  4, -5000),  (  5, -4800),  (  6, -4600),  (  7, -4400),  (  8, -4200),  (  9, -4000),  ( 10, -3800),  ( 11, -3600),  ( 12, -3400),  ( 13, -3300),  ( 14, -3200),  ( 15, -3100),  ( 16, -3000),  ( 17, -2900),  ( 18, -2800),  ( 19, -2700),  ( 20, -2600),  ( 21, -2500),  ( 22, -2400),  ( 23, -2300),  ( 24, -2200),  ( 25, -2100),  ( 26, -2000),  ( 27, -1900),  ( 28, -1850),  ( 29, -1800),  ( 30, -1750),  ( 31, -1700),  ( 32, -1650),  ( 33, -1600),  ( 34, -1550),  ( 35, -1500),  ( 36, -1450),  ( 37, -1400),  ( 38, -1350),  ( 39, -1300),  ( 40, -1250),  ( 41, -1200),  ( 42, -1150),  ( 43, -1100),  ( 44, -1050),  ( 45, -1000),  ( 46,  -950),  ( 47,  -925),  ( 48,  -900),  ( 49,  -875),  ( 50,  -850),  ( 51,  -825),  ( 52,  -800),  ( 53,  -775),  ( 54,  -750),  ( 55,  -725),  ( 56,  -700),  ( 57,  -675),  ( 58,  -650),  ( 59,  -625),  ( 60,  -600),  ( 61,  -575),  ( 62,  -550),  ( 63,  -525),  ( 64,  -500),  ( 65,  -475),  ( 66,  -450),  ( 67,  -425),  ( 68,  -400),  ( 69,  -387),  ( 70,  -375),  ( 71,  -362),  ( 72,  -350),  ( 73,  -337),  ( 74,  -325),  ( 75,  -312),  ( 76,  -300),  ( 77,  -287),  ( 78,  -275),  ( 79,  -262),  ( 80,  -250),  ( 81,  -237),  ( 82,  -225),  ( 83,  -212),  ( 84,  -200),  ( 85,  -187),  ( 86,  -175),  ( 87,  -162),  ( 88,  -150),  ( 89,  -137),  ( 90,  -125),  ( 91,  -112),  ( 92,  -100),  ( 93,   -87),  ( 94,   -75),  ( 95,   -62),  ( 96,   -50),  ( 97,   -37),  ( 98,   -25),  ( 99,   -15),  (100,     0) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          00         100         0002 : 33, 0004 : 10, 0008 : 10, 0080 : 17, 0400 : 25, 4000000 : 10, 40000000 : 25, 
+
+
+    -alarm (id: 5)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_ALARM(4)  
+       Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_ALARM Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       DEVICE_CATEGORY_HEADSET : { (  0, -4950),  ( 33, -3350),  ( 66, -1700),  (100,     0) }
+       DEVICE_CATEGORY_SPEAKER : { (  0, -5800),  ( 20, -4000),  ( 60, -1700),  (100,     0) }
+       DEVICE_CATEGORY_EARPIECE : { (  0, -4950),  ( 33, -3350),  ( 66, -1700),  (100,     0) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  0, -5800),  ( 20, -4000),  ( 60, -2100),  (100, -1000) }
+       DEVICE_CATEGORY_HEARING_AID : { (  0, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          01         07         0002 : 03, 0004 : 02, 0008 : 02, 0080 : 02, 0400 : 03, 4000000 : 02, 40000000 : 03, 
+
+
+    -notification (id: 6)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_NOTIFICATION(5)  
+       Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_NOTIFICATION Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+                    { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_NOTIFICATION_EVENT Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       DEVICE_CATEGORY_HEADSET : { (  1, -4950),  ( 33, -3350),  ( 66, -1700),  (100,     0) }
+       DEVICE_CATEGORY_SPEAKER : { (  1, -4680),  ( 42, -2070),  ( 85,  -540),  (100,     0) }
+       DEVICE_CATEGORY_EARPIECE : { (  1, -4950),  ( 33, -3350),  ( 66, -1700),  (100,     0) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  1, -5800),  ( 20, -4000),  ( 60, -2100),  (100, -1000) }
+       DEVICE_CATEGORY_HEARING_AID : { (  1, -4950),  ( 33, -3350),  ( 66, -1700),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          00         07         0002 : 02, 0004 : 01, 0008 : 01, 0080 : 01, 0400 : 02, 4000000 : 01, 40000000 : 02, 
+
+
+    -bluetooth_sco (id: 7)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_BLUETOOTH_SCO(6)  
+       Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_UNKNOWN Source: AUDIO_SOURCE_DEFAULT Flags: 0x4 Tags:  }
+       DEVICE_CATEGORY_HEADSET : { (  0, -4200),  ( 33, -2800),  ( 66, -1400),  (100,     0) }
+       DEVICE_CATEGORY_SPEAKER : { (  0, -2400),  ( 33, -1600),  ( 66,  -800),  (100,     0) }
+       DEVICE_CATEGORY_EARPIECE : { (  0, -4200),  ( 33, -2800),  ( 66, -1400),  (100,     0) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  0, -11500),  (  1, -5900),  (  2, -5600),  (  3, -5300),  (  4, -5000),  (  5, -4800),  (  6, -4600),  (  7, -4400),  (  8, -4200),  (  9, -4000),  ( 10, -3800),  ( 11, -3600),  ( 12, -3400),  ( 13, -3300),  ( 14, -3200),  ( 15, -3100),  ( 16, -3000),  ( 17, -2900),  ( 18, -2800),  ( 19, -2700),  ( 20, -2600),  ( 21, -2500),  ( 22, -2400),  ( 23, -2300),  ( 24, -2200),  ( 25, -2100),  ( 26, -2000),  ( 27, -1900),  ( 28, -1850),  ( 29, -1800),  ( 30, -1750),  ( 31, -1700),  ( 32, -1650),  ( 33, -1600),  ( 34, -1550),  ( 35, -1500),  ( 36, -1450),  ( 37, -1400),  ( 38, -1350),  ( 39, -1300),  ( 40, -1250),  ( 41, -1200),  ( 42, -1150),  ( 43, -1100),  ( 44, -1050),  ( 45, -1000),  ( 46,  -950),  ( 47,  -925),  ( 48,  -900),  ( 49,  -875),  ( 50,  -850),  ( 51,  -825),  ( 52,  -800),  ( 53,  -775),  ( 54,  -750),  ( 55,  -725),  ( 56,  -700),  ( 57,  -675),  ( 58,  -650),  ( 59,  -625),  ( 60,  -600),  ( 61,  -575),  ( 62,  -550),  ( 63,  -525),  ( 64,  -500),  ( 65,  -475),  ( 66,  -450),  ( 67,  -425),  ( 68,  -400),  ( 69,  -387),  ( 70,  -375),  ( 71,  -362),  ( 72,  -350),  ( 73,  -337),  ( 74,  -325),  ( 75,  -312),  ( 76,  -300),  ( 77,  -287),  ( 78,  -275),  ( 79,  -262),  ( 80,  -250),  ( 81,  -237),  ( 82,  -225),  ( 83,  -212),  ( 84,  -200),  ( 85,  -187),  ( 86,  -175),  ( 87,  -162),  ( 88,  -150),  ( 89,  -137),  ( 90,  -125),  ( 91,  -112),  ( 92,  -100),  ( 93,   -87),  ( 94,   -75),  ( 95,   -62),  ( 96,   -50),  ( 97,   -37),  ( 98,   -25),  ( 99,   -15),  (100,     0) }
+       DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          00         15         0002 : 07, 0400 : 07, 40000000 : 07, 
+
+
+    -enforced_audible (id: 8)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_ENFORCED_AUDIBLE(7)  
+       Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_UNKNOWN Source: AUDIO_SOURCE_DEFAULT Flags: 0x1 Tags:  }
+       DEVICE_CATEGORY_HEADSET : { (  1, -3000),  ( 33, -2600),  ( 66, -2200),  (100, -1800) }
+       DEVICE_CATEGORY_SPEAKER : { (  1, -3400),  ( 71, -2400),  (100, -2000) }
+       DEVICE_CATEGORY_EARPIECE : { (  1, -2400),  ( 33, -1800),  ( 66, -1200),  (100,  -600) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  1, -5800),  ( 20, -4000),  ( 60, -2100),  (100, -1000) }
+       DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          00         07         0002 : 02, 0004 : 01, 0008 : 01, 0080 : 01, 0400 : 02, 4000000 : 01, 40000000 : 02, 
+
+
+    -dtmf (id: 9)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_DTMF(8)  
+       Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_VOICE_COMMUNICATION_SIGNALLING Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       DEVICE_CATEGORY_HEADSET : { (  1, -3000),  ( 33, -2600),  ( 66, -2200),  (100, -1800) }
+       DEVICE_CATEGORY_SPEAKER : { (  1, -4000),  ( 71, -2400),  (100, -1400) }
+       DEVICE_CATEGORY_EARPIECE : { (  1, -2400),  ( 33, -1800),  ( 66, -1200),  (100,  -600) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  1, -5800),  ( 20, -4000),  ( 60, -2100),  (100, -1000) }
+       DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          00         15         0002 : 05, 0004 : 02, 0008 : 02, 0080 : 03, 0400 : 04, 4000000 : 02, 40000000 : 04, 
+
+
+    -tts (id: 10)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_TTS(9)  
+       Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_UNKNOWN Source: AUDIO_SOURCE_DEFAULT Flags: 0x8 Tags:  }
+       DEVICE_CATEGORY_HEADSET : { (  0, -9600),  (100, -9600) }
+       DEVICE_CATEGORY_SPEAKER : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_EARPIECE : { (  0, -9600),  (100, -9600) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  0, -9600),  (100, -9600) }
+       DEVICE_CATEGORY_HEARING_AID : { (  0, -9600),  (100, -9600) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          00         15         0002 : 05, 0004 : 02, 0008 : 02, 0080 : 03, 0400 : 04, 4000000 : 02, 40000000 : 04, 
+
+
+    -accessibility (id: 11)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_ACCESSIBILITY(10)  
+       Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_ASSISTANCE_ACCESSIBILITY Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       DEVICE_CATEGORY_HEADSET : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_SPEAKER : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_EARPIECE : { (  0, -5800),  ( 20, -4000),  ( 60, -1700),  (100,     0) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_HEARING_AID : { (  0, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          01         100         0002 : 34, 0004 : 11, 0008 : 11, 0080 : 18, 0400 : 26, 4000000 : 11, 40000000 : 26, 
+
+
+    -assistant (id: 12)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_ASSISTANT(11)  
+       Attributes: { Content type: AUDIO_CONTENT_TYPE_SPEECH Usage: AUDIO_USAGE_ASSISTANT Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       DEVICE_CATEGORY_HEADSET : { (  1, -5800),  ( 20, -4000),  ( 60, -1700),  (100,     0) }
+       DEVICE_CATEGORY_SPEAKER : { (  1, -5800),  ( 20, -4000),  ( 60, -1700),  (100,     0) }
+       DEVICE_CATEGORY_EARPIECE : { (  1, -5800),  ( 20, -4000),  ( 60, -1700),  (100,     0) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  1, -5800),  ( 20, -4000),  ( 60, -1700),  (100,     0) }
+       DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          00         15         0002 : 05, 0004 : 02, 0008 : 02, 0080 : 03, 0400 : 04, 4000000 : 02, 40000000 : 04, 
+
+
+    -patch (id: 13)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams:  
+       DEVICE_CATEGORY_HEADSET : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_SPEAKER : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_EARPIECE : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_HEARING_AID : { (  0,     0),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          00         01         40000000 : 00, 
+
+
+    -AUDIO_STREAM_REROUTING (id: 14)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_REROUTING(12)  
+       Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_VIRTUAL_SOURCE Source: AUDIO_SOURCE_DEFAULT Flags: 0x0 Tags:  }
+       DEVICE_CATEGORY_HEADSET : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_SPEAKER : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_EARPIECE : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_HEARING_AID : { (  0,     0),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          00         01         40000000 : 00, 
+
+
+    -AUDIO_STREAM_PATCH (id: 15)
+      Volume Curves Streams/Attributes, Curve points Streams for device category (index, attenuation in millibel)
+       Streams: AUDIO_STREAM_PATCH(13)  
+       Attributes: { Any }
+       DEVICE_CATEGORY_HEADSET : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_SPEAKER : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_EARPIECE : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_EXT_MEDIA : { (  0,     0),  (100,     0) }
+       DEVICE_CATEGORY_HEARING_AID : { (  0,     0),  (100,     0) }
+        Can be muted  Index Min  Index Max  Index Cur [device : index]...
+        true          00         01         40000000 : 00, 
+
+Allow playback capture log:
+  Package manager errors: 0
+  - uid=10054, allowPlaybackCapture=true , packageName=ru.astroapps.hdrezka
+
+IAudioPolicyService binder call profile
+2 setDeviceConnectionState n=6 ave=108.463 std=82.6117 min=21.485 max=261.656
+4 handleDeviceConfigChange n=2 ave=315.404 std=283.684 min=114.809 max=515.999
+6 setForceUse n=14 ave=4.79979 std=8.46413 min=0.124 max=29.045
+8 getOutput n=18 ave=2.17717 std=2.59632 min=0.354 max=9.051
+17 initStreamVolume n=12 ave=0.148333 std=0.155615 min=0.082 max=0.633
+18 setStreamVolumeIndex n=5362 ave=2.10387 std=3.34022 min=0.368 max=126.147
+20 setVolumeIndexForAttributes n=2 ave=0.298 std=0.0523259 min=0.261 max=0.335
+22 getMaxVolumeIndexForAttributes n=17 ave=0.0904706 std=0.0838661 min=0.031 max=0.394
+23 getMinVolumeIndexForAttributes n=17 ave=0.0660588 std=0.0375324 min=0.029 max=0.161
+25 getDevicesForAttributes n=242 ave=3.98365 std=33.8448 min=0.145 max=507.828
+31 isStreamActive n=158 ave=0.163076 std=0.909714 min=0.031 max=11.5
+39 setSupportedSystemUsages n=1 ave=0.098 min=0.098 max=0.098
+41 getOffloadSupport n=6 ave=1.71667 std=3.54818 min=0.212 max=8.959
+43 listAudioPorts n=118 ave=23.6442 std=45.2274 min=0.103 max=265.211
+47 listAudioPatches n=81 ave=10.752 std=16.4366 min=0.087 max=105.15
+49 registerClient n=5 ave=0.5656 std=0.865693 min=0.111 max=2.112
+50 setAudioPortCallbacksEnabled n=9 ave=0.0993333 std=0.0775097 min=0.03 max=0.296
+51 setAudioVolumeGroupCallbacksEnabled n=5 ave=0.075 std=0.025 min=0.032 max=0.095
+62 setMasterMono n=3 ave=0.257333 std=0.198737 min=0.09 max=0.477
+64 getStreamVolumeDB n=7 ave=0.123143 std=0.0593392 min=0.065 max=0.213
+67 getHwOffloadFormatsSupportedForBluetoothMedia n=1 ave=0.237 min=0.237 max=0.237
+70 setActiveAssistantServicesUids n=2 ave=3.5985 std=4.92783 min=0.114 max=7.083
+71 setA11yServicesUids n=4 ave=0.23675 std=0.28932 min=0.063 max=0.668
+72 setCurrentImeUid n=1 ave=2.973 min=2.973 max=2.973
+75 listAudioProductStrategies n=2 ave=2.2175 std=2.3483 min=0.557 max=3.878
+77 listAudioVolumeGroups n=1 ave=0.445 min=0.445 max=0.445
+79 setRttEnabled n=2 ave=0.083 std=0.046669 min=0.05 max=0.116
+80 isCallScreenModeSupported n=1 ave=0.038 min=0.038 max=0.038
+82 removeDevicesRoleForStrategy n=4 ave=0.2895 std=0.194594 min=0.175 max=0.58
+93 getDirectProfilesForAttributes n=9 ave=5.53822 std=4.24537 min=1.224 max=14.444

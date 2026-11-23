@@ -1,0 +1,448 @@
+ACTIVITY MANAGER CONTENT PROVIDERS (dumpsys activity providers)
+  Published single-user content providers (by class):
+  * ContentProviderRecord{849983b u0 com.android.providers.settings/.SettingsProvider}
+    package=com.android.providers.settings process=system
+    proc=ProcessRecord{cb2c7a9 895:system/1000}
+    uid=1000 provider=android.content.ContentProvider$Transport@afc00e9
+    singleton=true
+    authority=settings
+    isSyncable=false multiprocess=false initOrder=100
+    Connections:
+      -> 1281:com.android.systemui/u0a33 s2/2 u0/0 +27m42s895ms
+      -> 1360:com.mediatek.tv.service/1000 s1/1 u0/0 +27m42s78ms
+      -> 1459:com.trd.service/1000 s1/1 u0/0 +27m41s522ms
+      -> 1422:com.trd.framework/1000 s1/1 u0/0 +27m41s504ms
+      -> 1400:com.android.bluetooth/1002 s1/1 u0/0 +27m41s503ms
+      -> 1253:com.android.tv.settings/1000 s1/1 u0/0 +27m41s181ms
+      -> 1549:android.ext.services/u0a44 s1/1 u0/0 +27m40s641ms
+      -> 1730:com.android.inputmethod.latin/u0a29 s1/1 u0/0 +27m39s26ms
+      -> 1925:com.android.providers.tv/u0a13 s1/1 u0/0 +27m37s212ms
+      -> 1854:com.android.providers.media.module/u0a43 s1/1 u0/0 +27m37s135ms
+      -> 1255:ru.pro100tehnika.tvlauncher/u0a55 s1/1 u0/0 +27m37s129ms
+      -> 1973:com.mediatek.autopair/1000 s1/1 u0/0 +27m37s37ms
+      -> 1256:com.android.toofifi/1000 s1/1 u0/0 +27m35s938ms
+      -> 2215:android.process.media/u0a7 s1/1 u0/0 +27m34s833ms
+      -> 2164:com.amazon.avod.thirdpartyclient/u0a47 s1/1 u0/0 +27m33s442ms
+      -> 2343:com.estrongs.android.pop/u0a50 s1/1 u0/0 +27m31s901ms
+      -> 1262:ru.astroapps.hdrezka/u0a54 s1/1 u0/0 +27m24s350ms
+      -> 3041:com.android.externalstorage/u0a8 s1/1 u0/0 +27m16s523ms
+      -> 2865:com.android.permissioncontroller/u0a41 s1/1 u0/0 +27m15s283ms
+      -> 2762:com.android.providers.calendar/u0a4 s1/1 u0/0 +27m15s81ms
+      -> 2763:com.android.remoteprovisioner/u0a32 s1/1 u0/0 +27m14s677ms
+      -> 2765:com.android.statementservice/u0a12 s1/1 u0/0 +27m13s766ms
+      -> 2764:com.mediatek.miracast/1000 s1/1 u0/0 +27m13s440ms
+      -> 3250:zeasn.open.technical.tv.store/1000 s1/1 u0/0 +27m11s928ms
+      -> 3280:com.rjpj.tcorrection/1000 s1/1 u0/0 +25m21s333ms
+  * ContentProviderRecord{c59fb58 u0 android/com.android.server.textclassifier.IconsContentProvider}
+    package=android process=system
+    proc=ProcessRecord{cb2c7a9 895:system/1000}
+    uid=1000 provider=android.content.ContentProvider$Transport@90ac2a5
+    singleton=true
+    authority=com.android.textclassifier.icons
+
+  Published user 0 content providers (by class):
+  * ContentProviderRecord{af504b1 u0 com.amazon.avod.thirdpartyclient/com.bugsnag.android.internal.BugsnagContentProvider}
+    package=com.amazon.avod.thirdpartyclient process=com.amazon.avod.thirdpartyclient
+    proc=ProcessRecord{73227 2164:com.amazon.avod.thirdpartyclient/u0a47}
+    uid=10047 provider=android.content.ContentProviderProxy@3a71d96
+    authority=com.amazon.avod.thirdpartyclient.bugsnag-startup
+    isSyncable=false multiprocess=false initOrder=9000
+  * ContentProviderRecord{12f7d17 u0 com.android.systemui/.keyguard.KeyguardSliceProvider}
+    package=com.android.systemui process=com.android.systemui
+    proc=ProcessRecord{93efd89 1281:com.android.systemui/u0a33}
+    uid=10033 provider=android.content.ContentProviderProxy@1f7504
+    authority=com.android.systemui.keyguard
+  * ContentProviderRecord{8243aed u0 com.android.shell/.HeapDumpProvider}
+    package=com.android.shell process=com.android.shell
+    proc=ProcessRecord{872574b 2767:com.android.shell/2000}
+    uid=2000 provider=android.content.ContentProviderProxy@1af7d22
+    authority=com.android.shell.heapdump
+  * ContentProviderRecord{a24d3b3 u0 com.android.providers.downloads/.DownloadStorageProvider}
+    package=com.android.providers.downloads process=android.process.media
+    proc=ProcessRecord{484ef45 2215:android.process.media/u0a7}
+    uid=10007 provider=android.content.ContentProviderProxy@9a0dd70
+    authority=com.android.providers.downloads.documents
+  * ContentProviderRecord{19698e9 u0 com.android.permissioncontroller/androidx.startup.InitializationProvider}
+    package=com.android.permissioncontroller process=com.android.permissioncontroller
+    proc=ProcessRecord{7f9b216 2865:com.android.permissioncontroller/u0a41}
+    uid=10041 provider=android.content.ContentProviderProxy@cec496e
+    authority=com.android.permissioncontroller.androidx-startup
+  * ContentProviderRecord{80ef80f u0 com.my.settings/androidx.startup.InitializationProvider}
+    package=com.my.settings process=com.my.settings
+    proc=ProcessRecord{284cad7 1263:com.my.settings/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@88e609c
+    authority=com.my.settings.androidx-startup
+  * ContentProviderRecord{ab6daa5 u0 com.android.providers.media.module/androidx.startup.InitializationProvider}
+    package=com.android.providers.media.module process=com.android.providers.media.module
+    proc=ProcessRecord{773d600 1854:com.android.providers.media.module/u0a43}
+    uid=10043 provider=android.content.ContentProviderProxy@7178e7a
+    authority=com.android.providers.media.module.androidx-startup
+  * ContentProviderRecord{ecd062b u0 com.coolux.source/androidx.startup.InitializationProvider}
+    package=com.coolux.source process=com.coolux.source
+    proc=ProcessRecord{a7e5235 1948:com.coolux.source/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@56eea88
+    authority=com.coolux.source.androidx-startup
+  * ContentProviderRecord{8df7c21 u0 com.amazon.avod.thirdpartyclient/com.amazon.avod.identity.ThirdPartyMAPInformationProvider}
+    package=com.amazon.avod.thirdpartyclient process=com.amazon.avod.thirdpartyclient
+    proc=ProcessRecord{73227 2164:com.amazon.avod.thirdpartyclient/u0a47}
+    uid=10047 provider=android.content.ContentProviderProxy@1801846
+    authority=com.amazon.identity.auth.device.MapInfoProvider.AVOD
+  * ContentProviderRecord{713da07 u0 com.estrongs.android.pop/com.huawei.hms.update.provider.UpdateProvider}
+    package=com.estrongs.android.pop process=com.estrongs.android.pop
+    proc=ProcessRecord{2a389ad 2343:com.estrongs.android.pop/u0a50}
+    uid=10050 provider=android.content.ContentProviderProxy@84c2734
+    authority=com.estrongs.android.pop.hms.update.provider
+  * ContentProviderRecord{296b95d u0 net.gtvbox.videoplayer/net.gtvbox.explorer.SuggestionProvider}
+    package=net.gtvbox.videoplayer process=net.gtvbox.videoplayer
+    proc=ProcessRecord{1a20fc4 3004:net.gtvbox.videoplayer/u0a56}
+    uid=10056 provider=android.content.ContentProviderProxy@19572d2
+    authority=net.gtvbox.explorer.SuggestionProvider
+  * ContentProviderRecord{60a0fa3 u0 com.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerProvider}
+    package=com.android.providers.media.module process=com.android.providers.media.module
+    proc=ProcessRecord{773d600 1854:com.android.providers.media.module/u0a43}
+    uid=10043 provider=android.content.ContentProviderProxy@e1e82a0
+    authority=com.android.providers.media.photopicker
+  * ContentProviderRecord{68a8e59 u0 com.android.tv.settings/.name.SuggestionContentProvider}
+    package=com.android.tv.settings process=com.android.tv.settings
+    proc=ProcessRecord{37667ef 1253:com.android.tv.settings/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@233ea1e
+    authority=com.android.tv.settings.name
+  * ContentProviderRecord{2a402ff u0 com.android.tv.settings/.partnercustomizer.TvSettingsSliceProvider}
+    package=com.android.tv.settings process=com.android.tv.settings
+    proc=ProcessRecord{37667ef 1253:com.android.tv.settings/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@8f928cc
+    authority=com.android.tv.settings
+  * ContentProviderRecord{64cb715 u0 com.amazon.avod.thirdpartyclient/com.amazon.avod.feature.detail.data.core.download.RoverDetailPageInitProvider}
+    package=com.amazon.avod.thirdpartyclient process=com.amazon.avod.thirdpartyclient
+    proc=ProcessRecord{73227 2164:com.amazon.avod.thirdpartyclient/u0a47}
+    uid=10047 provider=android.content.ContentProviderProxy@db08a2a
+    authority=com.amazon.avod.thirdpartyclient.roverdetailpageinit
+  * ContentProviderRecord{4bfd01b u0 com.android.shell/androidx.core.content.FileProvider}
+    package=com.android.shell process=com.android.shell
+    proc=ProcessRecord{872574b 2767:com.android.shell/2000}
+    uid=2000 provider=android.content.ContentProviderProxy@6f605b8
+    authority=com.android.shell
+  * ContentProviderRecord{ceaf91 u0 com.android.providers.calendar/.CalendarProvider2}
+    package=com.android.providers.calendar process=com.android.providers.calendar
+    proc=ProcessRecord{9912ab9 2762:com.android.providers.calendar/u0a4}
+    uid=10004 provider=android.content.ContentProviderProxy@ca51ef6
+    authority=com.android.calendar
+  * ContentProviderRecord{a0152f7 u0 zeasn.open.technical.tv.store/androidx.lifecycle.ProcessLifecycleOwnerInitializer}
+    package=zeasn.open.technical.tv.store process=zeasn.open.technical.tv.store
+    proc=ProcessRecord{4207d2 3250:zeasn.open.technical.tv.store/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@be1c564
+    authority=zeasn.open.technical.tv.store.lifecycle-process
+    isSyncable=false multiprocess=true initOrder=0
+  * ContentProviderRecord{89db3cd u0 com.android.webview/org.chromium.android_webview.services.SafeModeContentProvider}
+    package=com.android.webview process=com.android.webview:webview_service
+    proc=ProcessRecord{94142ba 3473:com.android.webview:webview_service/u0a28}
+    uid=10028 provider=android.content.ContentProviderProxy@57c3482
+    authority=com.android.webview.SafeModeContentProvider
+  * ContentProviderRecord{c6e2793 u0 com.android.permissioncontroller/.permission.service.PermissionSearchIndexablesProvider}
+    package=com.android.permissioncontroller process=com.android.permissioncontroller
+    proc=ProcessRecord{7f9b216 2865:com.android.permissioncontroller/u0a41}
+    uid=10041 provider=android.content.ContentProviderProxy@9a7d3d0
+    authority=com.android.permissioncontroller
+  * ContentProviderRecord{1debfc9 u0 zeasn.open.technical.tv.store/androidx.core.content.FileProvider}
+    package=zeasn.open.technical.tv.store process=zeasn.open.technical.tv.store
+    proc=ProcessRecord{4207d2 3250:zeasn.open.technical.tv.store/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@8bd16ce
+    authority=zeasn.open.technical.tv.store.fileProvider
+  * ContentProviderRecord{6c9a9ef u0 com.android.providers.media.module/com.android.providers.media.MediaProvider}
+    package=com.android.providers.media.module process=com.android.providers.media.module
+    proc=ProcessRecord{773d600 1854:com.android.providers.media.module/u0a43}
+    uid=10043 provider=android.content.ContentProviderProxy@37e5cfc
+    authority=media
+  * ContentProviderRecord{40a8f85 u0 com.amazon.avod.thirdpartyclient/androidx.startup.InitializationProvider}
+    package=com.amazon.avod.thirdpartyclient process=com.amazon.avod.thirdpartyclient
+    proc=ProcessRecord{73227 2164:com.amazon.avod.thirdpartyclient/u0a47}
+    uid=10047 provider=android.content.ContentProviderProxy@617d1da
+    authority=com.amazon.avod.thirdpartyclient.androidx-startup
+  * ContentProviderRecord{2b0f60b u0 com.estrongs.android.pop/androidx.core.content.FileProvider}
+    package=com.estrongs.android.pop process=com.estrongs.android.pop
+    proc=ProcessRecord{2a389ad 2343:com.estrongs.android.pop/u0a50}
+    uid=10050 provider=android.content.ContentProviderProxy@7d24ce8
+    authority=com.estrongs.android.pop.fileprovider
+  * ContentProviderRecord{b699f01 u0 com.android.permissioncontroller/.role.service.RoleSearchIndexablesProvider}
+    package=com.android.permissioncontroller process=com.android.permissioncontroller
+    proc=ProcessRecord{7f9b216 2865:com.android.permissioncontroller/u0a41}
+    uid=10041 provider=android.content.ContentProviderProxy@63131a6
+    authority=com.android.permissioncontroller.role
+  * ContentProviderRecord{c76e7e7 u0 com.amazon.avod.thirdpartyclient/com.amazon.alexa.ra.core.data.utils.RaFileProvider}
+    package=com.amazon.avod.thirdpartyclient process=com.amazon.avod.thirdpartyclient
+    proc=ProcessRecord{73227 2164:com.amazon.avod.thirdpartyclient/u0a47}
+    uid=10047 provider=android.content.ContentProviderProxy@cf34f94
+    authority=com.amazon.avod.thirdpartyclient.ra.fileprovider
+  * ContentProviderRecord{6502a3d u0 ru.astroapps.hdrezka/androidx.core.content.FileProvider}
+    package=ru.astroapps.hdrezka process=ru.astroapps.hdrezka
+    proc=ProcessRecord{fb92180 1262:ru.astroapps.hdrezka/u0a54}
+    uid=10054 provider=android.content.ContentProviderProxy@52ec232
+    authority=ru.astroapps.hdrezka.provider
+  * ContentProviderRecord{8c01b83 u0 com.android.systemui/androidx.startup.InitializationProvider}
+    package=com.android.systemui process=com.android.systemui
+    proc=ProcessRecord{93efd89 1281:com.android.systemui/u0a33}
+    uid=10033 provider=android.content.ContentProviderProxy@c7fd100
+    authority=com.android.systemui.androidx-startup
+  * ContentProviderRecord{a1a2d39 u0 com.mediatek.tv.service/com.mediatek.tv.agent.LocalSearchProvider}
+    package=com.mediatek.tv.service process=com.mediatek.tv.service
+    proc=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@a02cf7e
+    authority=com.mediatek.tv.internal.data
+    Connections:
+      -> 1253:com.android.tv.settings/1000 s0/0 u1/1 +25m35s192ms
+  * ContentProviderRecord{7deecdf u0 com.estrongs.android.pop/.app.FileContentProvider}
+    package=com.estrongs.android.pop process=com.estrongs.android.pop
+    proc=ProcessRecord{2a389ad 2343:com.estrongs.android.pop/u0a50}
+    uid=10050 provider=android.content.ContentProviderProxy@990fd2c
+    authority=com.estrongs.files
+  * ContentProviderRecord{be763f5 u0 com.android.tv.settings/.accessories.ConnectedDevicesSliceProvider}
+    package=com.android.tv.settings process=com.android.tv.settings
+    proc=ProcessRecord{37667ef 1253:com.android.tv.settings/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@678658a
+    authority=com.android.tv.settings.accessories.sliceprovider
+  * ContentProviderRecord{2ef77fb u0 com.android.tv.settings/androidx.core.content.FileProvider}
+    package=com.android.tv.settings process=com.android.tv.settings
+    proc=ProcessRecord{37667ef 1253:com.android.tv.settings/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@da6c018
+    authority=com.android.settings.files
+  * ContentProviderRecord{9174a71 u0 com.amazon.avod.thirdpartyclient/com.bugsnag.android.performance.internal.startup.BugsnagPerformanceProvider}
+    package=com.amazon.avod.thirdpartyclient process=com.amazon.avod.thirdpartyclient
+    proc=ProcessRecord{73227 2164:com.amazon.avod.thirdpartyclient/u0a47}
+    uid=10047 provider=android.content.ContentProviderProxy@bff5056
+    authority=com.amazon.avod.thirdpartyclient.BugsnagPerformanceProvider
+    isSyncable=false multiprocess=false initOrder=9001
+  * ContentProviderRecord{eb398d7 u0 com.android.providers.media.module/com.android.providers.media.MediaDocumentsProvider}
+    package=com.android.providers.media.module process=com.android.providers.media.module
+    proc=ProcessRecord{773d600 1854:com.android.providers.media.module/u0a43}
+    uid=10043 provider=android.content.ContentProviderProxy@853c5c4
+    authority=com.android.providers.media.documents
+  * ContentProviderRecord{b851cad u0 com.amazon.avod.thirdpartyclient/androidx.core.content.FileProvider}
+    package=com.amazon.avod.thirdpartyclient process=com.amazon.avod.thirdpartyclient
+    proc=ProcessRecord{73227 2164:com.amazon.avod.thirdpartyclient/u0a47}
+    uid=10047 provider=android.content.ContentProviderProxy@1381be2
+    authority=com.amazon.avod.fileprovider
+  * ContentProviderRecord{2eeb73 u0 com.android.packageinstaller/.wear.WearPackageIconProvider}
+    package=com.android.packageinstaller process=com.android.packageinstaller
+    proc=ProcessRecord{e7bb87c 1273:com.android.packageinstaller/u0a10}
+    uid=10010 provider=android.content.ContentProviderProxy@da97a30
+    authority=com.google.android.packageinstaller.wear.provider
+  * ContentProviderRecord{583d6a9 u0 com.android.providers.downloads/.DownloadProvider}
+    package=com.android.providers.downloads process=android.process.media
+    proc=ProcessRecord{484ef45 2215:android.process.media/u0a7}
+    launchingApp=ProcessRecord{484ef45 2215:android.process.media/u0a7}
+    uid=10007 provider=android.content.ContentProviderProxy@440142e
+    authority=downloads
+  * ContentProviderRecord{f02cbcf u0 com.android.systemui/androidx.core.content.FileProvider}
+    package=com.android.systemui process=com.android.systemui
+    proc=ProcessRecord{93efd89 1281:com.android.systemui/u0a33}
+    uid=10033 provider=android.content.ContentProviderProxy@f64095c
+    authority=com.android.systemui.fileprovider
+  * ContentProviderRecord{19a3465 u0 com.android.statementservice/androidx.startup.InitializationProvider}
+    package=com.android.statementservice process=com.android.statementservice
+    proc=ProcessRecord{1ed93ca 2765:com.android.statementservice/u0a12}
+    uid=10012 provider=android.content.ContentProviderProxy@5bd453a
+    authority=com.android.statementservice.androidx-startup
+  * ContentProviderRecord{18a55eb u0 net.gtvbox.videoplayer/androidx.startup.InitializationProvider}
+    package=net.gtvbox.videoplayer process=net.gtvbox.videoplayer
+    proc=ProcessRecord{1a20fc4 3004:net.gtvbox.videoplayer/u0a56}
+    uid=10056 provider=android.content.ContentProviderProxy@cd65f48
+    authority=net.gtvbox.videoplayer.androidx-startup
+  * ContentProviderRecord{1feb1e1 u0 net.gtvbox.videoplayer/net.gtvbox.account.AccountProvider}
+    package=net.gtvbox.videoplayer process=net.gtvbox.videoplayer
+    proc=ProcessRecord{1a20fc4 3004:net.gtvbox.videoplayer/u0a56}
+    uid=10056 provider=android.content.ContentProviderProxy@8aa7b06
+    authority=net.gtvbox.account.AccountProvider
+  * ContentProviderRecord{eb665c7 u0 ru.astroapps.hdrezka/androidx.startup.InitializationProvider}
+    package=ru.astroapps.hdrezka process=ru.astroapps.hdrezka
+    proc=ProcessRecord{fb92180 1262:ru.astroapps.hdrezka/u0a54}
+    uid=10054 provider=android.content.ContentProviderProxy@59627f4
+    authority=ru.astroapps.hdrezka.androidx-startup
+  * ContentProviderRecord{bd38b1d u0 com.android.permissioncontroller/com.android.car.ui.core.CarUiInstaller}
+    package=com.android.permissioncontroller process=com.android.permissioncontroller
+    proc=ProcessRecord{7f9b216 2865:com.android.permissioncontroller/u0a41}
+    uid=10041 provider=android.content.ContentProviderProxy@2e34192
+    authority=com.android.permissioncontroller.CarUiInstaller
+  * ContentProviderRecord{1a99763 u0 com.android.webview/org.chromium.android_webview.services.DeveloperModeContentProvider}
+    package=com.android.webview process=com.android.webview:webview_service
+    proc=ProcessRecord{94142ba 3473:com.android.webview:webview_service/u0a28}
+    uid=10028 provider=android.content.ContentProviderProxy@ae7cf60
+    authority=com.android.webview.DeveloperModeContentProvider
+  * ContentProviderRecord{a22bc19 u0 com.android.tv.settings/androidx.startup.InitializationProvider}
+    package=com.android.tv.settings process=com.android.tv.settings
+    proc=ProcessRecord{37667ef 1253:com.android.tv.settings/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@a6fe4de
+    authority=com.android.tv.settings.lifecycle-tests
+    isSyncable=false multiprocess=true initOrder=0
+  * ContentProviderRecord{b1446bf u0 com.mediatek.tv.service/com.android.tv.settings.HotWordMicContentProvider}
+    package=com.mediatek.tv.service process=com.mediatek.tv.service
+    proc=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@bea818c
+    authority=atv.hotwordmic
+  * ContentProviderRecord{49a00d5 u0 com.rjpj.tcorrection/androidx.startup.InitializationProvider}
+    package=com.rjpj.tcorrection process=com.rjpj.tcorrection
+    proc=ProcessRecord{cec26d6 3280:com.rjpj.tcorrection/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@b9170ea
+    authority=androidx.constraintlayout.widget.androidx-startup
+  * ContentProviderRecord{c508fdb u0 com.mediatek.tv.service/com.mediatek.wwtv.tvrecommendation.database.LocalImageProvider}
+    package=com.mediatek.tv.service process=com.mediatek.tv.service
+    proc=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@8842a78
+    authority=com.mediatek.wwtv.tvrecommendation
+  * ContentProviderRecord{606d551 u0 com.android.toofifi/androidx.core.content.FileProvider}
+    package=com.android.toofifi process=com.android.toofifi
+    proc=ProcessRecord{c4584df 1256:com.android.toofifi/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@38db1b6
+    authority=com.android.toofifi.fileprovider
+  * ContentProviderRecord{83e4eb7 u0 com.android.tv.settings/.partnercustomizer.CustomizedContentProvider}
+    package=com.android.tv.settings process=com.android.tv.settings
+    proc=ProcessRecord{37667ef 1253:com.android.tv.settings/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@70d7624
+    authority=com.mediatek.tv.setting.partnercustomizer
+  * ContentProviderRecord{e92758d u0 com.mediatek.tv.service/com.android.tv.settings.FarFieldMicContentProvider}
+    package=com.mediatek.tv.service process=com.mediatek.tv.service
+    proc=ProcessRecord{9b7c7d5 1360:com.mediatek.tv.service/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@c3b3342
+    authority=tvlauncher.mic
+  * ContentProviderRecord{5df1f53 u0 com.android.shell/.BugreportStorageProvider}
+    package=com.android.shell process=com.android.shell
+    proc=ProcessRecord{872574b 2767:com.android.shell/2000}
+    uid=2000 provider=android.content.ContentProviderProxy@8bdd090
+    authority=com.android.shell.documents
+  * ContentProviderRecord{dbddd89 u0 com.amazon.avod.thirdpartyclient/com.google.firebase.provider.FirebaseInitProvider}
+    package=com.amazon.avod.thirdpartyclient process=com.amazon.avod.thirdpartyclient
+    proc=ProcessRecord{73227 2164:com.amazon.avod.thirdpartyclient/u0a47}
+    uid=10047 provider=android.content.ContentProviderProxy@44d418e
+    authority=com.amazon.avod.thirdpartyclient.firebaseinitprovider
+    isSyncable=false multiprocess=false initOrder=100
+  * ContentProviderRecord{b25daf u0 com.android.packageinstaller/androidx.startup.InitializationProvider}
+    package=com.android.packageinstaller process=com.android.packageinstaller
+    proc=ProcessRecord{e7bb87c 1273:com.android.packageinstaller/u0a10}
+    uid=10010 provider=android.content.ContentProviderProxy@8d765bc
+    authority=com.android.packageinstaller.androidx-startup
+  * ContentProviderRecord{1dc945 u0 zeasn.open.technical.tv.store/com.squareup.picasso.PicassoProvider}
+    package=zeasn.open.technical.tv.store process=zeasn.open.technical.tv.store
+    proc=ProcessRecord{4207d2 3250:zeasn.open.technical.tv.store/1000}
+    uid=1000 provider=android.content.ContentProviderProxy@5fe89a
+    authority=zeasn.open.technical.tv.store.com.squareup.picasso
+  * ContentProviderRecord{2d125cb u0 com.android.remoteprovisioner/androidx.startup.InitializationProvider}
+    package=com.android.remoteprovisioner process=com.android.remoteprovisioner
+    proc=ProcessRecord{de67999 2763:com.android.remoteprovisioner/u0a32}
+    uid=10032 provider=android.content.ContentProviderProxy@29321a8
+    authority=com.android.remoteprovisioner.androidx-startup
+  * ContentProviderRecord{cd6b4c1 u0 com.android.inputmethod.latin/com.android.inputmethod.dictionarypack.DictionaryProvider}
+    package=com.android.inputmethod.latin process=com.android.inputmethod.latin
+    proc=ProcessRecord{ced10e6 1730:com.android.inputmethod.latin/u0a29}
+    uid=10029 provider=android.content.ContentProviderProxy@c3f466
+    authority=com.android.inputmethod.dictionarypack.aosp
+  * ContentProviderRecord{4ca53a7 u0 com.android.providers.media/.LegacyMediaProvider}
+    package=com.android.providers.media process=android.process.media
+    proc=ProcessRecord{484ef45 2215:android.process.media/u0a7}
+    uid=10007 provider=android.content.ContentProviderProxy@9ccb054
+    authority=media_legacy
+  * ContentProviderRecord{ed8dbfd u0 com.android.providers.tv/.TvProvider}
+    package=com.android.providers.tv process=com.android.providers.tv
+    proc=ProcessRecord{f752cbe 1925:com.android.providers.tv/u0a13}
+    uid=10013 provider=android.content.ContentProviderProxy@80af0f2
+    authority=android.media.tv
+    isSyncable=true multiprocess=false initOrder=0
+  * ContentProviderRecord{f3e8343 u0 com.estrongs.android.pop/com.fun.report.sdk.AppUpgradeFileProvider}
+    package=com.estrongs.android.pop process=com.estrongs.android.pop
+    proc=ProcessRecord{2a389ad 2343:com.estrongs.android.pop/u0a50}
+    uid=10050 provider=android.content.ContentProviderProxy@26e7dc0
+    authority=com.estrongs.android.pop.XuanhuFileProvider
+  * ContentProviderRecord{5dc3af9 u0 com.android.permissioncontroller/com.android.car.ui.core.SearchResultsProvider}
+    package=com.android.permissioncontroller process=com.android.permissioncontroller
+    proc=ProcessRecord{7f9b216 2865:com.android.permissioncontroller/u0a41}
+    uid=10041 provider=android.content.ContentProviderProxy@e532a3e
+    authority=com.android.permissioncontroller.SearchResultsProvider
+  * ContentProviderRecord{a3c109f u0 com.amazon.avod.thirdpartyclient/com.amazon.avod.search.SearchHistoryProvider}
+    package=com.amazon.avod.thirdpartyclient process=com.amazon.avod.thirdpartyclient
+    proc=ProcessRecord{73227 2164:com.amazon.avod.thirdpartyclient/u0a47}
+    uid=10047 provider=android.content.ContentProviderProxy@29db5ec
+    authority=com.amazon.avod.searchhistory
+  * ContentProviderRecord{b1c8db5 u0 com.android.externalstorage/.ExternalStorageProvider}
+    package=com.android.externalstorage process=com.android.externalstorage
+    proc=ProcessRecord{bf4e7eb 3041:com.android.externalstorage/u0a8}
+    uid=10008 provider=android.content.ContentProviderProxy@d53ac4a
+    authority=com.android.externalstorage.documents
+  * ContentProviderRecord{65b17bb u0 com.android.systemui/.people.PeopleProvider}
+    package=com.android.systemui process=com.android.systemui
+    proc=ProcessRecord{93efd89 1281:com.android.systemui/u0a33}
+    uid=10033 provider=android.content.ContentProviderProxy@ba644d8
+    authority=com.android.systemui.people.PeopleProvider
+  * ContentProviderRecord{5d55031 u0 com.estrongs.android.pop/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+    package=com.estrongs.android.pop process=com.estrongs.android.pop
+    proc=ProcessRecord{2a389ad 2343:com.estrongs.android.pop/u0a50}
+    uid=10050 provider=android.content.ContentProviderProxy@1284316
+    authority=com.estrongs.android.pop.AGCInitializeProvider
+
+  Single-user authority to provider mappings:
+  settings: 849983b/com.android.providers.settings/.SettingsProvider
+  com.android.textclassifier.icons: c59fb58/android/com.android.server.textclassifier.IconsContentProvider
+
+  User 0 authority to provider mappings:
+  net.gtvbox.videoplayer.androidx-startup: 18a55eb/net.gtvbox.videoplayer/androidx.startup.InitializationProvider
+  com.android.webview.DeveloperModeContentProvider: 1a99763/com.android.webview/org.chromium.android_webview.services.DeveloperModeContentProvider
+  com.android.packageinstaller.androidx-startup: b25daf/com.android.packageinstaller/androidx.startup.InitializationProvider
+  com.android.remoteprovisioner.androidx-startup: 2d125cb/com.android.remoteprovisioner/androidx.startup.InitializationProvider
+  com.android.shell.heapdump: 8243aed/com.android.shell/.HeapDumpProvider
+  com.android.permissioncontroller: c6e2793/com.android.permissioncontroller/.permission.service.PermissionSearchIndexablesProvider
+  com.android.providers.media.documents: eb398d7/com.android.providers.media.module/com.android.providers.media.MediaDocumentsProvider
+  com.android.tv.settings.name: 68a8e59/com.android.tv.settings/.name.SuggestionContentProvider
+  com.android.systemui.keyguard: 12f7d17/com.android.systemui/.keyguard.KeyguardSliceProvider
+  net.gtvbox.account.AccountProvider: 1feb1e1/net.gtvbox.videoplayer/net.gtvbox.account.AccountProvider
+  com.android.providers.downloads.documents: a24d3b3/com.android.providers.downloads/.DownloadStorageProvider
+  com.android.tv.settings.accessories.sliceprovider: be763f5/com.android.tv.settings/.accessories.ConnectedDevicesSliceProvider
+  com.android.systemui.androidx-startup: 8c01b83/com.android.systemui/androidx.startup.InitializationProvider
+  com.android.providers.media.photopicker: 60a0fa3/com.android.providers.media.module/com.android.providers.media.photopicker.PhotoPickerProvider
+  zeasn.open.technical.tv.store.lifecycle-process: a0152f7/zeasn.open.technical.tv.store/androidx.lifecycle.ProcessLifecycleOwnerInitializer
+  com.android.permissioncontroller.SearchResultsProvider: 5dc3af9/com.android.permissioncontroller/com.android.car.ui.core.SearchResultsProvider
+  tvlauncher.mic: e92758d/com.mediatek.tv.service/com.android.tv.settings.FarFieldMicContentProvider
+  com.android.inputmethod.dictionarypack.aosp: cd6b4c1/com.android.inputmethod.latin/com.android.inputmethod.dictionarypack.DictionaryProvider
+  com.amazon.avod.searchhistory: a3c109f/com.amazon.avod.thirdpartyclient/com.amazon.avod.search.SearchHistoryProvider
+  com.my.settings.androidx-startup: 80ef80f/com.my.settings/androidx.startup.InitializationProvider
+  com.amazon.avod.thirdpartyclient.BugsnagPerformanceProvider: 9174a71/com.amazon.avod.thirdpartyclient/com.bugsnag.android.performance.internal.startup.BugsnagPerformanceProvider
+  com.android.externalstorage.documents: b1c8db5/com.android.externalstorage/.ExternalStorageProvider
+  com.android.permissioncontroller.androidx-startup: 19698e9/com.android.permissioncontroller/androidx.startup.InitializationProvider
+  com.amazon.avod.fileprovider: b851cad/com.amazon.avod.thirdpartyclient/androidx.core.content.FileProvider
+  com.estrongs.android.pop.AGCInitializeProvider: 5d55031/com.estrongs.android.pop/com.huawei.agconnect.core.provider.AGConnectInitializeProvider
+  com.android.tv.settings: 2a402ff/com.android.tv.settings/.partnercustomizer.TvSettingsSliceProvider
+  com.amazon.avod.thirdpartyclient.androidx-startup: 40a8f85/com.amazon.avod.thirdpartyclient/androidx.startup.InitializationProvider
+  media: 6c9a9ef/com.android.providers.media.module/com.android.providers.media.MediaProvider
+  android.media.tv: ed8dbfd/com.android.providers.tv/.TvProvider
+  com.amazon.avod.thirdpartyclient.ra.fileprovider: c76e7e7/com.amazon.avod.thirdpartyclient/com.amazon.alexa.ra.core.data.utils.RaFileProvider
+  com.android.permissioncontroller.CarUiInstaller: bd38b1d/com.android.permissioncontroller/com.android.car.ui.core.CarUiInstaller
+  zeasn.open.technical.tv.store.com.squareup.picasso: 1dc945/zeasn.open.technical.tv.store/com.squareup.picasso.PicassoProvider
+  com.mediatek.tv.setting.partnercustomizer: 83e4eb7/com.android.tv.settings/.partnercustomizer.CustomizedContentProvider
+  com.coolux.source.androidx-startup: ecd062b/com.coolux.source/androidx.startup.InitializationProvider
+  net.gtvbox.explorer.SuggestionProvider: 296b95d/net.gtvbox.videoplayer/net.gtvbox.explorer.SuggestionProvider
+  com.estrongs.android.pop.fileprovider: 2b0f60b/com.estrongs.android.pop/androidx.core.content.FileProvider
+  downloads: 583d6a9/com.android.providers.downloads/.DownloadProvider
+  com.estrongs.android.pop.XuanhuFileProvider: f3e8343/com.estrongs.android.pop/com.fun.report.sdk.AppUpgradeFileProvider
+  com.android.providers.media.module.androidx-startup: ab6daa5/com.android.providers.media.module/androidx.startup.InitializationProvider
+  com.android.systemui.people.PeopleProvider: 65b17bb/com.android.systemui/.people.PeopleProvider
+  ru.astroapps.hdrezka.androidx-startup: eb665c7/ru.astroapps.hdrezka/androidx.startup.InitializationProvider
+  com.mediatek.tv.internal.data: a1a2d39/com.mediatek.tv.service/com.mediatek.tv.agent.LocalSearchProvider
+  media_legacy: 4ca53a7/com.android.providers.media/.LegacyMediaProvider
+  atv.hotwordmic: b1446bf/com.mediatek.tv.service/com.android.tv.settings.HotWordMicContentProvider
+  com.mediatek.wwtv.tvrecommendation: c508fdb/com.mediatek.tv.service/com.mediatek.wwtv.tvrecommendation.database.LocalImageProvider
+  com.estrongs.files: 7deecdf/com.estrongs.android.pop/.app.FileContentProvider
+  ru.astroapps.hdrezka.provider: 6502a3d/ru.astroapps.hdrezka/androidx.core.content.FileProvider
+  com.estrongs.android.pop.hms.update.provider: 713da07/com.estrongs.android.pop/com.huawei.hms.update.provider.UpdateProvider
+  com.android.toofifi.fileprovider: 606d551/com.android.toofifi/androidx.core.content.FileProvider
+  com.amazon.avod.thirdpartyclient.bugsnag-startup: af504b1/com.amazon.avod.thirdpartyclient/com.bugsnag.android.internal.BugsnagContentProvider
+  com.android.tv.settings.lifecycle-tests: a22bc19/com.android.tv.settings/androidx.startup.InitializationProvider
+  com.amazon.avod.thirdpartyclient.firebaseinitprovider: dbddd89/com.amazon.avod.thirdpartyclient/com.google.firebase.provider.FirebaseInitProvider
+  com.android.shell.documents: 5df1f53/com.android.shell/.BugreportStorageProvider
+  com.android.shell: 4bfd01b/com.android.shell/androidx.core.content.FileProvider
+  com.google.android.packageinstaller.wear.provider: 2eeb73/com.android.packageinstaller/.wear.WearPackageIconProvider
+  androidx.constraintlayout.widget.androidx-startup: 49a00d5/com.rjpj.tcorrection/androidx.startup.InitializationProvider
+  com.android.settings.files: 2ef77fb/com.android.tv.settings/androidx.core.content.FileProvider
+  com.android.systemui.fileprovider: f02cbcf/com.android.systemui/androidx.core.content.FileProvider
+  com.amazon.identity.auth.device.MapInfoProvider.AVOD: 8df7c21/com.amazon.avod.thirdpartyclient/com.amazon.avod.identity.ThirdPartyMAPInformationProvider
+  com.amazon.avod.thirdpartyclient.roverdetailpageinit: 64cb715/com.amazon.avod.thirdpartyclient/com.amazon.avod.feature.detail.data.core.download.RoverDetailPageInitProvider
+  com.android.statementservice.androidx-startup: 19a3465/com.android.statementservice/androidx.startup.InitializationProvider
+  com.android.calendar: ceaf91/com.android.providers.calendar/.CalendarProvider2
+  com.android.permissioncontroller.role: b699f01/com.android.permissioncontroller/.role.service.RoleSearchIndexablesProvider
+  zeasn.open.technical.tv.store.fileProvider: 1debfc9/zeasn.open.technical.tv.store/androidx.core.content.FileProvider
+  com.android.webview.SafeModeContentProvider: 89db3cd/com.android.webview/org.chromium.android_webview.services.SafeModeContentProvider

@@ -1,0 +1,16 @@
+dump packages 94 mine 96
+
+ONLY IN DUMP: ['com.vk.tv', 'de.szalkowski.activitylauncher', 'org.videolan.vlc', 'org.xbmc.kodi', 'ru.mts.mtstv', 'ru.rutube.app']
+
+ONLY IN MINE: ['com.estrongs.android.pop', 'com.yablio.sendfilestotv', 'de.szalkowski.activitylauncher.oss', 'io.github.romanvht.byedpi', 'net.gtvbox.videoplayer', 'org.liskovsoft.androidtv.rukeyboard', 'ru.astroapps.hdrezka', 'ru.pro100tehnika.tvlauncher']
+
+VERSION DIFFS:
+  com.android.provision                         mine 33/13 -> dump 1/1.0
+  com.android.toofifi                           mine 2133260709/V3.3.4.1_20837_20260709 -> dump 2133261012/V3.3.4.2_22279_20261012
+  com.coolux.source                             mine 41/5.3 -> dump 42/5.4
+
+PATH DIFFS:
+  com.amazon.avod.thirdpartyclient              mine /data/app/~~WKBV_H0QGsBez7dvQkjcnA==/com.amazon.avod.thirdpartyclient-UPfLdRmoWPT0uz1N2dObbg== -> dump /data/app/~~CaWRYcbbQBJl_h40wuOlmw==/com.amazon.avod.thirdpartyclient-VktF-2g0pBI8OthLq-1b7Q==
+  com.android.provision                         mine /system_ext/priv-app/Provision -> dump /system/app/KuSetupWizard
+  com.google.android.youtube.tv                 mine /data/app/~~qQXcbW037U7IwdGS3WiG6w==/com.google.android.youtube.tv-UF7yIketSRqomb4i67VNug== -> dump /data/app/~~iwYZNXbIgmhPstGxbeKiJg==/com.google.android.youtube.tv-gfM6SJlvL_PFfsjuLwsSTw==
+  com.netflix.mediaclient                       mine /data/app/~~SJtS_7hQ1ufRFgAAsJ5yDg==/com.netflix.mediaclient--nIYfw9Ccl5_hMMlODvqPQ== -> dump /data/app/~~DFfh7J8t1ulpND6hVz8gYg==/com.netflix.mediaclient-KD0NogEnTy9sV7Q-A0PjAQ==

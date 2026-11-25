@@ -1,0 +1,18 @@
+=== new vs mine
+entries: new=954 mine=954
+only in new (0):
+only in mine (0):
+size changed (4):
+  ~ bsp/board/BD_MT5873_H1V1_B6_S/board.ini  79370 -> 79598 (+228)
+  ~ bsp/chip/aq/InputSrc�/BasicSound_DTV.ini  5877 -> 5886 (+9)
+  ~ bsp/chip/aq/SoundStyle/BasicSound_User.ini  3834 -> 3871 (+37)
+  ~ platform/data�/misc�/ConfigDefaultValue.ini  215978 -> 216002 (+24)
+content changed (7):
+  ~ bsp/board/BD_MT5873_H1V1_B6_S/board.ini  999b2333b4c1 -> 803b19c1781a
+  ~ bsp/chip/aq/InputSrc�/BasicSound_DTV.ini  0292634d877f -> 0d5be0619827
+  ~ bsp/chip/aq/InputSrc�/BasicSound_HDMI.ini  bf951e7b0dc2 -> b49956c1bfc0
+  ~ bsp/chip/aq/InputSrc�/BasicSound_MM.ini  a46f1bbffd3f -> 2697cc743d5e
+  ~ bsp/chip/aq/SoundStyle/BasicSound_User.ini  59236d2adba1 -> b59a2531fa98
+  ~ bsp/chip/pq/Main_TMO.bin�  746c0e46588b -> 0e5b4addeae3
+  ~ platform/data�/misc�/ConfigDefaultValue.ini  b5068c5ac0e2 -> 8d5a6d393fe8
+content identical: 811

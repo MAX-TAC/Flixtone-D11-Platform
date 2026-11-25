@@ -1,0 +1,4 @@
+system_a	blocks_a=211858	blocks_b=208929	shared=164016	(84.6% of a, 84.8% of b)	only_new=29791	only_old=29346
+vendor_a	blocks_a=64114	blocks_b=64127	shared=38107	(86.6% of a, 86.6% of b)	only_new=5890	only_old=5909
+product_a	blocks_a=18836	blocks_b=18837	shared=18428	(98.2% of a, 98.2% of b)	only_new=332	only_old=333
+system_ext_a	blocks_a=21310	blocks_b=21312	shared=16244	(76.5% of a, 76.5% of b)	only_new=4983	only_old=4985

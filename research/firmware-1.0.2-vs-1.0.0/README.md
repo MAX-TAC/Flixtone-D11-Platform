@@ -1,0 +1,561 @@
+# Прошивка RUIOS.8054.1.0.2 (дамп `flixtone_backup`) — сравнение с дампом владельца 1.0.0
+
+Дата разбора: 2026-11-25.
+Объект: полный дамп разделов устройства с прошивкой **RUIOS.8054.1.0.2**, положенный в `Flixtone d11/flixtone_backup/`.
+База сравнения: дамп владельца (`d11_bk/` для разделов, `FlixTone_8054_Backup/super.img` для system-раздела,
+runtime-срез `2026-11-23` из этого репозитория).
+
+> Файл: `research/firmware-1.0.2-vs-1.0.0/README.md`.
+> Серийные номера в публичной версии скрыты (политика репозитория).
+
+---
+
+## 0. Уровни доказательности (как в README репозитория)
+
+| Метка | Смысл | Применимо к этому отчёту |
+|---|---|---|
+| `DEV` | `DEVICE_VERIFIED` — снято с живого устройства, есть сырой вывод | `getprop`, `dumpsys_package`, `packages.txt` из `flixtone_backup/meta/` |
+| `ST` | `STATIC_CONFIRMED` — прочитано из образа с указанием файла/смещения | хеши разделов, LP-метаданные, ext4-деревья, cpio ramdisk, заголовки boot/AVB/DTBO |
+| `ASM` | `ASSUMPTION` — гипотеза, требует проверки | выводы «зачем» изменено, влияние на поведение |
+| `LIM` | ограничение метода (не факт о прошивке) | EROFS-контент сжатых файлов не распакован |
+
+Правило: любое утверждение без метки — `ASM`. Влияние на картинку/звук/оптику не подтверждено на железе
+(`DEV` по этому дампу невозможен: устройство-источник не у нас).
+
+---
+
+## 1. Резюме (TL;DR)
+
+1. `flixtone_backup` — **не «другая модель» и не «близнец 8052»**, а полный дамп **другого экземпляра того же
+   FlixTone D11 (machine id `8054`)** с **более новой** прошивкой: `RUIOS.8054.1.0.2` (сборка 15.10.2026) против
+   `RUIOS.8054.1.0.0` (05.09.2026) у владельца. `ST`+`DEV`
+2. Это **штатное обновление вендора**, а не пользовательская сборка: подпись AVB та же (тот же публичный ключ), тип сборки тот же
+   (`userdebug`, `test-keys`), git-ревизии разные
+   (`a9576939…` против `d71834f6…`). `ST`
+3. Аппаратная конфигурация та же: `mt5873_cd`/`mt9660`, Android 13 (SDK 33), панель `C500AFH011`, 2 HDMI
+   (`HW6`,`HW7`), ToF есть, machine id 8054. `DEV`
+4. Устройство-источник **не разблокировано**: `ro.boot.vbmeta.device_state=locked`,
+   `verifiedbootstate=green`, `veritymode=enforcing`. У владельца — `unlocked/orange`. `DEV`
+5. Изменения в прошивке **не «косметические»**, но и не «переписана половина»: по 4-КиБ блокам
+   содержимое `system` совпадает на ~85%, `vendor` — 86,6%, `system_ext` — 76,5%, `product` — 98,2%. `ST`
+6. Реально найдены и подтверждены **три класса изменений** `ST`:
+   - **OEM-конфиги (`tvconfig`)**: правка `board.ini` (GPIO: добавлен `AUDIO_HEADPHONE_MUTE`, сдвинута нумерация,
+     `WIFI_RESET` переехал; `BOARD_TUNER_VIF_ASIA_SIGNAL_OPTION false→1`), **перерисованы таблицы громкости**
+     (`BasicSound_DTV/HDMI/MM`), правка `ConfigDefaultValue.ini` (`InputSourceID[1]` 10→12), обновлён
+     `Main_TMO.bin` (PQ-тюнинг).
+   - **Приложения**: `com.android.toofifi` (AirPlay) `V3.3.4.1_20837_20260709` → `V3.3.4.2_22279_20261012`;
+     `com.coolux.source` (KuSourceRJ) `5.3` → `5.4`; `com.android.provision` переехал из
+     `system_ext/priv-app/Provision` в `system/app/KuSetupWizard` и «сбросил» версию `33`→`1.0`;
+     `TvSettingsPlus.apk` +12 288 Б, `MultiMediaPlayer.apk` +4 096 Б (размеры из EROFS-метаданных).
+   - **Ядро/загрузчик**: ядро пересобрано (`5.15.189-android13-8-ga9576939dc4e-dirty`, сборка 14.10.2026,
+     10:55:56 UTC), загрузчик `mboot` — `01.01.261015` (было `01.01.260905`), ramdisk пересобран
+     (505 файлов, **103 файла изменены**, набор файлов тот же; 3 модуля ядра поменяли размер).
+7. **Калибровочные/приватные разделы** (`persist`, `private`, `eeprom_a`, `tvcertificate`, `project_id`,
+   `trddev`) различаются, но это **данные конкретного устройства**, а не прошивка: их нельзя переносить
+   между устройствами. `ST`
+8. `uenv` (U-Boot env) **по содержимому идентичен** — различие в образе только в метаданных ext4. `ST`
+9. Вывод для проекта MOD `ASM`: обновление 1.0.2 **не приносит** смены API/фреймворка для нашего
+   `TvSettingsPlus` (версии пакетов `com.android.tv.settings 1.0`, `com.trd.framework 1.0`,
+   `com.trd.service 13`, `com.rjpj.tcorrection 13` те же), но **меняет** аудио-таблицы громкости и GPIO
+   (наушники) — то есть поведение звука/GPIO на новой прошивке может отличаться от дампа владельца.
+
+---
+
+## 2. Что именно сравнивалось
+
+| Объект | Дамп 1.0.2 (`flixtone_backup/`) | База владельца | Метод |
+|---|---|---|---|
+| `super.img` (2 225 078 272 Б) | есть, SHA-256 `6ce1dd963b1c242e…` | `FlixTone_8054_Backup/super.img`, SHA-256 `ac16996dddaa7c8f…` | разбор LP-метаданных, извлечение логических разделов, 4-КиБ хеши |
+| `boot_a/b`, `dtbo_a/b`, `vbmeta(_system)_a/b` | есть | `d11_bk/` | заголовки + SHA |
+| `mboot_a/b`, `optee_a/b`, `uenv`, `armfw_a/b` | есть | `d11_bk/` (кроме `optee_b`, `armfw_b`) | SHA, строки версий, блочный diff |
+| `tvconfig_a/b`, `tvservice_a/b`, `3rd_*`, `linux_rootfs_*`, `bootdata_*`, `cache`, `cha/chb` | есть | `d11_bk/` только `tvconfig_a`; остального в дампе владельца нет | ext4/squashfs-разбор, дерево файлов |
+| `factory_a_a/b`, `persist`, `private`, `eeprom`, `tvcertificate`, `project_id`, `trddev` | есть | `d11_bk/` | SHA + ext4-деревья |
+| Runtime | `meta/getprop.txt`, `dumpsys_package.txt`, `packages.txt`, `settings_global.txt`, `dumpsys_*` | срез `2026-11-23` в репозитории | текстовый diff |
+
+Ограничение среды (`LIM`): в системе нет `lpunpack`, `erofs-utils`, `7-Zip`, WSL/WSL2 запрещён, поэтому
+`super.img` разбирался самописным парсером liblp (см. `tools/liblp_parse.py`), а EROFS читался самописным
+ридером. **Содержимое сжатых (z_erofs) файлов не распаковывалось**: для файлов с layout 3 сравнивались
+только метаданные (наличие, размер, тип). Для layout 0/2 (несжатые) сравнение содержимого корректно и
+использовано только там, где прошло валидацию (см. §5).
+
+---
+
+## 3. Идентификация и происхождение
+
+Источник: `flixtone_backup/meta/getprop.txt`, `ro.*`, `persist.*` (`DEV`).
+
+| Параметр | Дамп 1.0.2 | Дамп владельца 1.0.0 | Комментарий |
+|---|---|---|---|
+| `ro.rjpj.machine.id` | `8054` | `8054` | та же модель |
+| `ro.serialno` / `ro.boot.serialno` | `599E…E49B (серийник скрыт по политике репозитория)` | `B7EC…1FAA (серийник скрыт по политике репозитория)` | **другое физическое устройство** |
+| `ro.build.fingerprint` | `…/eng.suhaix.20261015.112145:userdebug/test-keys` | `…/eng.suhaix.20260905.031903:userdebug/test-keys` | |
+| `ro.build.date` | `Thu Oct 15 11:22:52 UTC 2026` | `Sat Sep  5 03:20:21 UTC 2026` | |
+| `ro.rjpj.yunota.version` | `RUIOS.8054.1.0.2` | `RUIOS.8054.1.0.0` | OTA-канал |
+| `ro.rjpj.gitrev` | `a9576939dc4edc8bb6c3b84cf54b8d84ee33a8b5` | `d71834f686bd97209e3bfeac15a6c4d357af35d5` | ревизия вендорского дерева |
+| `ro.rjpj.buildtime` | `20261015112150` | `20260905031904` | |
+| `ro.bootloader` / `mboot` | `01.01.261015` | `01.01.260905` | см. §7 |
+| `ro.boot.vbmeta.device_state` | `locked` | `unlocked` | источник не разблокирован |
+| `ro.boot.verifiedbootstate` | `green` | `orange` | |
+| `ro.build.host` | `949f1e63e2fb` | `5a7517920bed` | другая сборочная машина/контейнер |
+| `ro.product.model` | `Projetor` | `Projetor` | |
+
+Аппаратные параметры совпадают (`DEV`): `persist.sys.paneltype=C500AFH011`, `ro.rjpj.hdmi.ports=HW6:HDMI1,HW7:HDMI2`,
+`ro.rjpj.hdmi.port.count=2`, `ro.rjpj.support.toffunction=1`, `ro.rjpj.machine.id=8054`,
+`ro.soc.model=mt5873`, `ro.boot.hardware=mt9660`.
+
+Вердикт: **один и тот же SKU 8054, разные экземпляры и разные сборки.** Версия 1.0.2 старше по дате
+(15.10.2026) и является обновлением канала `RUIOS.8054`.
+
+---
+
+## 4. Карта разделов: что есть в полном дампе
+
+Полный дамп 1.0.2 содержит **40 образов разделов**, дамп владельца — 24 (`d11_bk`) + `super.img` отдельно.
+Ниже — таблица по всему `partitions/` (SHA-256 по первым 16 hex).
+
+| Раздел | Размер, Б | В дампе владельца | SHA-256 (1.0.2) | SHA-256 (владелец) | Статус |
+|---|---|---|---|---|---|
+| `3rd_a_a` / `3rd_a_b` | 31 457 280 | нет | `44af0826d8e727f8` | — | только в 1.0.2 |
+| `3rd_rw` | 31 457 280 | нет | `f479975dc5b9db72` | — | только в 1.0.2 |
+| `armfw_a` | 1 048 576 | есть | `ab2007acdd059e6a` | `ab2007acdd059e6a` | **идентичен** |
+| `armfw_b` | 1 048 576 | нет (в `d11_bk` только `armfw_a`) | `8f2247d357dcc32d` | — | только в 1.0.2 |
+| `boot_a` / `boot_b` | 78 643 200 | есть | `06520886ba3eb59c` | `f1fc341533babecc` | отличается (§7) |
+| `bootdata_a` / `_b` | 41 943 040 | нет | `aab04d70aeb3d726` | — | только в 1.0.2 |
+| `cache` | 5 242 880 | нет | `a2588d461ecbbe9c` | — | только в 1.0.2 |
+| `cha` / `chb` | 1 048 576 | нет | `fceff77629b70137` / `047023f753b77b4c` | — | только в 1.0.2 |
+| `dtbo_a` / `_b` | 8 388 608 | есть | `35a3c1516e07c769` | `7b6face54f66968c` | отличается (§7) |
+| `eeprom_a` | 2 097 152 | есть | `e176dc7d1a46ec01` | `7251ba45530bb0b0` | калибровка устройства |
+| `factory_a_a` / `_b` | 8 388 608 | есть | `a5ac13ec08b13a0b` | `fc45698f4aa7b1fe` | отличается (§6.2) |
+| `linux_rootfs_a_a` / `_b` | 57 671 680 | нет | `6bebf72a61751dcc` | — | только в 1.0.2 (§6.4) |
+| `mboot_a` / `_b` | 10 485 760 | есть | `e8b23ee7ee35aa38` | `ebf9a0adef859f56` | отличается (§7) |
+| `metadata` | 16 777 216 | есть | `f08edc5ba0883e80` | `135ce40738bfe7c2` | служебный, не прошивка |
+| `misc` | 1 048 576 | есть | `9fa3992bad29ae9d` | `9fa3992bad29ae9d` | **идентичен** |
+| `optee_a` | 25 165 824 | есть | `80b266139d77a92d` | `48f3051781d8e85d` | 2 блока различаются (§7) |
+| `optee_b` | 25 165 824 | нет | `517c44f500fe6683` | — | только в 1.0.2 |
+| `persist` | 20 971 520 | есть | `77a5431432a67d44` | `58593f968d910eda` | калибровка устройства |
+| `private` | 20 971 520 | есть | `26e0b7a62c3aa61e` | `94b9e4aa105a4777` | данные устройства |
+| `project_id` | 5 242 880 | есть | `941a644f03a96184` | `0afa86208f0a09fb` | данные устройства |
+| `super` | 2 225 078 272 | отдельно `FlixTone_8054_Backup/super.img` | `6ce1dd963b1c242e` | `ac16996dddaa7c8f` | §5 |
+| `trddev` | 2 097 152 | есть | `455ec6b2d289082d` | `240ae6628d3b8244` | данные устройства |
+| `tvcertificate` | 8 388 608 | есть | `8bd9e7c4b7aba141` | `69882fb11fcefa45` | данные устройства |
+| `tvconfig_a` | 157 286 400 | есть | `fca40ac0ab579b5e` | `f1cf46d79cceb9b6` | §6.1 |
+| `tvconfig_b` | 157 286 400 | нет | `08c028034b975280` | — | только в 1.0.2 |
+| `tvservice_a` / `_b` | 175 112 192 | нет | `2d17a6d8c9d47edf` | — | только в 1.0.2 (§6.3) |
+| `uenv` | 16 777 216 | есть | `017581b172891907` | `19dd44a643d0d9cc` | содержимое идентично (§6.5) |
+| `vbmeta_a` | 1 048 576 | есть | `794f9b1b0ad1617b` | `0131481e6ac5533d` | §7 |
+| `vbmeta_b` | 1 048 576 | есть | `d74a0cd77c678aa6` | `8e614141b3925e96` | §7 |
+| `vbmeta_system_a` / `_b` | 1 048 576 | есть | `75869876f28b4d80` / `3706891717b18700` | `d8b2856abd6920fb` / `07875443bbbb920c` | §7 |
+
+Полный дамп 1.0.2 закрывает пробелы дампа владельца: `super`, `tvservice`, `3rd`, `linux_rootfs`,
+`bootdata`, `cache`, `cha/chb`, `tvconfig_b`, `optee_b`, `armfw_b`. Это делает его **пригодным как источник
+полного отката**, чего у дампа владельца не было. `ST`
+
+Важно (`ST`): `3rd_a_a` и `3rd_a_b` **побайтово идентичны** (`44af0826…`), `tvservice_a` и `tvservice_b` тоже
+(`2d17a6d8…`), как и `factory_a_a/b`, `linux_rootfs_a_a/b`, `bootdata_a/b`, `boot_a/b`, `dtbo_a/b`,
+`mboot_a/b`. То есть B-слоты — это копии A, а не отдельная сборка.
+
+---
+
+## 5. `super.img`: динамические разделы
+
+### 5.1 Метаданные liblp (`ST`)
+
+Оба образа: одинаковый размер 2 225 078 272 Б, одинаковый GPT-«хвост», одинаковый layout метаданных
+(заголовок LP по смещению `0x3000`, block device `super`, `first_logical_sector=2048`,
+выравнивание 1 МиБ, `alignment_offset=0`).
+
+| Логический раздел | Группа | Размер 1.0.2 | Размер 1.0.0 | Δ | Экстент 1.0.2 (сектор/смещение) |
+|---|---|---|---|---|---|
+| `system_a` | `group_oem_a` | 867 770 368 | 855 773 184 | **+11 997 184 Б (+11,44 МиБ)** | 1 694 864 сект. @ 1 048 576 |
+| `vendor_a` | `group_oem_a` | 262 610 944 | 262 664 192 | −53 248 | 512 912 @ 869 269 504 |
+| `product_a` | `group_oem_a` | 77 152 256 | 77 156 352 | −4 096 | 150 688 @ 1 132 462 080 |
+| `system_ext_a` | `group_oem_a` | 87 285 760 | 87 293 952 | −8 192 | 170 480 @ 1 210 056 704 |
+| `system_b`, `vendor_b`, `product_b`, `system_ext_b` | `group_oem_b` | **0** | **0** | 0 | **экстентов нет** |
+
+Существенно (`ST`): **в обоих образах B-слот логических разделов пуст** (0 экстентов). Это согласуется с
+наблюдением владельца, что слот B «bootable, но без extents». То есть образ `super` — A-only, и «переключиться
+на B» без перезаписи `super` нельзя.
+
+Раздел `system` вырос на 11,44 МиБ, остальные — мелкие (±50 КиБ). Рост `system` — не «новый APK», а
+округление/перекладка EROFS-кластеров при пересборке (см. ниже): набор файлов `system` почти тот же.
+
+### 5.2 Файловые системы (`ST`)
+
+Все четыре логических раздела — **EROFS** (магия `0xE0F5E1E2` по смещению 1024), block size 4096,
+`feature_incompat = 1` (compacted 2B индексы), сжатие с включёнными кластерами. Извлечённые образы:
+
+| Раздел | SHA-256 извлечённого образа (1.0.2) | SHA-256 (1.0.0) |
+|---|---|---|
+| `system_a` | `7417ad968155ecb0…` | `9d8418cc87fd3ed0…` |
+| `vendor_a` | `0f749e2ddd12cdf5…` | `d6b6454e342fe5b0…` |
+| `product_a` | `3b9aaa738b3d95a7…` | `6226cf47fb073c65…` |
+| `system_ext_a` | `248685d712c5627d…` | `e4cfbc690db910c1…` |
+
+### 5.3 Насколько содержимое реально изменилось (`ST`)
+
+Метод: каждый образ разбит на блоки 4 КиБ, взяты множества хешей блоков; пересечение = содержимое,
+присутствующее в обеих версиях (в том числе со сдвигом адресов из-за перекладки разделов).
+
+| Раздел | Блоков 1.0.2 | Блоков 1.0.0 | Общих | «Только в 1.0.2» | «Только в 1.0.0» |
+|---|---|---|---|---|---|
+| `system_a` | 211 858 | 208 929 | 164 016 (**84,6%**) | 29 791 (~116 МиБ) | 29 346 (~115 МиБ) |
+| `vendor_a` | 64 114 | 64 127 | 38 107 (**86,6%**) | 5 890 (~23 МиБ) | 5 909 (~23 МиБ) |
+| `product_a` | 18 836 | 18 837 | 18 428 (**98,2%**) | 332 (~1,3 МиБ) | 333 |
+| `system_ext_a` | 21 310 | 21 312 | 16 244 (**76,5%**) | 4 983 (~19,5 МиБ) | 4 985 |
+
+Интерпретация (`ASM`): ~15% `system` и ~13% `vendor` переписаны; почти весь `product` стабилен;
+`system_ext` переписан больше всех относительно размера — там лежит `TvSettingsPlus`, `MultiMediaPlayer`,
+`LiveTV` и `MtkTvInput`, то есть именно UI/медиа-слой.
+
+### 5.4 Дерево файлов: что добавилось/убралось (`ST`)
+
+Разбор дерева EROFS дал достоверные (валидированные: типы узлов сверены с inode-режимами, 0 расхождений)
+данные для `system_ext_a` и `product_a`:
+
+**`system_ext_a`** — 130 записей в 1.0.2 против 137 в 1.0.0. Удалено (7 записей):
+
+```
+etc/permissions/com.android.provision.xml
+priv-app/Provision/Provision.apk
+priv-app/Provision/oat/arm/Provision.odex
+priv-app/Provision/oat/arm/Provision.vdex
+(+ каталоги priv-app/Provision, priv-app/Provision/oat, priv-app/Provision/oat/arm)
+```
+
+**`system`**: `system/app/KuSetupWizard/{KuSetupWizard.apk,oat/arm/*.odex,*.vdex}` — новый каталог, в дампе
+владельца отсутствует (`DEV`: `packages.txt` 1.0.2 содержит `package:/system/app/KuSetupWizard/KuSetupWizard.apk=com.android.provision`,
+а срез владельца — `package:/system_ext/priv-app/Provision/Provision.apk=com.android.provision`).
+То есть `Provision` не удалён, а **переехал** из `system_ext` в `system` под новым именем каталога
+`KuSetupWizard`.
+
+**`product_a`**: набор файлов идентичен (93 записи), размеры совпадают.
+
+Размеры изменённых файлов `system_ext` (`ST`, из inode-метаданных EROFS):
+
+| Файл | 1.0.0 | 1.0.2 | Δ (1.0.2 − 1.0.0) |
+|---|---|---|---|
+| `priv-app/TvSettingsPlus/TvSettingsPlus.apk` | 45 871 293 | 45 883 581 | **+12 288** |
+| `priv-app/MultiMediaPlayer/MultiMediaPlayer.apk` | 14 001 507 | 14 005 603 | +4 096 |
+
+Ограничение (`LIM`): для `system` и `vendor` дерево файлов разобрано частично — самописный ридер EROFS
+корректно читает не все каталоги (проблема на границе inline-данных у больших каталогов, например
+`/system/bin`, `/system/apex/*/lib`). Поэтому побайтовое сравнение *содержимого* файлов `system`/`vendor`
+в этом отчёте **не заявляется**. Для этого нужен `erofs-utils` (`fsck.erofs --extract`) — запрос окружения
+передан владельцу.
+
+---
+
+## 6. OEM-разделы: `tvconfig`, `factory`, `tvservice`, `3rd`/`linux_rootfs`, `uenv`
+
+### 6.1 `tvconfig_a` — главный источник содержательных правок (`ST`)
+
+ext4, 954 записи в обоих дампах; **811 файлов побайтово идентичны**. Изменены (7 файлов, 4 из них — размер):
+
+| Файл | Размер 1.0.0 → 1.0.2 | Что внутри |
+|---|---|---|
+| `bsp/board/BD_MT5873_H1V1_B6_S/board.ini` | 79 370 → 79 598 (+228) | таблица GPIO, опции тюнера |
+| `bsp/chip…/aq/InputSrc…/BasicSound_DTV.ini` | 5 877 → 5 886 (+9) | таблица громкости DTV |
+| `bsp/chip…/aq/InputSrc…/BasicSound_HDMI.ini` | 6 077 → 6 077 | таблица громкости HDMI |
+| `bsp/chip…/aq/InputSrc…/BasicSound_MM.ini` | 6 015 → 6 015 | таблица громкости MM |
+| `bsp/chip…/aq/SoundStyle/BasicSound_User.ini` | 3 834 → 3 871 (+37) | пользовательский звуковой профиль |
+| `bsp/chip…/pq/Main_TMO.bin` | размер тот же | бинарный PQ-тюнинг (TMO) |
+| `platform/data…/misc…/ConfigDefaultValue.ini` | 215 978 → 216 002 (+24) | дефолты системы |
+
+Содержательные правки `board.ini` (после отбрасывания «пустых строк» — их просто добавили при генерации):
+
+```diff
+ [BOARD_GPIO_SETTING]
+-BOARD_GPIO_NUM = 23;
++BOARD_GPIO_NUM = 24;
+-#BOARD_GPIO_19_ID = 0x336; #E_MI_SYS_BOARD_INFO_ID_GPIO_AUDIO_HEADPHONE_MUTE
+-#Board_GPIO_19_INVERTOR = 0;
+-#Board_GPIO_19_PAD_NO = 352; #PAD_SAR0
+-BOARD_GPIO_19_ID = 0x363; #E_MI_SYS_BOARD_INFO_ID_GPIO_WIFI_RESET
+-Board_GPIO_19_PAD_NO = 16; #PAD_GPIO10_PM
++BOARD_GPIO_19_ID = 0x336; #E_MI_SYS_BOARD_INFO_ID_GPIO_AUDIO_HEADPHONE_MUTE
++Board_GPIO_19_INVERTOR = 0;
++Board_GPIO_19_PAD_NO = 334; #PAD_SAR0
++BOARD_GPIO_20_ID = 0x363; #E_MI_SYS_BOARD_INFO_ID_GPIO_WIFI_RESET
++Board_GPIO_20_PAD_NO = 16; #PAD_GPIO10_PM
+```
+
+То есть (`ST`): **включён GPIO «mute наушников»** (был закомментирован), из-за чего вся нумерация
+`GPIO_19..22` сдвинулась на один (WIFI_RESET → 20, PANEL_VBIAS → 21, PANEL_STB → 22, PANEL_RST → 23).
+Плюс в секции тюнера: `BOARD_TUNER_VIF_ASIA_SIGNAL_OPTION = false` → `1`. `ASM`: это включает
+«азиатскую» опцию сигнала VIF; проверить на живом устройстве (ТВ-вход/поиск каналов) нечем — источник
+не разблокирован.
+
+Таблицы громкости (`ST`): изменён хвост кривой — в 1.0.0 после `0x3400` шёл резкий скачок на `0x1200` и
+далее повторяющиеся значения (`0x0B80,0x0B80,…`), в 1.0.2 — плавная монотонная кривая
+`0x3200,0x3000,0x2E00,…0x0C00` с шагом 0x20…0x200. Это **изменение громкостной характеристики**
+(около −6…−18 дБ на «тихой» половине в старой曲线 скачок). Формально файлы `BasicSound_HDMI.ini` и
+`BasicSound_MM.ini` поменяли только эти строки и «точки с запятой» (генератор конфигов стал писать без `;`),
+т.е. содержательное изменение именно в таблице.
+
+`ConfigDefaultValue.ini` (`ST`):
+
+```diff
+-InputSourceID[1]= \
+-10,6,14,\
++InputSourceID[1]=\
++12,6,14,\
+```
+
+`ASM`: первый элемент — ID источника по умолчанию для входа 1; смена 10→12 меняет, какой источник
+подставляется при старте (проверять по списку `InputSourceID` в том же файле).
+
+`tvconfig_b` в 1.0.2 есть (953 записи) — не сравнивался: в дампе владельца отсутствует.
+
+### 6.2 `factory_a_a` (`ST`)
+
+ext4, 4 записи, набор тот же. Изменены **два бинарника** (размеры те же, содержимое другое):
+`bin/factory_clt` (SHA `e637f438…` → `94178d5f…`) и `bin/factory_svc` (`386b7c9d…` → `33deea60…`).
+`ASM`: пересобраны заводские утилиты; поведение не проверялось.
+
+### 6.3 `tvservice_a` (`ST`, только 1.0.2)
+
+ext4, 243 записи (190 файлов, 18 каталогов) — glibc-рантайм TV-стека:
+`glibc/libmali.so` 21,5 МБ, `glibc/libc-2.21.so` 9,35 МБ, `libstdc++.so.6.0.21` 9,1 МБ,
+`optee_armtz/*.bin` (24 TA), `directfbQ/*` (DirectFB 1.4). В дампе владельца этого раздела **нет** —
+сравнить нельзя; для MOD это значит, что часть TV-стека (включая `libmali`) доступна только из нового дампа.
+`tvservice_a` и `tvservice_b` идентичны.
+
+### 6.4 `3rd_a` и `linux_rootfs_a` (`ST`, только 1.0.2)
+
+Оба — **SquashFS 4.0**, block 128 КиБ, сжатие `3` (lz4? по таблице mksquashfs — `lz4`):
+
+| Раздел | inodes | bytes_used | mkfs_time |
+|---|---|---|---|
+| `3rd_a_a` | 19 | 697 256 | 2026-10-15 11:29:07 UTC |
+| `linux_rootfs_a_a` | 1 124 | 48 992 674 | 2026-10-15 11:29:05 UTC |
+
+Оба собирались в момент сборки прошивки (15.10.2026, 11:29 UTC) — то есть пересобраны вместе с релизом.
+
+### 6.5 `uenv` (`ST`)
+
+ext4, 2 записи; файл `uboot.env` (65 536 Б, SHA-256 `de2f2560…`) **идентичен** в обоих дампах.
+Различие SHA самого образа `uenv.img` — метаданные ext4 (superblock/mkfs-time), не содержимое.
+
+### 6.6 Прочие (`ST`)
+
+- `persist`, `private`, `eeprom_a`, `tvcertificate`, `project_id`, `trddev` — различаются, но это
+  **per-device** данные: калибровки, MAC/BT, дампы регистров. Пример из props: `persist.bright.model`
+  1→3, `persist.rjpj.sensor.biasacc*` (−2799/−3900/3599 → −8399/−9200/−6500),
+  `persist.sys.keystone.calibv0 = −3.896904` (только в 1.0.2), `persist.service.bdroid.bdaddr` (MAC — не публикуется),
+  `persist.vendor.uuid`. `ST`
+- `metadata`, `misc`, `cache`, `cha`, `chb` — служебные; `misc` идентичен, остальное — состояние
+  конкретной загрузки.
+
+---
+
+## 7. Загрузочная цепочка: boot, dtbo, mboot, optee, vbmeta
+
+### 7.1 `boot_a` (`ST`)
+
+Android boot header v2, page 2048, cmdline идентичен:
+`androidboot.boot_devices=1c660000.mtk-mmc-fcie bootvideo.enable=1 buildvariant=userdebug`.
+
+| Параметр | 1.0.2 | 1.0.0 |
+|---|---|---|
+| Размер ядра | 36 194 312 | 36 194 312 (тот же) |
+| SHA-256 ядра | `823938a1aa8a632c…` | `e238b81b63da453f…` |
+| `Linux version` | `5.15.189-android13-8-ga9576939dc4e-dirty` | `5.15.189-android13-8-gd71834f686bd-dirty` |
+| Дата сборки ядра | `Wed Oct 14 10:55:56 UTC 2026` | `Sat Sep 5 03:11:15 UTC 2026` |
+| Размер ramdisk | 15 839 688 | 15 839 345 (+343) |
+| SHA-256 ramdisk | (gzip, меняется) | — |
+| `os_version` | `0x1a0001a4` | `0x1a0001a4` |
+
+Ядро — **сырой ARM64 `Image`** (код начинается по смещению 2048), пересборка с тем же размером: изменились
+git-ревизия и дата сборки, а не конфигурация/размер.
+
+### 7.2 Ramdisk (`ST`)
+
+Ramdisk — gzip + cpio newc. Распаковано: **505 записей в обоих**, набор файлов **идентичен**
+(ни добавлено, ни удалено), **103 файла с другим содержимым** при том же размере (пересобранные бинарники
+`system/bin/*`, `system/lib/*`, `first_stage_ramdisk/*`). Только 3 файла поменяли размер:
+
+| Модуль | 1.0.0 → 1.0.2 |
+|---|---|
+| `lib/modules/mtu3.ko` | 3 630 864 → 3 630 888 (+24) |
+| `lib/modules/phy-mtk-tphy-tv.ko` | 442 584 → 442 592 (+8) |
+| `lib/modules/xhci-mtk-hcd-tv.ko` | 1 206 624 → 1 206 640 (+16) |
+
+`system/etc/ramdisk/build.prop` и `prop.default` отличаются только «сборочными» строками (fingerprint,
+incremental, build.date/host, gitrev, yunota.version) — 58 изменённых строк, никаких поведенческих свойств.
+
+### 7.3 `dtbo_a` (`ST`)
+
+Заголовок DTBO — **big-endian** (магия `0xd7b7ab1e` в BE-порядке; нестандартно для AOSP, но так в обеих
+версиях). `207` записей, все размеры/смещения/`id`/`rev` совпадают; первый DTB побайтово идентичен.
+Различие всего в **2 блоках по 4 КиБ** по смещению 3 801 088 — это **хвост AVB-хеша/подписи** поверх
+таблицы DTBO, а не содержимое DTB.
+
+### 7.4 `mboot_a` (`ST`)
+
+10 485 760 Б, различие **18,36% блоков** (470 из 2560). Строка версии: `01.01.261015` (1.0.2) против
+`01.01.260905` (1.0.0) — загрузчик пересобран вместе с релизом. Это подтверждается `ro.bootloader` в
+`getprop`.
+
+### 7.5 `optee_a` (`ST`)
+
+25 165 824 Б, различие **2 блока** по смещению 2 801 664 (0,03%). `ASM`: точечная правка/переподпись
+крипто-контейнера OP-TEE; без разбора формата (Trustonic/OP-TEE TA) утверждать содержимое нельзя.
+
+### 7.6 `vbmeta_a` / `vbmeta_system_a` (`ST`)
+
+Заголовки AVB — тоже **big-endian** (`AVB0`, версия 1.0, `algorithm=2` = SHA256_RSA4096,
+`authentication_data_block_size=576`, `auxiliary_data_block_size=9344`, `hash=32`, `signature=512`,
+`public_key=1032`). **Публичный ключ идентичен** (SHA-256 `dcf38badcd7784d2…` в обеих версиях) —
+прошивка подписана тем же ключом вендора.
+
+`vbmeta_a` содержит chain-дескрипторы для `tvservice`, `bootdata`, `linux_rootfs_a`, `3rd_a`, `factory_a`,
+`vbmeta_system` и property-дескриптор со `fingerprint` — поэтому `vbmeta_a` и отличается: внутри
+зашита строка сборки (`…/suhaixiong10151120` против `…/suhaixiong09050314`).
+
+`ASM`: отсюда следует, что 1.0.2 — **официальное обновление того же вендора**, а не сборка «сбоку».
+Проверить подпись «руками» без `avbtool` нельзя (в окружении его нет); on-device AVB на источнике
+показывает `green`, т.е. подпись валидна для его загрузчика.
+
+---
+
+## 8. Runtime-срез: свойства, пакеты, настройки
+
+Источник: `flixtone_backup/meta/*` (`DEV`) против среза владельца `2026-11-23` в репозитории (`DEV`).
+
+### 8.1 Свойства (`DEV`)
+
+1170 свойств в 1.0.2 против 1165. Из 280 «изменённых» большинство — шум (`ro.boottime.*`,
+`init.svc_debug_pid.*`, `cache_key.*`, `persist.*` устройства). Содержательные:
+
+- сборочные: `ro.build.*`, `ro.system(_ext).build.*`, `ro.vendor.build.*`, `ro.odm.build.*`,
+  `ro.bootimage.build.*` — версия/дата/fingerprint (см. §3);
+- `ro.bootloader`, `ro.boot.vbmeta.digest`, `ro.boot.vbmeta.device_state`, `ro.boot.verifiedbootstate`;
+- `partition.*.verified.root_digest` — **у всех** разделов (`system`, `system_ext`, `vendor`, `product`,
+  `3rd`, `bootdata`, `factory`, `linux_rootfs`, `tvservice`) разные → подтверждает пересборку содержимого;
+- новые в 1.0.2: `persist.rjpj.hdmiplug.autoplay=1`, `persist.rjpj.tof.autofocus=1`,
+  `persist.rjpj.keystone.auto.vertical=0`, `persist.sys.keystone.calibv0=-3.896904`,
+  `persist.keystone.result.state=0`, `persist.sys.hysd.afmotordir=1`, `persist.trd.source_id=…HW7`;
+- исчезли: `persist.bluetooth.dualmode.enable`, `vendor.mstar.pos_*_offset`,
+  `vendor.mstar.trapezoid.trigger.osd.offset`.
+
+`ASM`: часть «новых» свойств — это просто ещё не созданные/уже созданные на конкретном устройстве
+persist-ключи (калибровка), а не новые фичи прошивки.
+
+### 8.2 Пакеты (`DEV`)
+
+Всего: 94 пакета в 1.0.2 против 96 у владельца. Разница — **пользовательские** приложения
+(у владельца стоят `com.estrongs.android.pop`, `io.github.romanvht.byedpi`, `org.liskovsoft.androidtv.rukeyboard`,
+`net.gtvbox.videoplayer`, `ru.astroapps.hdrezka`, `ru.pro100tehnika.tvlauncher`, `com.yablio.sendfilestotv`,
+`de.szalkowski.activitylauncher.oss`; на источнике — `com.vk.tv`, `org.videolan.vlc`, `org.xbmc.kodi`,
+`ru.mts.mtstv`, `ru.rutube.app`, `de.szalkowski.activitylauncher`). Это не прошивка, а `/data`.
+
+Системные изменения версий (`DEV`, `dumpsys_package`):
+
+| Пакет | 1.0.0 | 1.0.2 | Примечание |
+|---|---|---|---|
+| `com.android.toofifi` (FTAirplayWireless) | `V3.3.4.1_20837_20260709` | `V3.3.4.2_22279_20261012` | **обновлён AirPlay-модуль** |
+| `com.coolux.source` (KuSourceRJ) | `5.3` | `5.4` | **обновлён источник/список входов** |
+| `com.android.provision` | 33, путь `/system_ext/priv-app/Provision` | 1.0, путь `/system/app/KuSetupWizard` | переезд + смена версии |
+| `com.android.tv.settings` (TvSettingsPlus) | `1.0` | `1.0` | версия та же, APK +12 288 Б |
+| `com.trd.framework`, `com.trd.service`, `com.rjpj.tcorrection`, `com.rjpj.yunota`, `com.hysd.screen`, `com.mediatek.wwtv.tvcenter` (2.30.5), `com.mediatek.tv.service` (1.3), `com.zeasn.launcher` (1.0.93), `zeasn.open.technical.tv.store` (4.2.01), `com.android.webview` (101.0.4951.61) | — | — | без изменений версий |
+
+### 8.3 Настройки (`DEV`)
+
+`settings_global.txt` есть только для 1.0.2 (в срезе владельца этого файла нет) — сравнение невозможно,
+файл приложен к дампу как есть.
+
+---
+
+## 9. Что это значит для проекта MOD (`ASM`)
+
+1. **Обновление 1.0.2 не ломает наш MOD по версиям API/пакетов**: `com.android.tv.settings`, `com.trd.framework`,
+   `com.trd.service`, `com.rjpj.tcorrection`, `com.hysd.screen` — те же версии, что и на 1.0.0.
+   Значит, `TvSettingsPlus` и binder-интерфейсы `trd.framework` менять не требуется — при условии, что
+   внутренние AIDL/транзакции не менялись (это надо проверять по `libtrd*`/`classes*.dex`, сейчас нельзя —
+   APK сжаты).
+2. **Меняется звуковое поведение**: таблицы громкости `BasicSound_DTV/HDMI/MM` перерисованы, включён GPIO
+   mute наушников. Если на 1.0.2 ставить наш UI с прежними «шагами громкости», ожидания пользователя и
+   реальная кривая разойдутся. `ASM`: экран громкости в MOD стоит сверить с новой кривой.
+3. **`Provision`/`KuSetupWizard`**: на 1.0.2 мастер первоначальной настройки — `system/app/KuSetupWizard`,
+   а не `system_ext/priv-app/Provision`. Если в MOD есть ссылки/гейты на пакет `com.android.provision` —
+   они продолжат работать (имя пакета то же), но путь и версия другие. `ST`
+4. **Откат**: полный дамп 1.0.2 — единственный на сегодня источник *всех* разделов (включая `tvservice`,
+   `3rd`, `linux_rootfs`, `bootdata`, `tvconfig_b`, `optee_b`, `armfw_b`). Но:
+   - `persist`, `private`, `eeprom`, `tvcertificate`, `project_id`, `trddev`, `tvconfig_a` из **чужого**
+     устройства лить нельзя — это калибровки/сертификаты/ID другого экземпляра;
+   - `super` — A-only (B пуст), так что «переключение слота» не спасёт;
+   - AVB: источник `locked/green`, у владельца `unlocked/orange` — после прошивки 1.0.2 на разблокированное
+     устройство `verifiedbootstate` останется `orange`, но `vbmeta`/`boot` должны быть от 1.0.2 целиком,
+     иначе AVB-цепочка рассогласуется.
+5. **Сравнение с 8052 (Everycom) не требуется**: 1.0.2 — тот же 8054, а не близнец. Прежний вывод о
+   несовместимости 8052/8054 остаётся в силе и к этому дампу не относится.
+
+---
+
+## 10. Открытые вопросы (что проверить дальше)
+
+1. `LIM` → получить `fsck.erofs` (Linux/erofs-utils) и сделать полный файловый diff `system`/`vendor`
+   (сейчас — только метаданные и неполное дерево). Это единственное серьёзное «белое пятно».
+2. `ASM` → содержательно интерпретировать `Main_TMO.bin` (PQ) и `ConfigDefaultValue.ini`
+   (`InputSourceID[1]=12`) — нужен словарь ID из того же файла/`ConfigDefaultValue` и, желательно,
+   проверка на живом устройстве.
+3. `ASM` → подтвердить, что `BOARD_GPIO_19 = AUDIO_HEADPHONE_MUTE` реально используется прошивкой
+   (найти обработчик в `tvservice`/ядре; в EROFS-сжатых ELF сейчас не проверить).
+4. `ST`/`DEV` → сверить `vbmeta`/`boot`/`dtbo` подписи `avbtool verify_image` (нужен `avbtool`).
+5. `DEV` → если появится возможность: снять `dumpsys audio` на 1.0.2 и сравнить кривые громкости с 1.0.0
+   (у нас есть только срез владельца).
+
+---
+
+## 11. Артефакты и воспроизводимость
+
+Сырые данные и инструменты, использованные для этого отчёта, лежат рядом с ним:
+
+| Путь | Что содержит |
+|---|---|
+| `data/partition_table.md` | таблица «раздел / размер / SHA-256 / статус» |
+| `data/hashes_dump.txt` | SHA-256 всех образов обоих дампов |
+| `data/block_overlap.txt` | метрика «общие блоки 4 КиБ» (§5.3) |
+| `data/props_diff.txt` | diff `getprop` (приватные идентификаторы вырезаны) |
+| `data/pkgs_diff.txt` | diff версий пакетов из `dumpsys_package` |
+| `data/diff_tvconfig.txt` | файловый diff `tvconfig_a` (§6.1) |
+| `data/tvcfg_textdiff2.txt` | построчный diff изменённых конфигов `tvconfig` |
+| `data/ramdisk_diff_summary.txt` | diff cpio-ramdisk (§7.2) |
+| `tools/lp2.py` | разбор liblp: группы, разделы, экстенты, размеры |
+| `tools/super_extract.py` | извлечение логических разделов из `super.img` + SHA |
+| `tools/block_overlap.py` | метрика «общие блоки 4 КиБ» |
+| `tools/erofs.py`, `tools/tree_dump.py`, `tools/tree_diff.py` | EROFS: чтение inode/каталогов и сравнение деревьев |
+| `tools/ext4_tree.py`, `tools/ext4_diff.py`, `tools/ext4_extract.py` | ext4: деревья, сравнение, извлечение файлов |
+| `tools/ramdisk_dump.py`, `tools/ramdisk_summary.py` | gzip+cpio ramdisk |
+| `tools/avbparse.py`, `tools/imgparse.py`, `tools/blkdiff4k.py` | AVB/DTBO/boot-заголовки, блочные diff |
+| `tools/compare_props.py` | сравнение `getprop`/`dumpsys_package` |
+| `tools/getwheel.py` | установка python-зависимостей (`lz4`, `ext4`, `crcmod`) из wheel без pip |
+
+Зависимости python: `lz4`, `ext4`, `cachetools` и шим `crcmod` (чистый Python CRC-32C) — ставятся
+`tools/getwheel.py` в локальный каталог, pip в этой среде не работает из-за прав на временные файлы.
+
+Проверка ключевых чисел воспроизводится командами из этих скриптов; критичные значения (SHA разделов,
+размеры LP-разделов, ext4-деревья, cpio ramdisk, версии ядра/mboot) получены независимо от runtime-среза.
+
+---
+
+## 12. Итоговая таблица «что изменилось»
+
+| Слой | Изменение | Метка |
+|---|---|---|
+| Сборка | `eng.suhaix.20260905.031903` → `eng.suhaix.20261015.112145`, `RUIOS.8054.1.0.0` → `1.0.2`, gitrev `d71834f6` → `a9576939` | `ST`/`DEV` |
+| Ядро | пересобрано, `5.15.189…gd71834f6` → `…ga9576939`, размер тот же | `ST` |
+| Ramdisk | набор файлов тот же, 103 файла пересобраны, 3 модуля +24/+8/+16 Б | `ST` |
+| Загрузчик `mboot` | `01.01.260905` → `01.01.261015` | `ST` |
+| `optee` | 2 блока из 6144 | `ST` |
+| `dtbo` | содержимое DTB идентично, отличается только хвост AVB | `ST` |
+| `vbmeta` | тот же ключ, тот же алгоритм; другой fingerprint в дескрипторе | `ST` |
+| `system` | +11,44 МиБ; `Provision`→`KuSetupWizard`; ~85% блоков общие | `ST` |
+| `system_ext` | −`Provision`, `TvSettingsPlus` +12 288 Б, `MultiMediaPlayer` +4 096 Б; ~76,5% блоков общие | `ST` |
+| `vendor` | ~86,6% блоков общие; файловый diff не заявлен (`LIM`) | `ST`/`LIM` |
+| `product` | 98,2% блоков общие, набор файлов тот же | `ST` |
+| `tvconfig` | 7 файлов: GPIO/наушники, таблицы громкости, дефолты, PQ | `ST` |
+| `factory` | 2 заводских бинарника | `ST` |
+| `uenv` | идентично | `ST` |
+| `tvservice`, `3rd`, `linux_rootfs`, `bootdata` | есть только в 1.0.2; пересобраны 15.10.2026 | `ST` |
+| `persist/private/eeprom/tvcertificate/project_id/trddev` | per-device данные, не прошивка | `ST` |

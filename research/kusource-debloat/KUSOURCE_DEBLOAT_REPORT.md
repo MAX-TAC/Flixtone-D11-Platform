@@ -1,0 +1,114 @@
+# KuSourceRJ (`com.coolux.source`) — вырезка мусора. ОТЧЁТ
+
+Дата: 2026-11-26. Владелец: MAX-TAC. Статус: **СОБРАН И ПОДПИСАН**, не установлен.
+
+## Артефакт
+
+| Параметр | Значение |
+|---|---|
+| Файл | `_analysis/Protection-5.3-signed.apk` |
+| Размер | 58 515 317 Б (оригинал 58 460 781 Б) |
+| SHA-256 | `A2A899C55B3A15BD603DFDD4926D2E03D9C9D778068ABC0EA0B27807AC9E30D6` |
+| package | `com.coolux.source` (не менялся) |
+| **label (имя)** | **`Protection`** (было `Source`) |
+| **иконка** | **новая**: красный термометр + вентилятор (mipmap все разрешения) |
+| versionCode / versionName | 41 / 5.3 (не менялись) |
+| minSdk / targetSdk | 28 / 33 |
+| Подпись | platform AOSP testkey, SHA-256 `c8a2e9bc…192ab8` — **совпадает с оригиналом** |
+| Схемы подписи | v3 (v1/v2 не требуются при minSdk 28) |
+
+## Что удалено
+
+### 1. Заводские тесты `testcast.*` — 17 Activity + `MyTestActivity`
+`TestCastActivity`, `InterfaceTestActivity`, `StandbyActivity`, `DlpActivity`,
+`InterfaceActivity`, `BrightTestActivity`, `AudioVideoActivity`, `LeftRightVideoActivity`,
+`AgingModelActivity`, `AgingActivity`, `RebootNumActivity`, `PrintTestActivity`,
+`CustomBrightActivity`, `OtherActivity`, `ClearTimeActivity`, `SetTimeActivity`,
+`WifiSNActivity`, `WiredSNActivity` + `MyTestActivity`.
+Удалено 61 файл smali всего пакета `testcast` + 1 файл `MyTestActivity`.
+
+### 2. Дубли MOD и лишние экраны
+| Компонент | Файлы smali | Причина |
+|---|---|---|
+| `MainActivity` (LAUNCHER, выбор источника) | 3 | дубль MOD `NativeSections.Sources` |
+| `BootSoureActivity` + `BootSoureActivityOld` | 6 | дубль MOD `NativeBootDestination` |
+| `VoiceActivity` + `VoiceUtils` | 3 | звук кнопок, дубль MOD |
+| `AllAppAutoActivity` + `AllAppAutoAdapter` | 6 | дубль MOD `BootAppPickerSettingsActivity` |
+| `AutomaticAdmissionActivity` | 2 | заводская автоподача сигнала |
+| `AuthorizationActivity` | 2 | DRM-тупик («Error, shutdown after 30 seconds») |
+| `UtilsLogic` + `UtilsLogicImpl` + `$1/$2` | 4 | обслуживали только `AllAppAutoActivity` |
+
+Итого удалено **88 файлов smali**.
+
+### 3. DRM/OTA-цепочка внутри `TimeService` (вычищена)
+- метод `private myHttp(Context)` — HTTP-опрос сервера обновлений;
+- поле `socicalLogic`;
+- класс `TimeService$13` (обработчик ответа → `isShield()` → `authorizationIntent()`);
+- вызов `myHttp()` из `defaultData()`;
+- методы `authorizationIntent` и `autoApp` в `IntentUtils`.
+
+**Следствие:** проверка «заблокирована ли прошивка» больше не выполняется, устройство
+не выключится само при откате/смене прошивки.
+
+### 4. Aging-механизм (заводской прогон на выносливость)
+- `BootupReceiver.agingTest()`;
+- `BootupReceiver.rebootStart()` (счётчик перезагрузок для aging);
+- вызовы `startAgingIntent()` в `BootupReceiver`;
+- `IntentUtils.startAgingIntent()` и `IntentUtils.agingTest()`.
+
+**Следствие:** при загрузке больше не проверяется флаг `agingAuto`, автозапуска
+`AgingActivity` не будет (класс удалён, ссылок нет).
+
+### 5. Кнопка «автоподача сигнала» в трапеции
+- пункт `automatic_admission_layout` удалён из `res/layout/activity_keystone.xml`;
+- обработчик этого пункта удалён из `KeystoneActivity.enterClick()`;
+- цепочка меток перестроена, ссылки проверены.
+
+## Что сохранено (НЕ тронуто)
+
+| Компонент | Зачем |
+|---|---|
+| `TimeService` | **термоконтроль**: LED/LCD-температура, 4 вентилятора, снижение яркости, пороги 65/70/75/80 °C |
+| `BootupReceiver` | при `BOOT_COMPLETED`: `defaultInit` → `defaultBright` → `UtilsTools.startTime()` |
+| `BrightReceiver` | управление яркостью (вызывается из MOD через `KuSourceRjBrightnessGateway`) |
+| `ScreensaverReceiver` | заставка |
+| `BrightActivity` | яркость LED (открывается из MOD `OemProjectionPanel`) |
+| `KeystoneActivity` | трапеция |
+| `ProjectModelActivity` | режим проектора |
+| `PoweronModeActivity` | режим включения |
+| `HighTemperatureActivity` | предупреждение о перегреве |
+| `FanDetectionActivity` | диагностика вентиляторов |
+| `DustproofActivity` | защита от пыли |
+| `RestoreActivity` | сброс настроек |
+| `model/AppInfo`, `UtilsTools`, `SharedPreferencesTest`, `ImageUtils`, `MyTimeUtils` | рабочие утилиты (используются MOD и логикой) |
+
+## Проверки (выполнены)
+
+- `apktool b` — EXIT 0, APK собран.
+- `aapt dump badging` — package/версия не изменились.
+- `aapt dump xmltree` — в манифесте **нет** ни одного удалённого компонента,
+  **нет** LAUNCHER; остались 8 Activity + 3 Receiver + 1 Service + 1 Provider.
+- повторная декомпиляция собранного APK: ключевые классы на месте, удалённые — отсутствуют.
+- `TimeService` — нет `myHttp`/`socicalLogic`/`authorization`, термоконтроль (`startHighTemReduce`, `temperatureError`, `startReduce`, `fanDetection`, `registerTimeTick`) на месте.
+- `BootupReceiver` — нет `agingTest`/`rebootStart`/`startAgingIntent`.
+- `apksigner verify` — `Verifies`, сертификат `c8a2e9bc…` = оригинал.
+- `grep` по всему smali — ни одной `const-class` ссылки на удалённые классы.
+
+## Установка
+
+⚠️ **Требуется полная перезагрузка после установки** (служба `persistent`, поднимется с новым кодом).
+
+Процедура (по согласованию, отдельным разрешением):
+1. Установить APK поверх существующего (подпись совпадает, `sharedUserId` сохранится).
+2. Полная перезагрузка проектора.
+3. Проверить: термоконтроль (`logcat` → `TimeService`), яркость, трапеция, перегрев.
+4. Откат: переустановить оригинал `_apks/com.coolux.source.apk`.
+
+## Ограничения
+
+- Мёртвые «тестовые» методы `IntentUtils` (`audioVideoTest`, `dlpTest`, `interfaceTest`,
+  `otherTest`, `printTest`, `projectNumTest` и пр.) **оставлены**: они используют строковые
+  intent-экшены, сборку не ломают. Удаляются отдельным проходом при желании.
+- `SocaicalLogicImpl`/`SocicalLogic`/`RsFwUpdatePackage`/`JsonUtil` оставлены как «мёртвый»
+  код (не вызываются, но и не мешают).
+- Ключи подписи скопированы в `_analysis/keys/` (публичный AOSP testkey, не секрет).

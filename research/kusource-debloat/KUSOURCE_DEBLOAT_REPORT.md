@@ -7,15 +7,28 @@
 | Параметр | Значение |
 |---|---|
 | Файл | `_analysis/Protection-5.3-signed.apk` |
-| Размер | 58 515 317 Б (оригинал 58 460 781 Б) |
-| SHA-256 | `A2A899C55B3A15BD603DFDD4926D2E03D9C9D778068ABC0EA0B27807AC9E30D6` |
+| Размер | 58 415 851 Б (оригинал 58 460 781 Б) |
+| SHA-256 | `3A9297E2BB557E973A824DC27BDDDBAB37A8C98867E44930B4FAC33BB23C30EC` |
 | package | `com.coolux.source` (не менялся) |
 | **label (имя)** | **`Protection`** (было `Source`) |
 | **иконка** | **новая**: красный термометр + вентилятор (mipmap все разрешения) |
+| **языки** | английский (базовый) + русский (для служебных экранов) |
 | versionCode / versionName | 41 / 5.3 (не менялись) |
 | minSdk / targetSdk | 28 / 33 |
 | Подпись | platform AOSP testkey, SHA-256 `c8a2e9bc…192ab8` — **совпадает с оригиналом** |
 | Схемы подписи | v3 (v1/v2 не требуются при minSdk 28) |
+
+### Итоговый состав (после двух этапов вырезки)
+
+| Компонент | Тип | Назначение |
+|---|---|---|
+| `TimeService` | Service | **термоконтроль**: температура LED/LCD, 4 вентилятора, снижение яркости, пороги 65/70/75/80 °C |
+| `BootupReceiver` | Receiver | старт службы при `BOOT_COMPLETED` + стартовая яркость |
+| `BrightReceiver` | Receiver | яркость по broadcast `com.action.brightReceiver` (используется MOD) |
+| `HighTemperatureActivity` | Activity | экран предупреждения о перегреве (отсчёт 10 с → выключение) |
+| `FanDetectionActivity` | Activity | экран неисправности вентиляторов |
+| `DustproofActivity` | Activity | напоминание о чистке пылевого фильтра |
+| `androidx.startup.InitializationProvider` | Provider | служебный (AndroidX) |
 
 ## Что удалено
 
@@ -40,7 +53,19 @@
 
 Итого удалено **88 файлов smali**.
 
-### 3. DRM/OTA-цепочка внутри `TimeService` (вычищена)
+### 3. Дубли MOD (второй этап, по запросу владельца) — 5 Activity + 1 Receiver
+| Компонент | Файлы | Причина |
+|---|---|---|
+| `BrightActivity` | 3 | яркость в MOD идёт через `BrightReceiver` (broadcast), не через этот экран |
+| `KeystoneActivity` | 2 | трапеция в MOD через отдельное приложение `com.rjpj.tcorrection` |
+| `ProjectModelActivity` | 2 | ориентация проекции перенесена в MOD |
+| `PoweronModeActivity` | 2 | режим включения перенесён в MOD |
+| `RestoreActivity` | 6 | сброс настроек перенесён в MOD |
+| `ScreensaverReceiver` | 1 | ничем не вызывался; яркость в «screensaver» не нужна (сон/заставка отключены) |
+
+Итого второго этапа: **16 файлов smali**. Суммарно два этапа — **104 файла**.
+
+### 4. DRM/OTA-цепочка внутри `TimeService` (вычищена)
 - метод `private myHttp(Context)` — HTTP-опрос сервера обновлений;
 - поле `socicalLogic`;
 - класс `TimeService$13` (обработчик ответа → `isShield()` → `authorizationIntent()`);
@@ -50,7 +75,7 @@
 **Следствие:** проверка «заблокирована ли прошивка» больше не выполняется, устройство
 не выключится само при откате/смене прошивки.
 
-### 4. Aging-механизм (заводской прогон на выносливость)
+### 5. Aging-механизм (заводской прогон на выносливость)
 - `BootupReceiver.agingTest()`;
 - `BootupReceiver.rebootStart()` (счётчик перезагрузок для aging);
 - вызовы `startAgingIntent()` в `BootupReceiver`;
@@ -58,6 +83,14 @@
 
 **Следствие:** при загрузке больше не проверяется флаг `agingAuto`, автозапуска
 `AgingActivity` не будет (класс удалён, ссылок нет).
+
+### 6. Кнопка «автоподача сигнала» + тестовый ввод в трапеции
+- пункт `automatic_admission_layout` удалён из `res/layout/activity_keystone.xml`;
+- обработчики click/key удалены из `KeystoneActivity` (метод `enterKey`, `access$100`, `keyListenner`, `KeystoneActivity$2`).
+
+### 7. Перевод служебных экранов на русский
+Добавлены в `res/values-ru/strings.xml` (12 строк): `fan_detection_error*`,
+`temperature_shutdown0/1/2`, `temperature_error`, `dusproof_title*`.
 
 ### 5. Кнопка «автоподача сигнала» в трапеции
 - пункт `automatic_admission_layout` удалён из `res/layout/activity_keystone.xml`;

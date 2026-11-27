@@ -31,12 +31,40 @@
 
 ```text
 docs/            документы проекта: архитектура, карты, планы, решения (ADR)
+  apps/          разбор каждого приложения (KuSource→Protection, KuSettings, TRD, tcorrection, TvSettings)
+  architecture/  устройство 8054, параметры, архитектура настроек
+  features/      отдельные функции (аудио, HDMI-ARC, ALLM, keystone)
+  decisions/     ADR (порядок работ, доказательства, версионирование)
+  tasks/         планы, баги, спецификации
+  setup/         инструменты, чтение CI-логов
 research/        доказательная база: дампы, выводы, сравнения, эксперименты
 mod/             исходники модернизированных приложений (позже)
 firmware/        манифесты разделов, план сборки, схема восстановления
 tools/           скрипты диагностики и сборки
-reports/         отчёты прогонов (сырые, с датой и device fingerprint)
+reports/         итоговые отчёты (разбор проекта, сравнение прошивок, handoff)
 ```
+
+### Ключевые документы по приложениям (`docs/apps/`)
+
+| Документ | Приложение | Суть |
+|---|---|---|
+| `PROTECTION-HANDBOOK.md` | `com.coolux.source` (бывш. KuSourceRJ) | термоконтроль, вентиляторы, яркость; вырезка мусора; блокировка persistent |
+| `TCORRECTION-MAP.md` | `com.rjpj.tcorrection` | экраны трапеции/зума, механика I2C/FPGA, план переноса в MOD |
+| `TRD-FRAMEWORK-CORE.md` | `com.trd.framework` | binder-сервис железа, гомография OpenCV, ключи состояния |
+| `TRD-SERVICE-OVERLAY.md` | `com.trd.service` | оверлеи (фокус, диалоги), разграничение с framework |
+| `TRDSERVICE-FOCUS-4K.md` | `com.trd.service` | модернизация фокуса под 4K (артефакт + блокировка) |
+| `KUSETTINGS-ANALYSIS.md` | `com.my.settings` | китайское меню настроек |
+| `KUSOURCE-DEBLOAT-REPORT.md` | `com.coolux.source` | отчёт по вырезке мусора |
+| `TVSETTINGS-FULL-DOC.md` | TvSettingsPlus MOD | полная документация MOD |
+| `FACTORY-AND-SERVICE-APPS.md` | заводские/сервисные APK | классификация |
+
+### Отчёты (`reports/`)
+
+| Файл | Дата | Содержание |
+|---|---|---|
+| `2026-11-23-разбор-проекта.md` | 2026-11-23 | полный разбор проекта |
+| `2026-11-23-repositories-full-handoff.md` | 2026-11-23 | AI-handoff по 4 репозиториям |
+| `2026-11-25-сравнение-ruios-1.0.2-vs-1.0.0.md` | 2026-11-25 | сравнение прошивок RUIOS 1.0.2 vs 1.0.0 |
 
 ## Правила безопасности
 

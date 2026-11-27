@@ -214,6 +214,22 @@ Failure [INSTALL_FAILED_INVALID_APK: Package com.coolux.source is a persistent a
 ### Решение владельца (2026-11-27):
 **Приостановить установку.** Тестировать вырезанную версию только при пересборке прошивки. Сейчас — продолжить аудит остальных программ.
 
+### ⚠️ ВАЖНО для пересборки кастома (задача на будущее):
+Обе системные программы — **`com.coolux.source` (Protection)** и **`com.trd.service`** — имеют
+`android:persistent="true"` → заблокированы от обновления через `pm install`.
+**При сборке кастомной прошивки нужно снять `persistent` (или убрать флаг `PERSISTENT`)
+у этих пакетов**, чтобы после установки кастома не было блокировки будущих обновлений/фиксов.
+
+То же касается **`trdservice`** (см. `TRD-SERVICE-OVERLAY.md` и артефакт
+`_analysis/trdservice-focus-4k-signed.apk`).
+
+Сводка persistent-блокировок (для учёта при сборке):
+| Пакет | persistent | Артефакт готов |
+|---|---|---|
+| `com.coolux.source` (Protection) | да | `Protection-5.3-final.apk` |
+| `com.trd.service` | да | `trdservice-focus-4k-signed.apk` |
+| `com.rjpj.tcorrection` | **нет** → обновляется | (план переноса) |
+
 ---
 
 ## 8. Среда / инструменты (что работает)

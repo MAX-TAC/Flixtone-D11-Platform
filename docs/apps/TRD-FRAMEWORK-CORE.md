@@ -218,6 +218,25 @@ persist.display.keystone_rby      правый низ     Y
 (8 координат), а не как «углы мотора». Именно эти 8 чисел подаются в
 `SetUpDownTrapezid` / `SetLeftRightTrapezid`.
 
+### 8.1b. ВТОРОЙ набор ключей + аппаратный путь (уточнение 2026-11-27)
+
+⚠️ **Разбор `com.rjpj.tcorrection` выявил второй, аппаратный механизм коррекции:**
+
+- Ключи **`persist.rjpj.fourcorner.keystone_{lt,rt,lb,rb}{x,y}`** — их читает/пишет
+  `com.rjpj.tcorrection.KeystoneUtil` (приложение экранов коррекции).
+- Запись идёт **НЕ** через `SetKeystone` (гомографию), а через **`I2CDevice.writeRegister()` в `/dev/i2c-1`**
+  — то есть **FPGA/аппаратный блок** выполняет геометрию на уровне видеотракта.
+- `persist.display.keystone_*` — это «зеркало» (display-side mirror) для состояния.
+
+**Итог — два механизма, которые не путать:**
+| Механизм | Кто | Куда пишет |
+|---|---|---|
+| Гомография (OpenCV) | `trd.framework` (native `TrapezoidUtil`) | `SetUpDownTrapezid` через binder |
+| Аппаратная (FPGA) | `com.rjpj.tcorrection.KeystoneUtil` | `/dev/i2c-1` через `I2CDevice` |
+
+Для **своего UI** (перенос в MOD) достаточно сохранить логику `KeystoneUtil`
+(запись в I2C + persist), не трогая механику — она рабочая.
+
 ### 8.2. Смещение оптики
 
 ```
